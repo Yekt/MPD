@@ -1,7 +1,7 @@
 # Protokoll - Gruppe 9
 
 **Datum:** 11.04.2019  
-**Von:** 16:30h	**Bis**:17:30h
+**Zeit:** 16:40h - 17:50h
 
 **Teilnehmer:**
 > Till Simons Michels  
@@ -11,8 +11,17 @@
 > Markus Vogel  
 > Lukas Sauter
 
-## Themen
+
+### Themen
 - Thema1
 - Thema2
 
-## Ergebnisse
+### Ergebnisse
+- Gruppenname wurde auf "Gruppe 1" festgelegt
+- Wöchtentlicher Gruppentreff wurde auf Dienstag 6. DS festgelegt
+- Es wurde sich auf zwei Spielideen geeinigt und grundlegend ausgearbeitet
+- Zwei Spiele wurden auf positive und negative Aspekte anhand der Vorgaben beleuchtet
+- Es wurden Lukas Sauter als Gruppenleiter und Maximilian Taube als Protokollant endgültig festgelegt
+
+
+
