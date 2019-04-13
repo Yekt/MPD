@@ -29,17 +29,19 @@ Entsprechend ist das Spiel für Kinder ab ungefähr 10 Jahren geeignet.
 
 #### E.T. the Extra-Terrestrial (negativ Bsp.)
 **Spielstory 1 von 5 Sternen:** Beim Start des Spiels wird man ohne einen Dialog
-oder etwas Ähnlichem, was die Geschiechte einführen würde, in das Spielgeschähen
+oder etwas Ähnlichem, was die Geschiechte einführen würde, in das Spielgeschehen
 geworfen. Dialoge oder Hinweiße wie man in dem Spiel Fortschritt erzielt gibt es
 einfach nicht. Um zu verstehen was zu tun ist, muss man erst das Handbuch lesen,
 in dem dann jedes Spiel Element, wie die Gestalten in Anzügen die einen 
 verfolgen, erklärt ist. Ein Spiel sollte sich selbst durch das Spielgeschehen 
 erklären.
+
 **Gestaltung 1 von 5 Sternen:** Die Spielszenen sind in einem detaillosem 
 Pixelgrafik-stil dargestellt, der oft nur mit Hilfe des Handbuches erkennen 
-lässt, was dargestellt werden soll.
+lässt, was dargestellt werden soll. 
+
 **Usability 1 von 5 Sternen:** Die Steuerung wird auch nur mit Hilfe des 
-Handbuches erklärt und ist gradezu unterfordernt schlicht.
+Handbuches erklärt und ist gradezu unterfordernt schlicht. 
 
 - ist ohne das Handbuch nicht spielbar 
 - Grafik ist unansehnlich und nicht eindeutig
