@@ -28,6 +28,9 @@ Entsprechend ist das Spiel für Kinder ab ungefähr 10 Jahren geeignet.
 ### Spielanalyse
 
 #### E.T. the Extra-Terrestrial (negativ Bsp.)
+![ET-image](images/et2600.jpg)
+[Bild von 8-bitcentral.com](http://www.8-bitcentral.com/reviews/2600et.html)
+
 **Spielstory 1 von 5 Sternen:** Beim Start des Spiels wird man ohne einen Dialog
 oder etwas Ähnlichem, was die Geschiechte einführen würde, in das Spielgeschehen
 geworfen. Dialoge oder Hinweiße wie man in dem Spiel Fortschritt erzielt gibt es
