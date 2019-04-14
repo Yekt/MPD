@@ -21,9 +21,7 @@
 ### Festlegungen
 - Gruppenname wurde auf "Gruppe 1" festgelegt
 - Wöchtentlicher Gruppentreff wurde auf Dienstag 6. DS festgelegt
-- Es wurde sich auf zwei Spielideen geeinigt und grundlegend ausgearbeitet
-- Zwei Spiele wurden auf positive und negative Aspekte anhand der Vorgaben beleuchtet
+- Es wurde sich auf die Spielideen "Commander" und "What's inside" geeinigt und grundlegend ausgearbeitet
+- Über das Spiel "E.T. the Extra-Terrestrial" wurde als Negativbeispiel diskutiert
+- Über das Spiel "Minecraft" wurde als Positivbeispiele diskutiert
 - Es wurden Lukas Sauter als Gruppenleiter und Maximilian Taube als Protokollant endgültig festgelegt
-
-
-
