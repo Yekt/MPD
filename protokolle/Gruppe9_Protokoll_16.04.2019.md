@@ -20,7 +20,11 @@
 - Alternativ Rechnernetze Lernspiel mit ioT-Geräten als Lernobjekt
 - einfache Story sollte vorhanden sein
 - Spiel sollte alle Lerntypen ansprechen
-- 
+- Sprachassistenten in das Spiel integrieren Alexei/Alexo
+- Corporate Design: Markus
+- Story plus Texte:  Benjamin, Till
+- Struktur: Lukas
+- Zeitplan: Robert
 
 ### Festlegungen
 - Maximilian Taube am 23.04.19 nicht anwesend
