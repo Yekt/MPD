@@ -2,23 +2,23 @@ Note: Ich hab mir gedacht, dass die Verantwortlichen für STORY auch die Verantw
 
 
 
-Datum	| TODO																			| Arbeitspaket
+Datum	| TODO										| Arbeitspaket
 ----------------------------------------------------------------------------------------------------------
-26.05.	| grafisches Layout der Menüführung und visualisierte Screenflows				| GRAFIK
-		| Brainstorm über das exakte "Gameplay"											| GRUPPE1
-		| rudimentäre, funktionsfähige Menüs im Spiel (erstmal ohne Grafiken)			| IMPLEMENTIERUNG
-		| Auswahl der elektrischen Komponenten für JEDES Minispiel						| STORY
-		| Alle Interaktionen zwischen Älexa und Protagonist vollständig ausformulieren	| STORY
-		| "Point and Klick"-Teil des Spiels rudimentär, funktionsfähig implementieren	| IMPLEMENTIERUNG
+26.05.	| grafisches Layout der Menüführung und visualisierte Screenflows		| GRAFIK
+	| Brainstorm über das exakte "Gameplay"						| GRUPPE1
+	| rudimentäre, funktionsfähige Menüs im Spiel (erstmal ohne Grafiken)		| IMPLEMENTIERUNG
+	| Auswahl der elektrischen Komponenten für JEDES Minispiel			| STORY
+	| Alle Interaktionen zwischen Älexa und Protagonist vollständig ausformulieren	| STORY
+	| "Point and Klick"-Teil des Spiels rudimentär, funktionsfähig implementieren	| IMPLEMENTIERUNG
 ----------------------------------------------------------------------------------------------------------
-09.06.	| Menüs grafisch gestalten														| GRAFIK 
-		| Menüs Sounddisign																| SOUND
-		| Ebene 1 implementieren														| IMPLEMENTIERUNG
-		| Ebene 1 grafisch gestalten													| GRAFIK
-		| Ebene 1 Sounddisign und Interaktionen vertonen								| SOUND
+09.06.	| Menüs grafisch gestalten							| GRAFIK 
+	| Menüs Sounddisign								| SOUND
+	| Ebene 1 implementieren							| IMPLEMENTIERUNG
+	| Ebene 1 grafisch gestalten							| GRAFIK
+	| Ebene 1 Sounddisign und Interaktionen vertonen				| SOUND
 ----------------------------------------------------------------------------------------------------------
-07.07.	| Ebene 2,3,4 implementieren													| IMPLEMENTIERUNG
-		| Ebene 2,3,4 grafisch gestalten												| GRAFIK
-		| Ebene 2,3,4 Sounddisign und Interaktionen vertonen							| SOUND
-		| Ausarbeitung Präsentation und dazugehöriger Unterlagen						| GRUPPE1 aka wer sich am wenigsten überfordert fühlt.
-		|(Implementierung optionaler Spielinhalte, wie Achievements)					|
+07.07.	| Ebene 2,3,4 implementieren							| IMPLEMENTIERUNG
+	| Ebene 2,3,4 grafisch gestalten						| GRAFIK
+	| Ebene 2,3,4 Sounddisign und Interaktionen vertonen				| SOUND
+	| Ausarbeitung Präsentation und dazugehöriger Unterlagen			| wer sich am wenigsten überfordert fühlt.
+	|(Implementierung optionaler Spielinhalte, wie Achievements)			|
