@@ -22,3 +22,9 @@ Datum	| TODO										| Arbeitspaket
 	| Ebene 2,3,4 Sounddisign und Interaktionen vertonen				| SOUND
 	| Ausarbeitung Präsentation und dazugehöriger Unterlagen			| wer sich am wenigsten überfordert fühlt.
 	|(Implementierung optionaler Spielinhalte, wie Achievements)			|
+	
+Zuweisung, weil sich keiner meldet:
+GRAFIK: Markus, Max
+IMPLEMENTIERUNG: Robert, Lukas
+STORY: Till, Benjamin
+SOUND: Till, Benjamin
