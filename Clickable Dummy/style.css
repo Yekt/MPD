@@ -7,6 +7,15 @@
 	cursor: url("images/cursor.png"), default;
 }
 
+.settings {
+	background-image: url("images/Einstellungen.png");
+	background-size: 1280px 720px;
+	width: 1280px;
+	height: 720px;
+	background-repeat: no-repeat;
+	cursor: url("images/cursor.png"), default;
+}
+
 .flur {
 	background-image: url("images/Flur.png");
 	background-size: 1280px 720px;
@@ -59,7 +68,27 @@
 	position: absolute;
 	top: 287px;
 	left: 610px;
-	cursor: url("images/walk.png"), pointer;
+	cursor: url("images/cursor-signal.png"), pointer;
+}
+
+.settingsButton {
+	width: 386px;
+	height: 70px;
+	#background: black;
+	position: absolute;
+	top: 493px;
+	left: 661px;
+	cursor: url("images/cursor-signal.png"), pointer;
+}
+
+.settingsdone {
+	width: 277px;
+	height: 55px;
+	#background: black;
+	position: absolute;
+	top: 489px;
+	left: 509px;
+	cursor: url("images/cursor-signal.png"), pointer;
 }
 
 .menubutton {
