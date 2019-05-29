@@ -27,7 +27,7 @@
 - Die Endabgabe ist am 07. Juli
 
 ### Festlegungen
-- Prototyp: Gruntkonzept und mind. ein Minispiel
+- Prototyp: Grundkonzept und mindestens ein Minispiel
 - sollte auf dem Server laufen
 - Teile sollten in der Wohnung verteilt liegen und zum Inventar hinzugefügt werden können
 - Die Teile sollten durch Alexa kurz erklärt werden
