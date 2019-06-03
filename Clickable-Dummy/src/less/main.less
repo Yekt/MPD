@@ -1,0 +1,62 @@
+@import 'menus/mainMenu.less';
+@import 'hallway/hallway.less';
+@import 'menus/settings.less';
+@import 'kitchen/kitchen.less';
+@import 'bathroom/bathroom.less';
+@import 'dorm/dorm.less';
+@import 'livingroom/livingroom.less';
+
+@font-face {
+  font-family: "Birdy Game";
+  src: url("../fonts/BirdyGame.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Letters For Learners";
+  src: url("../fonts/LettersForLearners.ttf") format("truetype");
+}
+
+.gameWindow {
+  width: 1280px;
+  height: 720px;
+  background-size: 1280px 720px;
+  background-repeat: no-repeat;
+  cursor: url("../assets/cursors/cursor.png"), default;
+}
+
+.scaleDown {
+  transform: scale(0.66666666666666666666);
+  transform-origin: top left;
+}
+
+.cursorPointer {
+  cursor: url("../assets/cursors/cursor-signal.png"), pointer;
+}
+
+.caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.goBackwards {
+  width: 1280px;
+  height: 40px;
+  position: absolute;
+  top: 490px;
+  cursor: url("../assets/cursors/cursor-signal.png"), pointer;
+
+  &--text {
+    width: 100%;
+    text-align: center;
+    font-family: "Letters For Learners", sans-serif;
+    font-size: 30px;
+    color: #000000;
+    visibility: hidden;
+  }
+
+  &:hover .goBackwards--text {
+    visibility: visible;
+  }
+}

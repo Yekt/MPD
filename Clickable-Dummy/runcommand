@@ -1,0 +1,2 @@
+docker build -t medida .
+docker run -p 80:80 -v G:\Dokumente\Dateien\Uni\19-SS\Medida\GitRepo\Clickable-Dummy\src\:/var/www/html/ -d --name medida medida
