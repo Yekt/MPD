@@ -25,7 +25,7 @@
   width: 100%;
   text-align: center;
   font-family: "Letters For Learners", sans-serif;
-  font-size: 80px;
+  font-size: 70px;
   color: #3E87B3;
 }
 .settingsButton:hover img {
@@ -40,7 +40,7 @@
   width: 100%;
   text-align: center;
   font-family: "Letters For Learners", sans-serif;
-  font-size: 80px;
+  font-size: 70px;
   color: #3E87B3;
 }
 .helpButton:hover img {
@@ -51,7 +51,7 @@
 }
 .hallwayToKitchen {
   position: absolute;
-  top: 54px;
+  top: 52px;
   left: 40px;
 }
 .hallwayToKitchen:hover img {
@@ -67,14 +67,75 @@
 }
 .hallwayToDorm {
   position: absolute;
-  top: 54px;
+  top: 52px;
   left: 1033px;
 }
 .hallwayToDorm:hover img {
   filter: brightness(0.9);
 }
+.vacuum {
+  position: absolute;
+  top: 363px;
+  left: 770px;
+}
+.vacuum:hover img {
+  filter: brightness(0.9);
+}
+.rohr {
+  position: absolute;
+  top: 36px;
+  left: 856px;
+}
+.rohr:hover img {
+  filter: brightness(0.9);
+}
+.rohr:hover ~ .rohrText {
+  visibility: visible;
+}
+.turbine {
+  position: absolute;
+  top: 83px;
+  left: 1083px;
+}
+.turbine:hover img {
+  filter: brightness(0.9);
+}
+.turbine:hover ~ .turbineText {
+  visibility: visible;
+}
+.beutel {
+  position: absolute;
+  top: 272px;
+  left: 973px;
+}
+.beutel:hover img {
+  filter: brightness(0.9);
+}
+.beutel:hover ~ .beutelText {
+  visibility: visible;
+}
+.filter {
+  position: absolute;
+  top: 54px;
+  left: 939px;
+}
+.filter:hover img {
+  filter: brightness(0.9);
+}
+.filter:hover ~ .filterText {
+  visibility: visible;
+}
+.vacuumStarttext--hide:hover ~ .vacuumStarttext {
+  visibility: hidden;
+}
+.rohrText,
+.beutelText,
+.turbineText,
+.filterText {
+  visibility: hidden;
+}
 .settings {
-  background-image: url("../../assets/backgrounds/settings.png");
+  background-image: url("../assets/backgrounds/settings.png");
 }
 .slider {
   position: absolute;
@@ -208,4 +269,22 @@
 }
 .goBackwards:hover .goBackwards--text {
   visibility: visible;
+}
+.alexaText {
+  position: absolute;
+  top: 543px;
+  left: 43px;
+  width: 900px;
+  font-family: "Letters For Learners", sans-serif;
+}
+.alexaText h2 {
+  font-size: 50px;
+  margin: 0;
+}
+.alexaText p {
+  font-size: 30px;
+  margin: 0;
+}
+.buildingbox {
+  background-image: url("../assets/backgrounds/buildingbox.png");
 }

@@ -5,7 +5,7 @@
 </head>
 <body>
 <div class="gameWindow mainMenu">
-    <a href="hallway.php">
+    <a href="rooms/hallway/hallway.php">
         <div class="scaleDown cursorPointer startButton">
             <img src="assets/objekts/menus/button-yellow.png" />
             <div class="caption startButton--text">Spiel starten</div>
