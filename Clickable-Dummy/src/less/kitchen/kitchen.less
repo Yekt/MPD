@@ -11,3 +11,76 @@
     filter: brightness(0.9);
   }
 }
+
+.oven {
+  position: absolute;
+  top: 259px;
+  left: 424px;
+
+  &:hover img {
+    filter: brightness(0.9);
+  }
+}
+
+.heizstab {
+  position: absolute;
+  top: 260px;
+  left: 1080px;
+
+  &:hover img {
+    filter: brightness(0.9);
+  }
+
+  &:hover ~ .heizstabText {
+    visibility: visible;
+  }
+}
+
+.ventilator {
+  position: absolute;
+  top: 309px;
+  left: 943px;
+
+  &:hover img {
+    filter: brightness(0.9);
+  }
+
+  &:hover ~ .ventilatorText {
+    visibility: visible;
+  }
+}
+
+.lampe {
+  position: absolute;
+  top: 100px;
+  left: 1045px;
+
+  &:hover img {
+    filter: brightness(0.9);
+  }
+
+  &:hover ~ .lampeText {
+    visibility: visible;
+  }
+}
+
+.rad {
+  position: absolute;
+  top: 94px;
+  left: 929px;
+
+  &:hover img {
+    filter: brightness(0.9);
+  }
+
+  &:hover ~ .radText {
+    visibility: visible;
+  }
+}
+
+.heizstabText,
+.ventilatorText,
+.radText,
+.lampeText{
+  visibility: hidden;
+}

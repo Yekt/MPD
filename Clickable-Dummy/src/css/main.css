@@ -125,9 +125,6 @@
 .filter:hover ~ .filterText {
   visibility: visible;
 }
-.vacuumStarttext--hide:hover ~ .vacuumStarttext {
-  visibility: hidden;
-}
 .rohrText,
 .beutelText,
 .turbineText,
@@ -199,6 +196,64 @@
 .kitchenToLivingroom:hover img {
   filter: brightness(0.9);
 }
+.oven {
+  position: absolute;
+  top: 259px;
+  left: 424px;
+}
+.oven:hover img {
+  filter: brightness(0.9);
+}
+.heizstab {
+  position: absolute;
+  top: 260px;
+  left: 1080px;
+}
+.heizstab:hover img {
+  filter: brightness(0.9);
+}
+.heizstab:hover ~ .heizstabText {
+  visibility: visible;
+}
+.ventilator {
+  position: absolute;
+  top: 309px;
+  left: 943px;
+}
+.ventilator:hover img {
+  filter: brightness(0.9);
+}
+.ventilator:hover ~ .ventilatorText {
+  visibility: visible;
+}
+.lampe {
+  position: absolute;
+  top: 100px;
+  left: 1045px;
+}
+.lampe:hover img {
+  filter: brightness(0.9);
+}
+.lampe:hover ~ .lampeText {
+  visibility: visible;
+}
+.rad {
+  position: absolute;
+  top: 94px;
+  left: 929px;
+}
+.rad:hover img {
+  filter: brightness(0.9);
+}
+.rad:hover ~ .radText {
+  visibility: visible;
+}
+.heizstabText,
+.ventilatorText,
+.radText,
+.lampeText {
+  visibility: hidden;
+}
 .bathroom {
   background-image: url("../assets/backgrounds/bathroom.png");
 }
@@ -223,6 +278,64 @@
 }
 .livingroomToKitchen:hover img {
   filter: brightness(0.9);
+}
+.tv {
+  position: absolute;
+  top: 127px;
+  left: 390px;
+}
+.tv:hover img {
+  filter: brightness(0.9);
+}
+.lcd {
+  position: absolute;
+  top: 87px;
+  left: 911px;
+}
+.lcd:hover img {
+  filter: brightness(0.9);
+}
+.lcd:hover ~ .lcdText {
+  visibility: visible;
+}
+.power {
+  position: absolute;
+  top: 306px;
+  left: 924px;
+}
+.power:hover img {
+  filter: brightness(0.9);
+}
+.power:hover ~ .powerText {
+  visibility: visible;
+}
+.remote {
+  position: absolute;
+  top: 297px;
+  left: 1044px;
+}
+.remote:hover img {
+  filter: brightness(0.9);
+}
+.remote:hover ~ .remoteText {
+  visibility: visible;
+}
+.battery {
+  position: absolute;
+  top: 377px;
+  left: 1100px;
+}
+.battery:hover img {
+  filter: brightness(0.9);
+}
+.battery:hover ~ .batteryText {
+  visibility: visible;
+}
+.lcdText,
+.powerText,
+.remoteText,
+.batteryText {
+  visibility: hidden;
 }
 @font-face {
   font-family: "Birdy Game";
@@ -287,4 +400,7 @@
 }
 .buildingbox {
   background-image: url("../assets/backgrounds/buildingbox.png");
+}
+.Starttext--hide:hover ~ .Starttext {
+  visibility: hidden;
 }

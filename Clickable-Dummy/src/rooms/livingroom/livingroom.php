@@ -15,6 +15,11 @@
                 <img src="../../assets/objekts/door-left.png" />
             </div>
         </a>
+        <a href="tv.php">
+            <div class="scaleDown cursorPointer tv">
+                <img src="../../assets/objekts/livingroom/tv-broken.png" />
+            </div>
+        </a>
     </div>
 </body>
 

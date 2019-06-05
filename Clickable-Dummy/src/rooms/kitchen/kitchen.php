@@ -15,7 +15,11 @@
                 <img src="../../assets/objekts/door-right.png" />
             </div>
         </a>
+        <a href="oven.php">
+            <div class="scaleDown cursorPointer oven">
+                <img src="../../assets/objekts/kitchen/oven-broken.png" />
+            </div>
+        </a>
     </div>
 </body>
 
-</html>

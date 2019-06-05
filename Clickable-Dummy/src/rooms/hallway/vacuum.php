@@ -10,19 +10,19 @@
             <div class="caption goBackwards--text">- Zurück in den Flur -</div>
         </div>
     </a>
-    <div class="scaleDown cursorPointer vacuumStarttext--hide rohr">
+    <div class="scaleDown cursorPointer Starttext--hide rohr">
         <img src="../../assets/objekts/hallway/rohr.png" />
     </div>
-    <div class="scaleDown cursorPointer vacuumStarttext--hide filter">
+    <div class="scaleDown cursorPointer Starttext--hide filter">
         <img src="../../assets/objekts/hallway/filter.png" />
     </div>
-    <div class="scaleDown cursorPointer vacuumStarttext--hide turbine">
+    <div class="scaleDown cursorPointer Starttext--hide turbine">
         <img src="../../assets/objekts/hallway/turbine.png" />
     </div>
-    <div class="scaleDown cursorPointer vacuumStarttext--hide beutel">
+    <div class="scaleDown cursorPointer Starttext--hide beutel">
         <img src="../../assets/objekts/hallway/beutel.png" />
     </div>
-    <div class="alexaText vacuumStarttext">
+    <div class="alexaText Starttext">
         <h2>Älexa:</h2>
         <p>
             Na, dann wollen wir doch mal sehen, ob es uns gelingt den Staubsauger wieder zusammenzusetzen. Nimm dir

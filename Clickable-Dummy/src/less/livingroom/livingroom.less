@@ -11,3 +11,76 @@
     filter: brightness(0.9);
   }
 }
+
+.tv {
+  position: absolute;
+  top: 127px;
+  left: 390px;
+
+  &:hover img {
+    filter: brightness(0.9);
+  }
+}
+
+.lcd {
+  position: absolute;
+  top: 87px;
+  left: 911px;
+
+  &:hover img {
+    filter: brightness(0.9);
+  }
+
+  &:hover ~ .lcdText {
+    visibility: visible;
+  }
+}
+
+.power {
+  position: absolute;
+  top: 306px;
+  left: 924px;
+
+  &:hover img {
+    filter: brightness(0.9);
+  }
+
+  &:hover ~ .powerText {
+    visibility: visible;
+  }
+}
+
+.remote {
+  position: absolute;
+  top: 297px;
+  left: 1044px;
+
+  &:hover img {
+    filter: brightness(0.9);
+  }
+
+  &:hover ~ .remoteText {
+    visibility: visible;
+  }
+}
+
+.battery {
+  position: absolute;
+  top: 377px;
+  left: 1100px;
+
+  &:hover img {
+    filter: brightness(0.9);
+  }
+
+  &:hover ~ .batteryText {
+    visibility: visible;
+  }
+}
+
+.lcdText,
+.powerText,
+.remoteText,
+.batteryText{
+  visibility: hidden;
+}
