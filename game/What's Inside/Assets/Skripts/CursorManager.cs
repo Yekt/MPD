@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MousManager : MonoBehaviour
+public class CursorManager : MonoBehaviour
 {
     public Texture2D regular;
 	public Texture2D signal;

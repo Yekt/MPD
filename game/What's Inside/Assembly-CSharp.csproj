@@ -64,9 +64,9 @@
   <ItemGroup>
     <Compile Include="Assets\Skripts\Audio.cs" />
     <Compile Include="Assets\Skripts\AudioManager.cs" />
+    <Compile Include="Assets\Skripts\CursorManager.cs" />
     <Compile Include="Assets\Skripts\Inventory.cs" />
     <Compile Include="Assets\Skripts\Item.cs" />
-    <Compile Include="Assets\Skripts\MousManager.cs" />
     <Compile Include="Assets\Skripts\PersistentData.cs" />
     <Compile Include="Assets\Skripts\SceneChanger.cs" />
     <Compile Include="Assets\Skripts\Settings.cs" />
