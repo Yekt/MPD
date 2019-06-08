@@ -1,34 +1,40 @@
-﻿using System;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+public class Inventory : MonoBehaviour
+{
 
-    public class Inventory : MonoBehaviour {
-    
-        public static Inventory inv;
-        public List<Item> items = new List<Item>();
+     public GameObject inventory;
+     public GameObject slotHolder;
+     public bool invEnabled;
+     private int slotAmount;
+     private GameObject[] slots;
 
-        private void Awake()
-        {
-            Debug.Log("create inventory");
-            inv = this;
-        }
+     void Start()
+     {
+          slotAmount = 16;
+          slots = new GameObject[slotAmount];
 
-        public void AddItem(Item item)
-        {
-            if (!items.Contains(item))
-                items.Add(item);
-        }
+          for (int i = 0; i < slotAmount; i++)
+          {
+               slots[i] = slotHolder.transform.GetChild(i).gameObject;
+          }
 
-        // Start is called before the first frame update
-        void Start() {
-        
-        }
+     }
 
-        // Update is called once per frame
-        void Update() {
-        
-        }
-        
-    }
+     void Update()
+     {
+          UpdateSlots();
+          inventory.SetActive(invEnabled);
+     }
 
+
+     void UpdateSlots()
+     {
+          for (int i = 0; i < PersistentData.Instance.inventory.Count; i++) {
+               
+          }
+     }
+
+}

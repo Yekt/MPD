@@ -2,29 +2,30 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class Item : MonoBehaviour
 {
-    [HideInInspector]
-    public Collider col;
 
     public String name;
-    
-    // Start is called before the first frame update
+    public Sprite sprite;
+    public Collider col;
+    public bool inInventory;
+    public GameObject itemGameObject;
+
     void Start()
     {
+        inInventory = false;
         col = GetComponent<Collider>();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        itemGameObject.SetActive(!inInventory);
     }
 
-    private void OnMouseDown()
+    void MouseDownEvent()
     {
-        Debug.Log("clicked on " + name);
-        Inventory.inv.AddItem(this);
+        PersistentData.Instance.inventory.Add(itemGameObject);
     }
 }

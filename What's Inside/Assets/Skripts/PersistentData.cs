@@ -11,8 +11,10 @@ public class PersistentData : MonoBehaviour {
 	
 	[Range(0f, 1f)]
 	public float volume;
-	
-	
+
+	public List<GameObject> inventory = new List<GameObject>();
+
+
 	private void Awake(){
 		if(Instance == null){
 			// init singleton
