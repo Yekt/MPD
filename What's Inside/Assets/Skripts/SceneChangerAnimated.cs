@@ -5,8 +5,10 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Linq;
 
-public class SceneChanger : MonoBehaviour {
+public class SceneChangerAnimated : MonoBehaviour {
 	
+	public Animator animator;
+	private int nextScene;
 	
 	void Update(){
 		if(Input.GetKeyDown(KeyCode.Escape)) {
@@ -18,21 +20,26 @@ public class SceneChanger : MonoBehaviour {
 		}
 	}
 	
-    public void loadScene(int sceneNumber) {
-		if(PersistentData.Instance.sceneLog[PersistentData.Instance.sceneLog.Count - 1] != sceneNumber){
-			PersistentData.Instance.sceneLog.Add(sceneNumber);
+    public void loadScene(int scene) {
+		animator.SetTrigger("FadeOut");
+		if(PersistentData.Instance.sceneLog[PersistentData.Instance.sceneLog.Count - 1] != scene){
+			PersistentData.Instance.sceneLog.Add(scene);
 		}
-		//print();
-		SceneManager.LoadScene(sceneNumber);
+		nextScene = scene;
 	}
 	
 	public void loadPreviousScene() {
 		if(PersistentData.Instance.sceneLog.Count > 1){
+			animator.SetTrigger("FadeOut");
 			PersistentData.Instance.sceneLog.RemoveAt(PersistentData.Instance.sceneLog.Count - 1);
 			int scene = PersistentData.Instance.sceneLog[PersistentData.Instance.sceneLog.Count - 1];
-			//print();
-			SceneManager.LoadScene(scene);
+			nextScene = scene;
 		}
+	}
+	
+	public void onFadeComplete(){
+		//print()
+		SceneManager.LoadScene(nextScene);
 	}
 	
 	private void print(){

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PersistentData : MonoBehaviour {
 	// Singelton
@@ -21,7 +22,7 @@ public class PersistentData : MonoBehaviour {
 			
 			// init persistent fields
 			sceneLog = new List<int>();
-			sceneLog.Add(0); // add main menu to the list
+			sceneLog.Add(SceneManager.GetActiveScene().buildIndex); // add start scene to the list
 			volume = 0.5f;
 		}
 		else Destroy(gameObject);
