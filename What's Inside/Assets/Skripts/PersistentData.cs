@@ -21,7 +21,7 @@ public class PersistentData : MonoBehaviour {
 			
 			// init persistent fields
 			sceneLog = new List<int>();
-			sceneLog.Add(1);
+			sceneLog.Add(0); // add main menu to the list
 			volume = 0.5f;
 		}
 		else Destroy(gameObject);
