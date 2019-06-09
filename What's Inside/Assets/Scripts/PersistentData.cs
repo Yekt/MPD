@@ -13,6 +13,8 @@ public class PersistentData : MonoBehaviour {
 	[Range(0f, 1f)]
 	public float volume;
 	
+	public bool vacuumFixed;
+	
 	
 	private void Awake(){
 		if(Instance == null){
@@ -24,6 +26,7 @@ public class PersistentData : MonoBehaviour {
 			sceneLog = new List<int>();
 			sceneLog.Add(SceneManager.GetActiveScene().buildIndex); // add start scene to the list
 			volume = 0.5f;
+			vacuumFixed = false;
 		}
 		else Destroy(gameObject);
 	}

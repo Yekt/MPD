@@ -39,6 +39,7 @@ public class VacuumCleaner : MonoBehaviour
         {
             vacuumCleanerBroken.SetActive(false);
             vacuumCleaner.SetActive(true);
+			PersistentData.Instance.vacuumFixed = true;
         }
     }
 }
