@@ -20,7 +20,7 @@ public class Inventory : MonoBehaviour
 			Instance = this;
 			DontDestroyOnLoad(gameObject);
 			
-			sortItems();
+			SortItems();
 		}
 		else Destroy(gameObject);
 	}
@@ -30,17 +30,17 @@ public class Inventory : MonoBehaviour
 			int s = SceneManager.GetActiveScene().buildIndex;
 			if(window.active) window.SetActive(false);
 			else if(!window.active && s!=0 && s!=1 && s!=2) {
-				sortItems();
+				SortItems();
 				showItems();
 				window.SetActive(true);
 			}
 		}
-		sortItems();
+		SortItems();
 		showItems();
 	}
 	
 	
-	private void sortItems(){
+	private void SortItems(){
 		GameObject[] tmp = new GameObject[items.Length];
 		
 		int j = 0;
@@ -83,7 +83,7 @@ public class Inventory : MonoBehaviour
 				if (item.name.Equals(newItem.name)){
 					item.available = true;
 					item.found = true;
-					sortItems();
+					SortItems();
 					showItems();
 				}
 			}
@@ -97,7 +97,7 @@ public class Inventory : MonoBehaviour
 			if (item.available){
 				if (item.name.Equals(usedItem.name)){
 					item.available = false;
-					sortItems();
+					SortItems();
 					showItems();
 				}
 			}
