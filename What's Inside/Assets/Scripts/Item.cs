@@ -7,13 +7,15 @@ public class Item : MonoBehaviour {
 
 
     public String name;
+    public String info;
 	public bool available;
 	public bool found;
+	
 	//private bool selected;
     
 
     void Start() {
-		Debug.Log(name);
+		// Debug.Log(name);
         if(Inventory.Instance.wasFound(this)) gameObject.SetActive(false);
     }
 	

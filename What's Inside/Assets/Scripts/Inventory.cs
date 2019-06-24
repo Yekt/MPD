@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Inventory : MonoBehaviour
 {
@@ -11,7 +12,8 @@ public class Inventory : MonoBehaviour
 	
 	public GameObject[] items;
 	public GameObject[] slots;
-	public GameObject window;	
+	public GameObject itemWin;
+	public GameObject textWin;
 	
 	
 	void Awake(){
@@ -28,11 +30,17 @@ public class Inventory : MonoBehaviour
 	void Update(){
 		if(Input.GetKeyDown(KeyCode.I)){
 			int s = SceneManager.GetActiveScene().buildIndex;
-			if(window.active) window.SetActive(false);
-			else if(!window.active && s!=0 && s!=1 && s!=2) {
+			if (itemWin.active)
+			{
+				itemWin.SetActive(false);
+				textWin.SetActive(false);
+			}
+			else if(!itemWin.active && s!=0 && s!=1 && s!=2) {
 				SortItems();
 				showItems();
-				window.SetActive(true);
+				ShowText(null);
+				itemWin.SetActive(true);
+				textWin.SetActive(true);
 			}
 		}
 		SortItems();
@@ -112,6 +120,26 @@ public class Inventory : MonoBehaviour
 			}
 		}
 		return false;
+	}
+
+	public void ShowText(Item item)
+	{
+		GameObject header = textWin.transform.GetChild(0).gameObject;
+		GameObject body = textWin.transform.GetChild(1).gameObject;
+		
+		if (item == null)
+		{
+			//Debug.Log("on call");
+			header.GetComponent<Text>().text = "Item information";
+			body.GetComponent<Text>().text = "Klick auf ein Item um Informationen darüber zu sehen!";
+			
+		}
+		else
+		{
+			// Debug.Log(item.name + "\n" + item.info);
+			header.GetComponent<Text>().text = item.name;
+			body.GetComponent<Text>().text = item.info;
+		}
 	}
 
 }
