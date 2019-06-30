@@ -13,5 +13,10 @@ public class VacuumBroken : MonoBehaviour
 		else {
 			gameObject.SetActive(true);
 		}
+        
     }
+    
+    
+    
+    
 }
