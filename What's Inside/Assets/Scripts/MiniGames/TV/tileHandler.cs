@@ -38,10 +38,12 @@ public class tileHandler : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
+        /*
         rotationOfTheTile = Random.Range(0, 4);
         rotateToPos(rotationOfTheTile);
         sortOfTile = Random.Range(1, 4);
-        
+        */
     }
 
     // Update is called once per frame
