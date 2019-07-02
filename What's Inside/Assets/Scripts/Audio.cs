@@ -1,4 +1,5 @@
-﻿using UnityEngine.Audio;
+﻿using System;
+using UnityEngine.Audio;
 using UnityEngine;
 
 [System.Serializable]
@@ -14,4 +15,6 @@ public class Audio{
 	public AudioSource source;
 	
 	public bool loop;
+
+	public String text;
 }
