@@ -4,42 +4,75 @@ using UnityEngine;
 
 public class VacuumCleaner : MonoBehaviour
 {
-    public GameObject vacuumCleanerBroken;
-    public GameObject vacuumCleaner;
-    public List<GameObject> components = new List<GameObject>();
+    public List<VacuumComponent> components = new List<VacuumComponent>();
     [HideInInspector]
-    public GameObject toRemove;
+    public VacuumComponent toRemove;
 
     // Start is called before the first frame update
     void Start()
     {
-        vacuumCleanerBroken.SetActive(true);
-        vacuumCleaner.SetActive(false);
+        foreach (VacuumComponent component in components)
+        {
+            component.solution.SetActive(false);
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
-        foreach(GameObject component in components)
+        foreach(VacuumComponent component in components)
         {
-            if (vacuumCleanerBroken.GetComponent<Collider2D>().bounds.Contains(component.transform.position))
+            if (!Input.GetMouseButton(0))
             {
-                AudioManager.Instance.Play("Click");
-                component.SetActive(false);
-                toRemove = component;
+                if (ComponentPlacedInCorrectPosition(component))
+                {
+                    component.component.SetActive(false);
+                    component.position.SetActive(false);
+                    component.solution.SetActive(true);
+                    toRemove = component;
+                    //TODO Älexa: Minispiel-Staubsauger_Richtiges-Bauteil-Ausgewählt
+                }
+                if (ComponentPlacedInWrongPosition(component))
+                {
+                    component.ResetPosition();
+                    //TODO Älexa: Minispiel-Staubsauger_Falsches-Bauteil-Ausgewählt
+                }
+                if (toRemove != null)
+                {
+                    components.Remove(toRemove);
+                    toRemove = null;
+                }
+
+                if (components.Count == 0)
+                {
+                    PersistentData.Instance.vacuumFixed = true;
+                }
             }
         }
-        if (toRemove != null)
-        {
-            components.Remove(toRemove);
-            toRemove = null;
-        }
+    }
 
-        if (components.Count == 0)
+    bool ComponentPlacedInCorrectPosition(VacuumComponent component)
+    {
+        if (component.component.GetComponent<Collider2D>().bounds.Contains(component.position.transform.position)) {
+            return true;
+        } else
         {
-            vacuumCleanerBroken.SetActive(false);
-            vacuumCleaner.SetActive(true);
-			PersistentData.Instance.vacuumFixed = true;
+            return false;
         }
+    }
+
+    bool ComponentPlacedInWrongPosition(VacuumComponent component)
+    {
+        foreach (VacuumComponent otherComponent in components)
+        {
+            if (!(component.Equals(otherComponent)))
+            {
+                if (component.component.GetComponent<Collider2D>().bounds.Contains(otherComponent.position.transform.position))
+                {
+                    return true;
+                }
+            }
+        }
+        return false;
     }
 }
