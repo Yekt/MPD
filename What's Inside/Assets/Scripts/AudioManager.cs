@@ -57,7 +57,7 @@ public class AudioManager : MonoBehaviour {
 			   dialogPlays = true;
 			   if (a.text.Length > 0)
 			   {
-				   speechBubble.transform.GetChild(0).GetComponent<Text>().text = a.text;
+				   speechBubble.transform.GetChild(0).transform.GetChild(0).GetComponent<Text>().text = a.text;
 				   speechBubble.SetActive(true);
 			   }
 		   }
@@ -67,6 +67,7 @@ public class AudioManager : MonoBehaviour {
    public void StopDialog()
    {
 	   // todo: audio stoppen wenns läuft, Sprechblase ausblenden
+	   speechBubble.SetActive(false);
    }
 
    private void AdjustVolume(float volume){
