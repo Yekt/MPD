@@ -387,7 +387,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: "Gebl\xE4se"
+  info: 
   available: 0
+  found: 0
 --- !u!114 &585948553
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -878,22 +880,22 @@ PrefabInstance:
     - target: {fileID: 9023268006669714135, guid: 3055382efe5f582448a7b3fd598042e3,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: -821
       objectReference: {fileID: 0}
     - target: {fileID: 9023268006669714135, guid: 3055382efe5f582448a7b3fd598042e3,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -453
+      value: 454
       objectReference: {fileID: 0}
     - target: {fileID: 9023268006669714135, guid: 3055382efe5f582448a7b3fd598042e3,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 291.1
+      value: 221.7
       objectReference: {fileID: 0}
     - target: {fileID: 9023268006669714135, guid: 3055382efe5f582448a7b3fd598042e3,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 87.8
+      value: 114.5
       objectReference: {fileID: 0}
     - target: {fileID: 9023268006669714135, guid: 3055382efe5f582448a7b3fd598042e3,
         type: 3}

@@ -190,22 +190,22 @@ PrefabInstance:
     - target: {fileID: 9023268006669714135, guid: 3055382efe5f582448a7b3fd598042e3,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: -790
       objectReference: {fileID: 0}
     - target: {fileID: 9023268006669714135, guid: 3055382efe5f582448a7b3fd598042e3,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -453
+      value: 460
       objectReference: {fileID: 0}
     - target: {fileID: 9023268006669714135, guid: 3055382efe5f582448a7b3fd598042e3,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 291.1
+      value: 246.4
       objectReference: {fileID: 0}
     - target: {fileID: 9023268006669714135, guid: 3055382efe5f582448a7b3fd598042e3,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 87.8
+      value: 101.5
       objectReference: {fileID: 0}
     - target: {fileID: 9023268006669714135, guid: 3055382efe5f582448a7b3fd598042e3,
         type: 3}
@@ -265,7 +265,7 @@ PrefabInstance:
     - target: {fileID: 9023268006669714134, guid: 3055382efe5f582448a7b3fd598042e3,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
-      value: loadPreviousScene
+      value: loadScene
       objectReference: {fileID: 0}
     - target: {fileID: 9023268006669714134, guid: 3055382efe5f582448a7b3fd598042e3,
         type: 3}
@@ -281,6 +281,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9023268006669714134, guid: 3055382efe5f582448a7b3fd598042e3,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9023268006669714134, guid: 3055382efe5f582448a7b3fd598042e3,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_IntArgument
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 9023268006669714139, guid: 3055382efe5f582448a7b3fd598042e3,
         type: 3}
@@ -326,6 +336,13 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4831385916370675671, guid: 3055382efe5f582448a7b3fd598042e3,
+        type: 3}
+      propertyPath: m_Text
+      value: 'zum Flur
+
+'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3055382efe5f582448a7b3fd598042e3, type: 3}
