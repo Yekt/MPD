@@ -94,3 +94,203 @@ MonoBehaviour:
     volume: 1
     source: {fileID: 0}
     loop: 0
+  - clip: {fileID: 8300000, guid: ed0317b3537fbac4faabed8a58763804, type: 3}
+    name: FlurBetreten
+    volume: 1
+    source: {fileID: 0}
+    loop: 0
+  - clip: {fileID: 8300000, guid: 4354f6c9d3f5330458be2fda4a24cad0, type: 3}
+    name: FlurErstesBetresten1
+    volume: 1
+    source: {fileID: 0}
+    loop: 0
+  - clip: {fileID: 8300000, guid: e14f19bd3bfa8b4458d6dbdefbfd8728, type: 3}
+    name: FlurErstesBetreten2
+    volume: 1
+    source: {fileID: 0}
+    loop: 0
+  - clip: {fileID: 8300000, guid: 2889ec053819a94489e684dc421e4146, type: 3}
+    name: FlurErstesBetreten3
+    volume: 1
+    source: {fileID: 0}
+    loop: 0
+  - clip: {fileID: 8300000, guid: 7c3c2ae40f8c1cd40bb46291c1e69fb1, type: 3}
+    name: FlurHut
+    volume: 1
+    source: {fileID: 0}
+    loop: 0
+  - clip: {fileID: 8300000, guid: 238670df8ff16a04f91b2b51d485fa1f, type: 3}
+    name: KuecheErstesBetreten
+    volume: 1
+    source: {fileID: 0}
+    loop: 0
+  - clip: {fileID: 8300000, guid: 5fd92b5eed435c949a6e7f86c52cf2cc, type: 3}
+    name: KuecheBetreten
+    volume: 1
+    source: {fileID: 0}
+    loop: 0
+  - clip: {fileID: 8300000, guid: 1d056edbedb92c94a8776507934b8e21, type: 3}
+    name: Milestone11
+    volume: 1
+    source: {fileID: 0}
+    loop: 0
+  - clip: {fileID: 8300000, guid: e1ba39e6641ce5b499a61efd966c059a, type: 3}
+    name: Milestone12
+    volume: 1
+    source: {fileID: 0}
+    loop: 0
+  - clip: {fileID: 8300000, guid: 798e579b67f370a4c9f2e53ca5910aa7, type: 3}
+    name: Milestone13
+    volume: 1
+    source: {fileID: 0}
+    loop: 0
+  - clip: {fileID: 8300000, guid: 15cb0609820090941b07b72d2b420087, type: 3}
+    name: Milestone21
+    volume: 1
+    source: {fileID: 0}
+    loop: 0
+  - clip: {fileID: 8300000, guid: 3fb6a285163674e4a835a18920177665, type: 3}
+    name: Milestone22
+    volume: 1
+    source: {fileID: 0}
+    loop: 0
+  - clip: {fileID: 8300000, guid: a98f13013c961ae449ffff8da3d31d4e, type: 3}
+    name: Milestone23
+    volume: 1
+    source: {fileID: 0}
+    loop: 0
+  - clip: {fileID: 8300000, guid: 214de8669f0338b4c835154e6357b712, type: 3}
+    name: Milestone31
+    volume: 1
+    source: {fileID: 0}
+    loop: 0
+  - clip: {fileID: 8300000, guid: e1e789f76f4fcce45859a23b78345dd2, type: 3}
+    name: TVErstesBetreten1
+    volume: 1
+    source: {fileID: 0}
+    loop: 0
+  - clip: {fileID: 8300000, guid: d6e06d375ca708049bbd77e15b6a630c, type: 3}
+    name: TVErstesBetreten2
+    volume: 1
+    source: {fileID: 0}
+    loop: 0
+  - clip: {fileID: 8300000, guid: 69902a7fefa55ae48833d10e91db907a, type: 3}
+    name: TVErstesBetreten3
+    volume: 1
+    source: {fileID: 0}
+    loop: 0
+  - clip: {fileID: 8300000, guid: 1dbc176b7ac6602409b8bbc9ded63eab, type: 3}
+    name: TVAbgeschlossen
+    volume: 1
+    source: {fileID: 0}
+    loop: 0
+  - clip: {fileID: 8300000, guid: d430dc9e94b888c4f8a96802fe5ce464, type: 3}
+    name: OfenErstesBetreten
+    volume: 1
+    source: {fileID: 0}
+    loop: 0
+  - clip: {fileID: 8300000, guid: ba045376adbe89c4494289861cf50611, type: 3}
+    name: OfenHeizstab
+    volume: 1
+    source: {fileID: 0}
+    loop: 0
+  - clip: {fileID: 8300000, guid: f92ec02ad63c3254bb43d10a2053221d, type: 3}
+    name: OfenHeizstabAbgeschlossen
+    volume: 1
+    source: {fileID: 0}
+    loop: 0
+  - clip: {fileID: 8300000, guid: e40a8774d08b64644b532e9d275d0d3b, type: 3}
+    name: OfenLampe
+    volume: 1
+    source: {fileID: 0}
+    loop: 0
+  - clip: {fileID: 8300000, guid: a031878f51235ee448518a2bd915d7bf, type: 3}
+    name: OfenLampeAbgeschlossen
+    volume: 1
+    source: {fileID: 0}
+    loop: 0
+  - clip: {fileID: 8300000, guid: 3c9733e72d393074caa3613d6eda308c, type: 3}
+    name: OfenVentilator
+    volume: 1
+    source: {fileID: 0}
+    loop: 0
+  - clip: {fileID: 8300000, guid: 97494293be7d4504a8609f485bdef446, type: 3}
+    name: OfenVentilatorAbgeschlossen
+    volume: 1
+    source: {fileID: 0}
+    loop: 0
+  - clip: {fileID: 8300000, guid: e6d1bbc73bd5bc84eb45d8eb34af9845, type: 3}
+    name: OfenAbgeschlossen
+    volume: 1
+    source: {fileID: 0}
+    loop: 0
+  - clip: {fileID: 8300000, guid: 82c6c2c764b004249beee5d4c91020b3, type: 3}
+    name: StaubsaugerFilter
+    volume: 1
+    source: {fileID: 0}
+    loop: 0
+  - clip: {fileID: 8300000, guid: 84ec371c601d65745a3583840466c1d8, type: 3}
+    name: StaubsaugerRohr
+    volume: 1
+    source: {fileID: 0}
+    loop: 0
+  - clip: {fileID: 8300000, guid: 1082e3200ac6b9b44893d0680322c80a, type: 3}
+    name: StaubsaugerTurbine
+    volume: 1
+    source: {fileID: 0}
+    loop: 0
+  - clip: {fileID: 8300000, guid: 35ac7422ee59c1d48ac23de81e7e5f4d, type: 3}
+    name: StaubsaugerBeutel
+    volume: 1
+    source: {fileID: 0}
+    loop: 0
+  - clip: {fileID: 8300000, guid: febf8435e04d58d49b6eb99ef5c7c079, type: 3}
+    name: StaubsaugerBetreten1
+    volume: 1
+    source: {fileID: 0}
+    loop: 0
+  - clip: {fileID: 8300000, guid: 7c3057848da0b6846b847bca2a367593, type: 3}
+    name: StaubsaugerBetreten2
+    volume: 1
+    source: {fileID: 0}
+    loop: 0
+  - clip: {fileID: 8300000, guid: 3f71e4c3bbc2c3241b53acb67574462e, type: 3}
+    name: StaubsaugerFalsch
+    volume: 1
+    source: {fileID: 0}
+    loop: 0
+  - clip: {fileID: 8300000, guid: aac8b358c08aec743a3d3d2265366a59, type: 3}
+    name: StaubsaugerRichtig
+    volume: 1
+    source: {fileID: 0}
+    loop: 0
+  - clip: {fileID: 8300000, guid: d1743e8d6d098364da6ddd749893f0f1, type: 3}
+    name: StaubsaugerAbgeschlossen
+    volume: 1
+    source: {fileID: 0}
+    loop: 0
+  - clip: {fileID: 8300000, guid: 578e3a54ceb28434aa69258c813b2643, type: 3}
+    name: SchlafzimmerErstesBetreten
+    volume: 1
+    source: {fileID: 0}
+    loop: 0
+  - clip: {fileID: 8300000, guid: 6f7ad77c9ee4937428aeb1448c55d5cf, type: 3}
+    name: WohnzimmerErstesBetreten
+    volume: 1
+    source: {fileID: 0}
+    loop: 0
+  - clip: {fileID: 8300000, guid: 8a2fdd9223e86ad4fb0529fca7e5c34d, type: 3}
+    name: VersuchsNochmal1
+    volume: 1
+    source: {fileID: 0}
+    loop: 0
+  - clip: {fileID: 8300000, guid: a8c3ac819067dde48a79c8058dd74286, type: 3}
+    name: VersuchsNochmal2
+    volume: 1
+    source: {fileID: 0}
+    loop: 0
+  - clip: {fileID: 8300000, guid: b74190ae1ffc81a40a575e521f0857ae, type: 3}
+    name: VersuchsNochmal3
+    volume: 1
+    source: {fileID: 0}
+    loop: 0
