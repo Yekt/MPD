@@ -48,6 +48,7 @@ public class AudioManager : MonoBehaviour {
 
    public void PlayDialog(string name)
    {
+	   Debug.Log("drin");
 	   if (!dialogPlays)
 	   {
 		   Audio a = Array.Find(sounds, sound => sound.name == name);
@@ -60,6 +61,10 @@ public class AudioManager : MonoBehaviour {
 				   speechBubble.transform.GetChild(0).transform.GetChild(0).GetComponent<Text>().text = a.text;
 				   speechBubble.SetActive(true);
 			   }
+		   }
+		   else
+		   {
+			   Debug.Log("kein file");
 		   }
 	   }
    }
