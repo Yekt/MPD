@@ -64,3 +64,33 @@ MonoBehaviour:
     volume: 1
     source: {fileID: 0}
     loop: 0
+  - clip: {fileID: 8300000, guid: 9cb1b3ca2a710194d9559c9fb55226ae, type: 3}
+    name: RadioFrage1
+    volume: 1
+    source: {fileID: 0}
+    loop: 0
+  - clip: {fileID: 8300000, guid: 980e2fa9931c65e48bf3c94145c1b0f1, type: 3}
+    name: RadioFrage2
+    volume: 1
+    source: {fileID: 0}
+    loop: 0
+  - clip: {fileID: 8300000, guid: 0d6f471ec9d41a447abd4b7ecf31b576, type: 3}
+    name: RadioFrage3
+    volume: 1
+    source: {fileID: 0}
+    loop: 0
+  - clip: {fileID: 8300000, guid: ca38ded02bc646047a364415531ae10a, type: 3}
+    name: RadioFrage4
+    volume: 1
+    source: {fileID: 0}
+    loop: 0
+  - clip: {fileID: 8300000, guid: 343b877e9ed830b46b9466415ddce299, type: 3}
+    name: RadioFrage5
+    volume: 1
+    source: {fileID: 0}
+    loop: 0
+  - clip: {fileID: 8300000, guid: ea4ba6a739acf624987f0e8bc90fd7a9, type: 3}
+    name: RadioAbgeschlossen
+    volume: 1
+    source: {fileID: 0}
+    loop: 0
