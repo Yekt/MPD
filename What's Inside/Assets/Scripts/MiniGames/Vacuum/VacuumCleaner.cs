@@ -15,6 +15,7 @@ public class VacuumCleaner : MonoBehaviour
         {
             component.solution.SetActive(false);
         }
+        AudioManager.Instance.Play("StaubsaugerBetreten2");
     }
 
     // Update is called once per frame
@@ -47,10 +48,11 @@ public class VacuumCleaner : MonoBehaviour
                 if (components.Count == 0)
                 {
                     PersistentData.Instance.vacuumFixed = true;
+                    Inventory.Instance.activateGameItem("Lampe");
                     Inventory.Instance.deactivateItem("Filter");
                     Inventory.Instance.deactivateItem("Staubsaugerbeutel");
                     Inventory.Instance.deactivateItem("Saugturbine");
-                    Inventory.Instance.deactivateItem("Rohr");
+                    Inventory.Instance.deactivateItem("Rohr");                    
                     AudioManager.Instance.Play("StaubsaugerAbgeschlossen");
                     // TODO Items aus dem Inventar löschen und neues Item hinzufügen
                 }
