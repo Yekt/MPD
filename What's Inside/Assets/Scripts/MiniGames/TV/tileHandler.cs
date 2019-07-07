@@ -1,7 +1,34 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Serialization;
+
+public enum TileRotation
+{
+    NOROTATION = 0, //0 Degrees
+    TILTEDRIGHT = 1, //90 Degrees
+    TURNEDARROUND = 2, //180 Degrees
+    TILTEDLEFT = 3 //270 Degrees
+}
+
+
+public enum SortOfTile
+{
+    STARTTILE,
+    ENDTILE,
+    STREIGHTTILE,
+    CURVETILE
+    
+}
+
+public enum Direction
+{
+    TOP = 0,
+    RIGHT = 1,
+    BOT = 2,
+    LEFT = 3
+}
 
 public class tileHandler : MonoBehaviour
 {
@@ -11,39 +38,38 @@ public class tileHandler : MonoBehaviour
     //     3  -  1
     //        2
     //
-    public int rotationOfTheTile;
+    //public int rotationOfTheTile;
+
+    public TileRotation rotation; 
     
-    // sortOfTile = 0;
+    // sortOfTile = StartTile;
     //             x
     //          x  -  x output
     //             x
     // 
-    // sortOfTile = 1;
+    // sortOfTile = EndTile;
     //             x
     //    input x  -  x 
     //             x
     //
-    // sortOfTile = 2;
+    // sortOfTile = StreightTile;
     //             x
     //    input x  -  x output
     //             x
     //
-    // sortOfTile = 3;
+    // sortOfTile = CurveTile;
     //             x
     //    input x  -  x 
     //             x
     //           output
-    public int sortOfTile;
+    //public int sortOfTile;
+    public SortOfTile sortOfTile;
+    
     
     // Start is called before the first frame update
     void Start()
     {
         
-        /*
-        rotationOfTheTile = Random.Range(0, 4);
-        rotateToPos(rotationOfTheTile);
-        sortOfTile = Random.Range(1, 4);
-        */
     }
 
     // Update is called once per frame
@@ -51,93 +77,124 @@ public class tileHandler : MonoBehaviour
     {
         
     }
+    
 
     
-    //returns the input
-    // 0 is top; 1 is right; 2 is bot; 3 is left
-    public int getInput()
+    public Direction[] getConnections()
     {
-        if (sortOfTile == 0) return 4; // if 4 appears, there is no input
         
-        switch (rotationOfTheTile)
-                {
-                    case 0:
-                        return 3;
-                        break;
-                    case 1:
-                        return 0;
-                        break;
-                    case 2:
-                        return 1;
-                        break;
-                    case 3:
-                        return 2;
-                        break;
-                }
-
-        return -1; // if -1 appears there is a bug with the rotation
-    }
-
-    // 0 is top; 1 is right; 2 is bot; 3 is left
-    public int getOutput()
-    {
-        if (sortOfTile == 1) return 4; //if 4 appears, there is no output
-        if (sortOfTile == 0 || sortOfTile == 2)
+        Direction[] connections = new Direction[2];
+        
+        if (sortOfTile == SortOfTile.STREIGHTTILE)
         {
-            switch (rotationOfTheTile)
+
+            switch (rotation)
             {
-                case 0:
-                    return 1;
-                    break;
-                case 1:
-                    return 2;
-                    break;
-                case 2:
-                    return 3;
-                    break;
-                case 3:
-                    return 0;
-                    break;
-            }
-        }else if (sortOfTile == 3)
-        {
-            switch (rotationOfTheTile)
-            {
-                case 0:
-                    return 2;
-                    break;
-                case 1:
-                    return 3;
-                    break;
-                case 2:
-                    return 0;
-                    break;
-                case 3:
-                    return 1;
-                    break;
+                case TileRotation.NOROTATION:
+                    connections[0] = Direction.RIGHT;
+                    connections[1] = Direction.LEFT;
+                    return connections;
+                
+                
+                case TileRotation.TILTEDRIGHT:
+                    connections[0] = Direction.TOP;
+                    connections[1] = Direction.BOT;
+                    return connections;
+                
+                
+                case TileRotation.TURNEDARROUND:
+                    connections[0] = Direction.RIGHT;
+                    connections[1] = Direction.LEFT;
+                    return connections;
+                
+                
+                case TileRotation.TILTEDLEFT:
+                    connections[0] = Direction.TOP;
+                    connections[1] = Direction.BOT;
+                    return connections;
                 
             }
+            
+            
+            
+            
+        }else if (sortOfTile == SortOfTile.CURVETILE)
+        {
+            switch (rotation)
+            {
+                case TileRotation.NOROTATION:
+                    connections[0] = Direction.LEFT;
+                    connections[1] = Direction.BOT;
+                    return connections;
+                    
+                case TileRotation.TILTEDRIGHT:
+                    connections[0] = Direction.TOP;
+                    connections[1] = Direction.LEFT;
+                    return connections;
+                
+                case TileRotation.TURNEDARROUND:
+                    connections[0] = Direction.TOP;
+                    connections[1] = Direction.RIGHT;
+                    return connections;
+                
+                case TileRotation.TILTEDLEFT:
+                    connections[0] = Direction.RIGHT;
+                    connections[1] = Direction.BOT;
+                    return connections;
+            }
+            
+            
+            
+        }else if (sortOfTile == SortOfTile.ENDTILE)
+        {
+            switch (rotation)
+            {
+                case TileRotation.NOROTATION:
+                    connections[0] = Direction.LEFT;
+                    return connections;
+                case TileRotation.TILTEDRIGHT:
+                    connections[0] = Direction.TOP;
+                    return connections;
+                case TileRotation.TURNEDARROUND:
+                    connections[0] = Direction.RIGHT;
+                    return connections;
+                case TileRotation.TILTEDLEFT:
+                    connections[0] = Direction.BOT;
+                    return connections;
+                    
+            }
         }
-
-        return -1; // if -1 appears there is a bug with the rotation
+        else
+        {
+            throw new Exception("getConnections should not be executed on Starttile. It should have finished the process. ");
+            
+        }
+        
+        return null;
     }
+    
     
     public void rotateToPos(int rotationOfTheTile)
     {
+        
         RectTransform rectTransform = GetComponent<RectTransform>();
         rectTransform.SetPositionAndRotation(rectTransform.position, default);
-        switch (this.rotationOfTheTile)
+        switch (this.rotation)
         {
-            case 0:
+            case TileRotation.NOROTATION:
+                Debug.Log("Rotation 0");
                 break;
-            case 1:
-                rectTransform.Rotate( new Vector3( 0, 0, 90 ) );
+            case TileRotation.TILTEDRIGHT:
+                rectTransform.Rotate( new Vector3( 0, 0, -90 ) );
+                Debug.Log("Rotation -90");
                 break;
-            case 2:
-                rectTransform.Rotate( new Vector3( 0, 0, 180 ) );
+            case TileRotation.TURNEDARROUND:
+                rectTransform.Rotate( new Vector3( 0, 0, -180 ) );
+                Debug.Log("Rotation -180");
                 break;
-            case 3:
-                rectTransform.Rotate( new Vector3( 0, 0, 270 ) );
+            case TileRotation.TILTEDLEFT:
+                rectTransform.Rotate( new Vector3( 0, 0, -270 ) );
+                Debug.Log("Rotation -270");
                 break;
         }
     }
@@ -145,15 +202,16 @@ public class tileHandler : MonoBehaviour
 
     public void rotateRight()
     {
+        if (this.sortOfTile == SortOfTile.STARTTILE || this.sortOfTile == SortOfTile.ENDTILE) return;
         RectTransform rectTransform = GetComponent<RectTransform>();
-        rectTransform.Rotate(new Vector3(0,0, 90));
-        if (rotationOfTheTile == 3)
+        rectTransform.Rotate(new Vector3(0,0, -90));
+        if (rotation == TileRotation.TILTEDLEFT)
         {
-            rotationOfTheTile = 0;
+            rotation = 0;
         }
         else
         {
-            rotationOfTheTile++;
+            rotation++;
         }
     }
 
