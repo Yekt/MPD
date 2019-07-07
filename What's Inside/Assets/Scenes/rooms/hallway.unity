@@ -208,6 +208,7 @@ GameObject:
   - component: {fileID: 99817057}
   - component: {fileID: 99817056}
   - component: {fileID: 99817055}
+  - component: {fileID: 99817060}
   - component: {fileID: 99817059}
   m_Layer: 5
   m_Name: Staubsauger_broken
@@ -358,9 +359,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1630361976}
-        m_MethodName: Play
-        m_Mode: 5
+      - m_Target: {fileID: 99817060}
+        m_MethodName: enterGame
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -421,6 +422,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isFixedSprite: 0
+--- !u!114 &99817060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 99817053}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96880b6108a419f4c87c9533d146ad5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  items:
+  - Rohr
+  - Staubsaugerbeutel
+  - Filter
+  - Saugturbine
+  szene: 8
+  sceneChanger: {fileID: 1606559277}
 --- !u!1001 &177211877
 PrefabInstance:
   m_ObjectHideFlags: 0
