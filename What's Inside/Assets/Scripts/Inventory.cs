@@ -14,9 +14,19 @@ public class Inventory : MonoBehaviour
 	public GameObject[] slots;
 	public GameObject itemWin;
 	public GameObject textWin;
+	public GameObject holder;
 	
 	
 	void Awake(){
+		slots = new GameObject[holder.transform.childCount];
+		items = new GameObject[holder.transform.childCount];
+
+		for (int i = 0; i < holder.transform.childCount; i++)
+		{
+			slots[i] = holder.transform.GetChild(i).gameObject;
+			items[i] = holder.transform.GetChild(i).transform.GetChild(0).gameObject;
+		}
+
 		if(items.Length != slots.Length) Debug.LogError("missmatch of item- and slot-length");
 		if(Instance == null){
 			Instance = this;
@@ -124,8 +134,8 @@ public class Inventory : MonoBehaviour
 
 	public void ShowText(Item item)
 	{
-		GameObject header = textWin.transform.GetChild(0).gameObject;
-		GameObject body = textWin.transform.GetChild(1).gameObject;
+		GameObject header = textWin.transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).gameObject;
+		GameObject body = textWin.transform.GetChild(0).transform.GetChild(0).transform.GetChild(1).gameObject;
 		
 		if (item == null)
 		{

@@ -1,6 +1,7 @@
 ﻿using UnityEngine.Audio;
 using UnityEngine;
 using System;
+using UnityEngine.UI;
 
 public class AudioManager : MonoBehaviour {
 	
@@ -10,6 +11,8 @@ public class AudioManager : MonoBehaviour {
 	public Audio[] sounds;
 	
 	private float lastVolume;
+	private bool dialogPlays = false;
+	public GameObject speechBubble;
 	
 	void Start(){
 		bool flag = false;
@@ -35,16 +38,30 @@ public class AudioManager : MonoBehaviour {
 		if(lastVolume != PersistentData.Instance.volume)
 			AdjustVolume(PersistentData.Instance.volume);
 	}
-    
-	
 	
    public void Play(string name){
 	   Audio a = Array.Find(sounds, sound => sound.name == name);
 	   //Debug.Log(name);
-	   if(a != null) a.source.Play();
+	   if (a != null)
+	   {
+		   a.source.Play();
+		   if (a.text.Length > 0)
+		   {
+			   speechBubble.transform.GetChild(0).transform.GetChild(0).GetComponent<Text>().text = a.text;
+			   speechBubble.SetActive(true);
+		   }
+	   }
 	   else Debug.LogWarning("sound " + name + " not found!");
    }
-   
+
+
+
+   public void StopDialog()
+   {
+	   // todo: audio stoppen wenns läuft, Sprechblase ausblenden
+	   speechBubble.SetActive(false);
+   }
+
    private void AdjustVolume(float volume){
 	   foreach(Audio a in sounds){
 		   a.volume = volume;
