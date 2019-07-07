@@ -47,6 +47,10 @@ public class VacuumCleaner : MonoBehaviour
                 if (components.Count == 0)
                 {
                     PersistentData.Instance.vacuumFixed = true;
+                    Inventory.Instance.deactivateItem("Filter");
+                    Inventory.Instance.deactivateItem("Staubsaugerbeutel");
+                    Inventory.Instance.deactivateItem("Saugturbine");
+                    Inventory.Instance.deactivateItem("Rohr");
                     AudioManager.Instance.Play("StaubsaugerAbgeschlossen");
                     // TODO Items aus dem Inventar löschen und neues Item hinzufügen
                 }
