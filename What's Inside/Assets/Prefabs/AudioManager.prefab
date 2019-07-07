@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 590669553991269443}
   - component: {fileID: 4722262971134168161}
   - component: {fileID: 8638988267739612501}
-  - component: {fileID: 406413408835248189}
   m_Layer: 5
   m_Name: Panel
   m_TagString: Untagged
@@ -37,8 +36,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 65.79999, y: -0.6000061}
-  m_SizeDelta: {x: -149.5, y: -29.4}
+  m_AnchoredPosition: {x: 36.23, y: -0.5999756}
+  m_SizeDelta: {x: -193.12, y: -29.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &590669553991269443
 CanvasRenderer:
@@ -58,8 +57,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0.392}
   m_RaycastTarget: 1
@@ -87,41 +86,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: -1200242548, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_ShowMaskGraphic: 0
---- !u!114 &406413408835248189
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2089568447551534532}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1367256648, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
-  m_Content: {fileID: 6368503829178366513}
-  m_Horizontal: 1
-  m_Vertical: 1
-  m_MovementType: 1
-  m_Elasticity: 0.1
-  m_Inertia: 1
-  m_DecelerationRate: 0.135
-  m_ScrollSensitivity: 20
-  m_Viewport: {fileID: 0}
-  m_HorizontalScrollbar: {fileID: 0}
-  m_VerticalScrollbar: {fileID: 0}
-  m_HorizontalScrollbarVisibility: 0
-  m_VerticalScrollbarVisibility: 0
-  m_HorizontalScrollbarSpacing: 0
-  m_VerticalScrollbarSpacing: 0
-  m_OnValueChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.ScrollRect+ScrollRectEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!1 &2705195998774333666
 GameObject:
   m_ObjectHideFlags: 0
@@ -156,8 +123,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0000071526, y: -136.49802}
-  m_SizeDelta: {x: 632.3, y: 372.5}
+  m_AnchoredPosition: {x: -0.00011206, y: -134.1}
+  m_SizeDelta: {x: 575.64, y: 372.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6617564533559886841
 CanvasRenderer:
@@ -177,8 +144,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
   m_RaycastTarget: 1
@@ -257,8 +224,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
@@ -267,7 +234,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: d228cdda192af384da14343f48c430b4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 731a44447a91fc142909062e541797a5, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -286,8 +253,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Navigation:
     m_Mode: 3
     m_SelectOnUp: {fileID: 0}
@@ -327,7 +294,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument:
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -367,9 +334,9 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -148}
-  m_SizeDelta: {x: -18.2, y: -321.3}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 399.99997, y: 80.8}
+  m_SizeDelta: {x: 768.76, y: 133.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3427977778090020390
 CanvasRenderer:
@@ -389,8 +356,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
@@ -478,8 +445,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
@@ -500,8 +467,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 1301386320, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_IgnoreReversedGraphics: 1
   m_BlockingObjects: 0
   m_BlockingMask:
@@ -549,261 +516,307 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a5567de5177fa464eaa03e63ea0fd4c1, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   sounds:
   - clip: {fileID: 8300000, guid: a391c33f91293af44bce142b7ec1837e, type: 3}
     name: AmbientMusic
     volume: 1
     source: {fileID: 0}
     loop: 1
-    text:
+    text: 
   - clip: {fileID: 8300000, guid: 24d6315af2a972644955c4c13724a447, type: 3}
     name: Hover
     volume: 1
     source: {fileID: 0}
     loop: 0
-    text:
+    text: 
   - clip: {fileID: 8300000, guid: 5fd5bb8545c26e44cb4b632f463b837c, type: 3}
     name: Click
     volume: 1
     source: {fileID: 0}
     loop: 0
-    text:
+    text: 
   - clip: {fileID: 8300000, guid: e90b444bc8453c148a781f271c10ab02, type: 3}
     name: Door
     volume: 1
     source: {fileID: 0}
     loop: 0
+    text: 
   - clip: {fileID: 8300000, guid: 9cb1b3ca2a710194d9559c9fb55226ae, type: 3}
     name: RadioFrage1
     volume: 1
     source: {fileID: 0}
     loop: 0
+    text: 
   - clip: {fileID: 8300000, guid: 980e2fa9931c65e48bf3c94145c1b0f1, type: 3}
     name: RadioFrage2
     volume: 1
     source: {fileID: 0}
     loop: 0
+    text: 
   - clip: {fileID: 8300000, guid: 0d6f471ec9d41a447abd4b7ecf31b576, type: 3}
     name: RadioFrage3
     volume: 1
     source: {fileID: 0}
     loop: 0
+    text: 
   - clip: {fileID: 8300000, guid: ca38ded02bc646047a364415531ae10a, type: 3}
     name: RadioFrage4
     volume: 1
     source: {fileID: 0}
     loop: 0
+    text: 
   - clip: {fileID: 8300000, guid: 343b877e9ed830b46b9466415ddce299, type: 3}
     name: RadioFrage5
     volume: 1
     source: {fileID: 0}
     loop: 0
+    text: 
   - clip: {fileID: 8300000, guid: ea4ba6a739acf624987f0e8bc90fd7a9, type: 3}
     name: RadioAbgeschlossen
     volume: 1
     source: {fileID: 0}
     loop: 0
+    text: 
   - clip: {fileID: 8300000, guid: ed0317b3537fbac4faabed8a58763804, type: 3}
     name: FlurBetreten
     volume: 1
     source: {fileID: 0}
     loop: 0
+    text: 
   - clip: {fileID: 8300000, guid: 4354f6c9d3f5330458be2fda4a24cad0, type: 3}
     name: FlurErstesBetreten1
     volume: 1
     source: {fileID: 0}
     loop: 0
+    text: 
   - clip: {fileID: 8300000, guid: e14f19bd3bfa8b4458d6dbdefbfd8728, type: 3}
     name: FlurErstesBetreten2
     volume: 1
     source: {fileID: 0}
     loop: 0
+    text: 
   - clip: {fileID: 8300000, guid: 2889ec053819a94489e684dc421e4146, type: 3}
     name: FlurErstesBetreten3
     volume: 1
     source: {fileID: 0}
     loop: 0
+    text: 
   - clip: {fileID: 8300000, guid: 7c3c2ae40f8c1cd40bb46291c1e69fb1, type: 3}
     name: FlurHut
     volume: 1
     source: {fileID: 0}
     loop: 0
+    text: 
   - clip: {fileID: 8300000, guid: 238670df8ff16a04f91b2b51d485fa1f, type: 3}
     name: KuecheErstesBetreten
     volume: 1
     source: {fileID: 0}
     loop: 0
+    text: 
   - clip: {fileID: 8300000, guid: 5fd92b5eed435c949a6e7f86c52cf2cc, type: 3}
     name: KuecheBetreten
     volume: 1
     source: {fileID: 0}
     loop: 0
+    text: 
   - clip: {fileID: 8300000, guid: 1d056edbedb92c94a8776507934b8e21, type: 3}
     name: Milestone11
     volume: 1
     source: {fileID: 0}
     loop: 0
+    text: 
   - clip: {fileID: 8300000, guid: e1ba39e6641ce5b499a61efd966c059a, type: 3}
     name: Milestone12
     volume: 1
     source: {fileID: 0}
     loop: 0
+    text: 
   - clip: {fileID: 8300000, guid: 798e579b67f370a4c9f2e53ca5910aa7, type: 3}
     name: Milestone13
     volume: 1
     source: {fileID: 0}
     loop: 0
+    text: 
   - clip: {fileID: 8300000, guid: 15cb0609820090941b07b72d2b420087, type: 3}
     name: Milestone21
     volume: 1
     source: {fileID: 0}
     loop: 0
+    text: 
   - clip: {fileID: 8300000, guid: 3fb6a285163674e4a835a18920177665, type: 3}
     name: Milestone22
     volume: 1
     source: {fileID: 0}
     loop: 0
+    text: 
   - clip: {fileID: 8300000, guid: a98f13013c961ae449ffff8da3d31d4e, type: 3}
     name: Milestone23
     volume: 1
     source: {fileID: 0}
     loop: 0
+    text: 
   - clip: {fileID: 8300000, guid: 214de8669f0338b4c835154e6357b712, type: 3}
     name: Milestone31
     volume: 1
     source: {fileID: 0}
     loop: 0
+    text: 
   - clip: {fileID: 8300000, guid: e1e789f76f4fcce45859a23b78345dd2, type: 3}
     name: TVErstesBetreten1
     volume: 1
     source: {fileID: 0}
     loop: 0
+    text: 
   - clip: {fileID: 8300000, guid: d6e06d375ca708049bbd77e15b6a630c, type: 3}
     name: TVErstesBetreten2
     volume: 1
     source: {fileID: 0}
     loop: 0
+    text: 
   - clip: {fileID: 8300000, guid: 69902a7fefa55ae48833d10e91db907a, type: 3}
     name: TVErstesBetreten3
     volume: 1
     source: {fileID: 0}
     loop: 0
+    text: 
   - clip: {fileID: 8300000, guid: 1dbc176b7ac6602409b8bbc9ded63eab, type: 3}
     name: TVAbgeschlossen
     volume: 1
     source: {fileID: 0}
     loop: 0
+    text: 
   - clip: {fileID: 8300000, guid: d430dc9e94b888c4f8a96802fe5ce464, type: 3}
     name: OfenErstesBetreten
     volume: 1
     source: {fileID: 0}
     loop: 0
+    text: 
   - clip: {fileID: 8300000, guid: ba045376adbe89c4494289861cf50611, type: 3}
     name: OfenHeizstab
     volume: 1
     source: {fileID: 0}
     loop: 0
+    text: 
   - clip: {fileID: 8300000, guid: f92ec02ad63c3254bb43d10a2053221d, type: 3}
     name: OfenHeizstabAbgeschlossen
     volume: 1
     source: {fileID: 0}
     loop: 0
+    text: 
   - clip: {fileID: 8300000, guid: e40a8774d08b64644b532e9d275d0d3b, type: 3}
     name: OfenLampe
     volume: 1
     source: {fileID: 0}
     loop: 0
+    text: 
   - clip: {fileID: 8300000, guid: a031878f51235ee448518a2bd915d7bf, type: 3}
     name: OfenLampeAbgeschlossen
     volume: 1
     source: {fileID: 0}
     loop: 0
+    text: 
   - clip: {fileID: 8300000, guid: 3c9733e72d393074caa3613d6eda308c, type: 3}
     name: OfenVentilator
     volume: 1
     source: {fileID: 0}
     loop: 0
+    text: 
   - clip: {fileID: 8300000, guid: 97494293be7d4504a8609f485bdef446, type: 3}
     name: OfenVentilatorAbgeschlossen
     volume: 1
     source: {fileID: 0}
     loop: 0
+    text: 
   - clip: {fileID: 8300000, guid: e6d1bbc73bd5bc84eb45d8eb34af9845, type: 3}
     name: OfenAbgeschlossen
     volume: 1
     source: {fileID: 0}
     loop: 0
+    text: 
   - clip: {fileID: 8300000, guid: 82c6c2c764b004249beee5d4c91020b3, type: 3}
     name: StaubsaugerFilter
     volume: 1
     source: {fileID: 0}
     loop: 0
+    text: 
   - clip: {fileID: 8300000, guid: 84ec371c601d65745a3583840466c1d8, type: 3}
     name: StaubsaugerRohr
     volume: 1
     source: {fileID: 0}
     loop: 0
+    text: 
   - clip: {fileID: 8300000, guid: 1082e3200ac6b9b44893d0680322c80a, type: 3}
     name: StaubsaugerTurbine
     volume: 1
     source: {fileID: 0}
     loop: 0
+    text: 
   - clip: {fileID: 8300000, guid: 35ac7422ee59c1d48ac23de81e7e5f4d, type: 3}
     name: StaubsaugerBeutel
     volume: 1
     source: {fileID: 0}
     loop: 0
+    text: 
   - clip: {fileID: 8300000, guid: febf8435e04d58d49b6eb99ef5c7c079, type: 3}
     name: StaubsaugerBetreten1
     volume: 1
     source: {fileID: 0}
     loop: 0
+    text: 
   - clip: {fileID: 8300000, guid: 7c3057848da0b6846b847bca2a367593, type: 3}
     name: StaubsaugerBetreten2
     volume: 1
     source: {fileID: 0}
     loop: 0
+    text: 
   - clip: {fileID: 8300000, guid: 3f71e4c3bbc2c3241b53acb67574462e, type: 3}
     name: StaubsaugerFalsch
     volume: 1
     source: {fileID: 0}
     loop: 0
+    text: 
   - clip: {fileID: 8300000, guid: aac8b358c08aec743a3d3d2265366a59, type: 3}
     name: StaubsaugerRichtig
     volume: 1
     source: {fileID: 0}
     loop: 0
+    text: 
   - clip: {fileID: 8300000, guid: d1743e8d6d098364da6ddd749893f0f1, type: 3}
     name: StaubsaugerAbgeschlossen
     volume: 1
     source: {fileID: 0}
     loop: 0
+    text: 
   - clip: {fileID: 8300000, guid: 578e3a54ceb28434aa69258c813b2643, type: 3}
     name: SchlafzimmerErstesBetreten
     volume: 1
     source: {fileID: 0}
     loop: 0
+    text: 
   - clip: {fileID: 8300000, guid: 6f7ad77c9ee4937428aeb1448c55d5cf, type: 3}
     name: WohnzimmerErstesBetreten
     volume: 1
     source: {fileID: 0}
     loop: 0
+    text: 
   - clip: {fileID: 8300000, guid: 8a2fdd9223e86ad4fb0529fca7e5c34d, type: 3}
     name: VersuchsNochmal1
     volume: 1
     source: {fileID: 0}
     loop: 0
+    text: 
   - clip: {fileID: 8300000, guid: a8c3ac819067dde48a79c8058dd74286, type: 3}
     name: VersuchsNochmal2
     volume: 1
     source: {fileID: 0}
     loop: 0
+    text: 
   - clip: {fileID: 8300000, guid: b74190ae1ffc81a40a575e521f0857ae, type: 3}
     name: VersuchsNochmal3
     volume: 1
     source: {fileID: 0}
     loop: 0
-    text:
+    text: 
   speechBubble: {fileID: 7262477821260420128}
