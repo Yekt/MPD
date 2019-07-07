@@ -572,7 +572,9 @@ PrefabInstance:
     - target: {fileID: 6606403324689514070, guid: 150c478ef8ef0ce45932115c3703585f,
         type: 3}
       propertyPath: info
-      value: 
+      value: "Ein Filter trennt Substanzen voneinander. Beispiele daf\xFCr sind Kaffeefilter
+        oder Abgasfilter. In unserem Falle dient dieser Filter um Staub und andere
+        Kleinteile aus der Luft zu filtern."
       objectReference: {fileID: 0}
     - target: {fileID: 6606403324689514070, guid: 150c478ef8ef0ce45932115c3703585f,
         type: 3}
@@ -1616,7 +1618,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: Ventilator
-  info: 
+  info: "Ventilatoren saugen auf einer Seite Luft an und erzeugen auf der anderen
+    Seite eine Luftverwirbelung. Dies dient dazu Luftmassen in einem begrenzten Raum
+    umzuw\xE4lzen."
   status: 0
   inventoryItem: 1
 --- !u!114 &347939649
@@ -1920,7 +1924,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: Heizstab
-  info: 
+  info: "Heizst\xE4be werden genutzt, um Stoffe zu erw\xE4rmen. Dies geschieht mit
+    Hilfe eines Wiederstandes duch den starker Strom flie\xDFt, was dazu f\xFChrt,
+    dass er sich stark erw\xE4rmt. Dieser Wiederstand ist elektisch isoliert, sodass
+    er nur die W\xE4rme abstrahlt. Solche Heizst\xE4be werden zum Beispiel in Wasserkochern
+    oder Elektro\xF6fen verwendet."
   status: 0
   inventoryItem: 1
 --- !u!114 &661838902
@@ -2378,7 +2386,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: Lampe
-  info: 
+  info: "Eine Lampe erzeugt durch Elektrizit\xE4t Licht. Dies kann durch das Stimmulieren
+    von Edelgasen oder Erhitzen eines Wiederstandes beziehungsweise einer Diode (LED)
+    geschehen."
   status: 0
   inventoryItem: 1
 --- !u!114 &699138848
@@ -2607,7 +2617,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: Eingangsfilter
-  info: 
+  info: "Mit dem Eingansfilter wird ein elektrisches Signal abh\xE4ngig von der Frequenz
+    in der Amplitude und in der Phasenlage ver\xE4ndert. Dadurch k\xF6nnen unerw\xFCnschte
+    Signalanteile abgeschw\xE4cht oder unterdr\xFCckt werden. So stellt man bei einem
+    Radio sicher, dass nur der gew\xFCnschte Sender empfangen wird."
   status: 0
   inventoryItem: 1
 --- !u!114 &803620285
@@ -3261,7 +3274,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: "Verst\xE4rker"
-  info: 
+  info: "Der Verst\xE4rker verarbeitet ein eingehendes Analogsignel so, dass die Ausgangsgr\xF6\xDFe
+    gr\xF6\xDFer wird als die Eingangsgr\xF6\xDFe. Die zus\xE4tzliche Leistung wird
+    einer Energiequelle entnommen, also zum Beipiel einer Batterie oder einem Netzteil.
+    So k\xF6nnen die Schallwellen sp\xE4ter vom Lautsprecher wiedergegeben werden."
   status: 0
   inventoryItem: 1
 --- !u!114 &969184018
@@ -3569,7 +3585,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: Demodulator
-  info: 
+  info: "Die Stimme eines Radiomoderierenden beziehhungsweise die Musik, die wir im
+    Radio h\xF6ren, wird vor dem Versenden mit einem Modulator in ein Tr\xE4gersignal
+    moduliert. Somit wird die hochfrequente \xDCbertragung eines niederfrequenten
+    Nutzsignals erm\xF6glicht. Damit das Radio dieses wieder abspielen kann, wird
+    der Demodulator verwendet."
   status: 0
   inventoryItem: 1
 --- !u!114 &1016340889
@@ -3972,7 +3992,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: Saugturbine
-  info: 
+  info: "Eine Turbine erzeugt durch starke Rotation auf einer Seite einen Unterdruck
+    und auf der anderen Seite eine kanalisierte Str\xF6mung in Fl\xFCssigkeiten oder
+    Gasen. Umgekehrt kann eine Turbine auch durch eine Str\xF6mung angetrieben werden,
+    woduch Energie erzeugt wird (z.B. Windrad). Im Falle des Staubsaugers erzeugt
+    die Turbine einen Luftzug, um Staub und andere Kleinteile einzusaugen."
   status: 0
   inventoryItem: 1
 --- !u!114 &1194967563
@@ -4276,7 +4300,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: Rohr
-  info: 
+  info: Rohre werden genutzt, um Stoffe zu transportieren.
   status: 0
   inventoryItem: 1
 --- !u!114 &1229566759
@@ -4661,7 +4685,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: Lautsprecher
-  info: 
+  info: Ein Lautsprecher besteht aus einer Membran und einem kleinen Elektromagneten.
+    Durch das Elektrosignal wird der Magnet an- und ausgeschalten, wodurch die Membran
+    in Schwingung versetzt wird, was die Schallwellen erzeugt.
   status: 0
   inventoryItem: 1
 --- !u!114 &1490505679
@@ -5040,7 +5066,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: Antenne
-  info: 
+  info: Eine Antenne dient zum Empfang elektromagnetischer Wellen.
   status: 0
   inventoryItem: 1
 --- !u!114 &1594769360
@@ -5451,7 +5477,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: Fernseherkabel
-  info: 
+  info: "Ein Kabel was den Fernseher an den Stromkreislauf anschlie\xDFt."
   status: 0
   inventoryItem: 1
 --- !u!114 &1733892035
@@ -6044,7 +6070,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: Staubsaugerbeutel
-  info: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+  info: Ein kleiner Beutel in dem der Staub gesammelt wird, den man aufsaugt.
   status: 0
   inventoryItem: 1
 --- !u!114 &1937283777

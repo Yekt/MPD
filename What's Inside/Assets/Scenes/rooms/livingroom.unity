@@ -860,13 +860,13 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 857042595}
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 857042594}
+        m_MethodName: loadScene
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 10
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1162,18 +1162,12 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 857042593}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 857042595}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 94450c0d485b79a4d8b3fb0d1a4165b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &857042595 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4231691160280469112, guid: b6fc509cf2dc00f4fb7645858b04f424,
-    type: 3}
-  m_PrefabInstance: {fileID: 857042593}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1184192952
 GameObject:
   m_ObjectHideFlags: 0
