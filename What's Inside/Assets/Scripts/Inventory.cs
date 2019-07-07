@@ -107,13 +107,28 @@ public class Inventory : MonoBehaviour
 			}
 		}
 	}
-	
+
+	public void activateGameItem(String itemName)
+	{
+		foreach (GameObject itemObject in items){
+			Item item = itemObject.GetComponent<Item>();
+			if (!item.available){
+				if (item.name.Equals(itemName)){
+					item.available = true;
+					item.found = true;
+					SortItems();
+					showItems();
+				}
+			}
+		}
+	}
+
 	// removes an Item from your inventory after it has been used
-	public void deactivateItem(Item usedItem){
+	public void deactivateItem(String itemName){
 		foreach (GameObject itemObject in items){
 			Item item = itemObject.GetComponent<Item>();
 			if (item.available){
-				if (item.name.Equals(usedItem.name)){
+				if (item.name.Equals(itemName)){
 					item.available = false;
 					SortItems();
 					showItems();
