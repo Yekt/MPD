@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &2089568447551534532
+--- !u!1 &1242679400534428023
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,179 +8,11 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 3270636250712195151}
-  - component: {fileID: 590669553991269443}
-  - component: {fileID: 4722262971134168161}
-  - component: {fileID: 8638988267739612501}
-  m_Layer: 5
-  m_Name: Panel
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &3270636250712195151
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2089568447551534532}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 6368503829178366513}
-  m_Father: {fileID: 4530714490475058975}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 36.23, y: -0.5999756}
-  m_SizeDelta: {x: -193.12, y: -29.4}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &590669553991269443
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2089568447551534532}
-  m_CullTransparentMesh: 0
---- !u!114 &4722262971134168161
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2089568447551534532}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
---- !u!114 &8638988267739612501
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2089568447551534532}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1200242548, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_ShowMaskGraphic: 0
---- !u!1 &2705195998774333666
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 6368503829178366513}
-  - component: {fileID: 6617564533559886841}
-  - component: {fileID: 1656948308297530601}
-  m_Layer: 5
-  m_Name: Text
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &6368503829178366513
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2705195998774333666}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 3270636250712195151}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 6, y: -139.5}
-  m_SizeDelta: {x: 563.6, y: 361.6}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &6617564533559886841
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2705195998774333666}
-  m_CullTransparentMesh: 0
---- !u!114 &1656948308297530601
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2705195998774333666}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 22
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 0
-    m_MaxSize: 59
-    m_Alignment: 0
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: New Text
---- !u!1 &6827451614358513527
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 7542997549172173644}
-  - component: {fileID: 6181948804688678526}
-  - component: {fileID: 2579059827666657473}
-  - component: {fileID: 3623912221134335423}
-  - component: {fileID: 5740391274866550050}
+  - component: {fileID: 2823481037152175436}
+  - component: {fileID: 1894793793204641918}
+  - component: {fileID: 7803524821660225217}
+  - component: {fileID: 9064516468143932351}
+  - component: {fileID: 11520915160517410}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -188,18 +20,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &7542997549172173644
+--- !u!224 &2823481037152175436
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6827451614358513527}
+  m_GameObject: {fileID: 1242679400534428023}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 4530714490475058975}
+  m_Father: {fileID: 8169896506924890399}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -207,26 +39,26 @@ RectTransform:
   m_AnchoredPosition: {x: 375, y: 44.65}
   m_SizeDelta: {x: 44.4, y: 44.4}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &6181948804688678526
+--- !u!222 &1894793793204641918
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6827451614358513527}
+  m_GameObject: {fileID: 1242679400534428023}
   m_CullTransparentMesh: 0
---- !u!114 &2579059827666657473
+--- !u!114 &7803524821660225217
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6827451614358513527}
+  m_GameObject: {fileID: 1242679400534428023}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
@@ -244,18 +76,18 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
---- !u!114 &3623912221134335423
+--- !u!114 &9064516468143932351
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6827451614358513527}
+  m_GameObject: {fileID: 1242679400534428023}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   m_Navigation:
     m_Mode: 3
     m_SelectOnUp: {fileID: 0}
@@ -283,11 +115,11 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 2579059827666657473}
+  m_TargetGraphic: {fileID: 7803524821660225217}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 9204639095623475712}
+      - m_Target: {fileID: 3475770902594063360}
         m_MethodName: StopDialog
         m_Mode: 1
         m_Arguments:
@@ -295,10 +127,10 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument:
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 9204639095623475712}
+      - m_Target: {fileID: 3475770902594063360}
         m_MethodName: Play
         m_Mode: 5
         m_Arguments:
@@ -311,24 +143,24 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
---- !u!114 &5740391274866550050
+--- !u!114 &11520915160517410
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6827451614358513527}
+  m_GameObject: {fileID: 1242679400534428023}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   m_Delegates:
   - eventID: 0
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 9204639095623475712}
+        - m_Target: {fileID: 3475770902594063360}
           m_MethodName: Play
           m_Mode: 5
           m_Arguments:
@@ -341,7 +173,7 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
---- !u!1 &7262477821260420128
+--- !u!1 &3118910266766277152
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -349,9 +181,9 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4530714490475058975}
-  - component: {fileID: 3427977778090020390}
-  - component: {fileID: 4361617656732430150}
+  - component: {fileID: 8169896506924890399}
+  - component: {fileID: 6923025373750911014}
+  - component: {fileID: 8288467621336498502}
   m_Layer: 5
   m_Name: TextBubble
   m_TagString: Untagged
@@ -359,47 +191,47 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!224 &4530714490475058975
+--- !u!224 &8169896506924890399
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7262477821260420128}
+  m_GameObject: {fileID: 3118910266766277152}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 3270636250712195151}
-  - {fileID: 7542997549172173644}
-  m_Father: {fileID: 4201344269572278909}
+  - {fileID: 7125463247053532751}
+  - {fileID: 2823481037152175436}
+  m_Father: {fileID: 8489062230740427901}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 393, y: 80.8}
+  m_AnchoredPosition: {x: 394, y: 73}
   m_SizeDelta: {x: 768.76, y: 133.7}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &3427977778090020390
+--- !u!222 &6923025373750911014
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7262477821260420128}
+  m_GameObject: {fileID: 3118910266766277152}
   m_CullTransparentMesh: 0
---- !u!114 &4361617656732430150
+--- !u!114 &8288467621336498502
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7262477821260420128}
+  m_GameObject: {fileID: 3118910266766277152}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
@@ -417,7 +249,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
---- !u!1 &8640544004263073028
+--- !u!1 &3475770902594063375
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -425,10 +257,373 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4201344269572278909}
-  - component: {fileID: 4803365856466241000}
-  - component: {fileID: 6597447259679168317}
-  - component: {fileID: 8394397835711244665}
+  - component: {fileID: 3475770902594063361}
+  - component: {fileID: 3475770902594063360}
+  m_Layer: 0
+  m_Name: AudioManager 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3475770902594063361
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3475770902594063375}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 8489062230740427901}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3475770902594063360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3475770902594063375}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5567de5177fa464eaa03e63ea0fd4c1, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  sounds:
+  - clip: {fileID: 8300000, guid: a391c33f91293af44bce142b7ec1837e, type: 3}
+    name: AmbientMusic
+    volume: 1
+    source: {fileID: 0}
+    loop: 1
+    text:
+  - clip: {fileID: 8300000, guid: 24d6315af2a972644955c4c13724a447, type: 3}
+    name: Hover
+    volume: 1
+    source: {fileID: 0}
+    loop: 0
+    text:
+  - clip: {fileID: 8300000, guid: 5fd5bb8545c26e44cb4b632f463b837c, type: 3}
+    name: Click
+    volume: 1
+    source: {fileID: 0}
+    loop: 0
+    text:
+  - clip: {fileID: 8300000, guid: e90b444bc8453c148a781f271c10ab02, type: 3}
+    name: Door
+    volume: 1
+    source: {fileID: 0}
+    loop: 0
+    text:
+  - clip: {fileID: 8300000, guid: 9cb1b3ca2a710194d9559c9fb55226ae, type: 3}
+    name: RadioFrage1
+    volume: 1
+    source: {fileID: 0}
+    loop: 0
+    text:
+  - clip: {fileID: 8300000, guid: 980e2fa9931c65e48bf3c94145c1b0f1, type: 3}
+    name: RadioFrage2
+    volume: 1
+    source: {fileID: 0}
+    loop: 0
+    text:
+  - clip: {fileID: 8300000, guid: 0d6f471ec9d41a447abd4b7ecf31b576, type: 3}
+    name: RadioFrage3
+    volume: 1
+    source: {fileID: 0}
+    loop: 0
+    text:
+  - clip: {fileID: 8300000, guid: ca38ded02bc646047a364415531ae10a, type: 3}
+    name: RadioFrage4
+    volume: 1
+    source: {fileID: 0}
+    loop: 0
+    text:
+  - clip: {fileID: 8300000, guid: 343b877e9ed830b46b9466415ddce299, type: 3}
+    name: RadioFrage5
+    volume: 1
+    source: {fileID: 0}
+    loop: 0
+    text:
+  - clip: {fileID: 8300000, guid: ea4ba6a739acf624987f0e8bc90fd7a9, type: 3}
+    name: RadioAbgeschlossen
+    volume: 1
+    source: {fileID: 0}
+    loop: 0
+    text:
+  - clip: {fileID: 8300000, guid: ed0317b3537fbac4faabed8a58763804, type: 3}
+    name: FlurBetreten
+    volume: 1
+    source: {fileID: 0}
+    loop: 0
+    text: "Der Flur - hier \xF6ffnen sich dir so viele T\xFCren!"
+  - clip: {fileID: 8300000, guid: 4354f6c9d3f5330458be2fda4a24cad0, type: 3}
+    name: FlurErstesBetreten1
+    volume: 1
+    source: {fileID: 0}
+    loop: 0
+    text: "Hallo, ich bin \xC4lexa. Deine pers\xF6nliche Sprachassistentin. Ich h\xF6re
+      dir zu, immer, und du kannst mit mir reden. "
+  - clip: {fileID: 8300000, guid: e14f19bd3bfa8b4458d6dbdefbfd8728, type: 3}
+    name: FlurErstesBetreten2
+    volume: 1
+    source: {fileID: 0}
+    loop: 0
+    text: "Wenn du Hilfe brauchst, dann z\xF6gere nicht mich einfach anzuklicken.
+      Vertrau dich mir gern an! "
+  - clip: {fileID: 8300000, guid: 2889ec053819a94489e684dc421e4146, type: 3}
+    name: FlurErstesBetreten3
+    volume: 1
+    source: {fileID: 0}
+    loop: 0
+    text: "Es k\xF6nnten vielleicht eventuell alle deine Daten an \xC4mazon geschickt,
+      gespeichert und weiterverarbeitet werden."
+  - clip: {fileID: 8300000, guid: 7c3c2ae40f8c1cd40bb46291c1e69fb1, type: 3}
+    name: FlurHut
+    volume: 1
+    source: {fileID: 0}
+    loop: 0
+    text: 'Sie haben dem Hut ins Gesicht geklick '
+  - clip: {fileID: 8300000, guid: 238670df8ff16a04f91b2b51d485fa1f, type: 3}
+    name: KuecheErstesBetreten
+    volume: 1
+    source: {fileID: 0}
+    loop: 0
+    text: "Backe backe Kuchen\u2026 - Oh nein, der Ofen ist kaputt!"
+  - clip: {fileID: 8300000, guid: 5fd92b5eed435c949a6e7f86c52cf2cc, type: 3}
+    name: KuecheBetreten
+    volume: 1
+    source: {fileID: 0}
+    loop: 0
+    text: "Die K\xFCche. Aber Zeit zum Essen hast du jetzt nicht!"
+  - clip: {fileID: 8300000, guid: 1d056edbedb92c94a8776507934b8e21, type: 3}
+    name: Milestone11
+    volume: 1
+    source: {fileID: 0}
+    loop: 0
+    text: "Was ist denn hier passiert? Sieht aus als h\xE4tte irgendein Schelm deine
+      Elektroger\xE4te auseinandergebaut. "
+  - clip: {fileID: 8300000, guid: e1ba39e6641ce5b499a61efd966c059a, type: 3}
+    name: Milestone12
+    volume: 1
+    source: {fileID: 0}
+    loop: 0
+    text: "Sieh zu, dass du alle Teile f\xFCr den Staubsauger findest. Sie befinden
+      sich dann in deinem Inventar, das du mit \u201Ci\u201D aufrufen kannst."
+  - clip: {fileID: 8300000, guid: 798e579b67f370a4c9f2e53ca5910aa7, type: 3}
+    name: Milestone13
+    volume: 1
+    source: {fileID: 0}
+    loop: 0
+    text: 'Falls du alle Teile gefunden hast kannst du dich an die Reparatur des Staubsaugers
+      setzen, indem du auf ihn klickst. '
+  - clip: {fileID: 8300000, guid: 15cb0609820090941b07b72d2b420087, type: 3}
+    name: Milestone21
+    volume: 1
+    source: {fileID: 0}
+    loop: 0
+    text: "Oh, es scheint als w\xFCrde das dort nicht hingeh\xF6ren."
+  - clip: {fileID: 8300000, guid: 3fb6a285163674e4a835a18920177665, type: 3}
+    name: Milestone22
+    volume: 1
+    source: {fileID: 0}
+    loop: 0
+    text: "In den anderen Zimmern befinden sich auch noch Ger\xE4te, die wieder zusammengebaut
+      werden m\xFCssen."
+  - clip: {fileID: 8300000, guid: a98f13013c961ae449ffff8da3d31d4e, type: 3}
+    name: Milestone23
+    volume: 1
+    source: {fileID: 0}
+    loop: 0
+    text: "Was war das denn? Hast du das auch geh\xF6rt?"
+  - clip: {fileID: 8300000, guid: 214de8669f0338b4c835154e6357b712, type: 3}
+    name: Milestone31
+    volume: 1
+    source: {fileID: 0}
+    loop: 0
+    text: "Na sowas! Ich hab schon wieder was geh\xF6rt. Scheint so als w\xE4ren wir
+      nicht alleine... "
+  - clip: {fileID: 8300000, guid: e1e789f76f4fcce45859a23b78345dd2, type: 3}
+    name: TVErstesBetreten1
+    volume: 1
+    source: {fileID: 0}
+    loop: 0
+    text: Die Kabel sind nicht verbunden.
+  - clip: {fileID: 8300000, guid: d6e06d375ca708049bbd77e15b6a630c, type: 3}
+    name: TVErstesBetreten2
+    volume: 1
+    source: {fileID: 0}
+    loop: 0
+    text: 'Klicke auf ein Kabel, um es zu drehen. Aber pass auf: du hast nicht unbegrenzt
+      Zeit.'
+  - clip: {fileID: 8300000, guid: 69902a7fefa55ae48833d10e91db907a, type: 3}
+    name: TVErstesBetreten3
+    volume: 1
+    source: {fileID: 0}
+    loop: 0
+    text: Wenn du denkst, dass du fertig bist, schalte den Fernseher mit der Fernbedienung
+      ein.
+  - clip: {fileID: 8300000, guid: 1dbc176b7ac6602409b8bbc9ded63eab, type: 3}
+    name: TVAbgeschlossen
+    volume: 1
+    source: {fileID: 0}
+    loop: 0
+    text: "Endlich wieder N\xE4tflix\u2019n\u2019chill!"
+  - clip: {fileID: 8300000, guid: d430dc9e94b888c4f8a96802fe5ce464, type: 3}
+    name: OfenErstesBetreten
+    volume: 1
+    source: {fileID: 0}
+    loop: 0
+    text: Der Ofen funktioniert nicht. Schau dir die Teile genau an!
+  - clip: {fileID: 8300000, guid: ba045376adbe89c4494289861cf50611, type: 3}
+    name: OfenHeizstab
+    volume: 1
+    source: {fileID: 0}
+    loop: 0
+    text: "Die Heizst\xE4be sind kalt. Hast du in Physik aufgepasst? Durch Reibung
+      entsteht W\xE4rme!"
+  - clip: {fileID: 8300000, guid: f92ec02ad63c3254bb43d10a2053221d, type: 3}
+    name: OfenHeizstabAbgeschlossen
+    volume: 1
+    source: {fileID: 0}
+    loop: 0
+    text: Sehr gut. Du hast dem Ofen wieder ordentlich eingeheizt!
+  - clip: {fileID: 8300000, guid: e40a8774d08b64644b532e9d275d0d3b, type: 3}
+    name: OfenLampe
+    volume: 1
+    source: {fileID: 0}
+    loop: 0
+    text: "Die Lampe leuchtet nicht\u2026 Ich bin fassungslos!"
+  - clip: {fileID: 8300000, guid: a031878f51235ee448518a2bd915d7bf, type: 3}
+    name: OfenLampeAbgeschlossen
+    volume: 1
+    source: {fileID: 0}
+    loop: 0
+    text: Du hast den Dreh raus!
+  - clip: {fileID: 8300000, guid: 3c9733e72d393074caa3613d6eda308c, type: 3}
+    name: OfenVentilator
+    volume: 1
+    source: {fileID: 0}
+    loop: 0
+    text: Der scheint zu klemmen. Vielleicht muss der mal ordentlich angepustet werden!
+  - clip: {fileID: 8300000, guid: 97494293be7d4504a8609f485bdef446, type: 3}
+    name: OfenVentilatorAbgeschlossen
+    volume: 1
+    source: {fileID: 0}
+    loop: 0
+    text: "Manchmal braucht es nur einen Windsto\xDF in die richtige Richtung."
+  - clip: {fileID: 8300000, guid: e6d1bbc73bd5bc84eb45d8eb34af9845, type: 3}
+    name: OfenAbgeschlossen
+    volume: 1
+    source: {fileID: 0}
+    loop: 0
+    text: Der Ofen kann wieder Ofen sein, ich bin stolz auf dich!
+  - clip: {fileID: 8300000, guid: 82c6c2c764b004249beee5d4c91020b3, type: 3}
+    name: StaubsaugerFilter
+    volume: 1
+    source: {fileID: 0}
+    loop: 0
+    text: Ein sehr feiner Filter. Damit kann man ja nicht einmal Sand sieben!
+  - clip: {fileID: 8300000, guid: 84ec371c601d65745a3583840466c1d8, type: 3}
+    name: StaubsaugerRohr
+    volume: 1
+    source: {fileID: 0}
+    loop: 0
+    text: "Das ist aber ein langes Rohr! Wo k\xF6nnte man das hin verlegen?"
+  - clip: {fileID: 8300000, guid: 1082e3200ac6b9b44893d0680322c80a, type: 3}
+    name: StaubsaugerTurbine
+    volume: 1
+    source: {fileID: 0}
+    loop: 0
+    text: "Sieht aus als k\xF6nnte man damit einen starken Unterdruck erzeugen. Ob
+      das auch unter Druck funktioniert?"
+  - clip: {fileID: 8300000, guid: 35ac7422ee59c1d48ac23de81e7e5f4d, type: 3}
+    name: StaubsaugerBeutel
+    volume: 1
+    source: {fileID: 0}
+    loop: 0
+    text: "Das scheint ein Beutel zu sein. Ein sehr kleiner, aber daf\xFCr auch ein
+      Feiner!"
+  - clip: {fileID: 8300000, guid: febf8435e04d58d49b6eb99ef5c7c079, type: 3}
+    name: StaubsaugerBetreten1
+    volume: 1
+    source: {fileID: 0}
+    loop: 0
+    text: 'Was ist denn hier passiert? '
+  - clip: {fileID: 8300000, guid: 7c3057848da0b6846b847bca2a367593, type: 3}
+    name: StaubsaugerBetreten2
+    volume: 1
+    source: {fileID: 0}
+    loop: 0
+    text: Nimm die einzelnen Teile und versuche sie wieder richtig in den Staubsauger
+      zu bauen.
+  - clip: {fileID: 8300000, guid: 3f71e4c3bbc2c3241b53acb67574462e, type: 3}
+    name: StaubsaugerFalsch
+    volume: 1
+    source: {fileID: 0}
+    loop: 0
+    text: "Selbst ich merke, dass das hier nicht hingeh\xF6rt\u2026 Und ich bin nur
+      eine k\xFCnstliche Intelligenz!"
+  - clip: {fileID: 8300000, guid: aac8b358c08aec743a3d3d2265366a59, type: 3}
+    name: StaubsaugerRichtig
+    volume: 1
+    source: {fileID: 0}
+    loop: 0
+    text: Das sieht korrekt aus, weiter so!
+  - clip: {fileID: 8300000, guid: d1743e8d6d098364da6ddd749893f0f1, type: 3}
+    name: StaubsaugerAbgeschlossen
+    volume: 1
+    source: {fileID: 0}
+    loop: 0
+    text: Der Staubsauger kann wieder saugen, toll gemacht!
+  - clip: {fileID: 8300000, guid: 578e3a54ceb28434aa69258c813b2643, type: 3}
+    name: SchlafzimmerErstesBetreten
+    volume: 1
+    source: {fileID: 0}
+    loop: 0
+    text: Das Schlafzimmer.  Zum Hinlegen ist jetzt keine Zeit! Das Radio scheint
+      kaputt zu sein.
+  - clip: {fileID: 8300000, guid: 6f7ad77c9ee4937428aeb1448c55d5cf, type: 3}
+    name: WohnzimmerErstesBetreten
+    volume: 1
+    source: {fileID: 0}
+    loop: 0
+    text: Der Fernseher sieht kaputt aus. Vielleicht auch besser so. Zddddddefeeit
+      zum Fernsehen hast du jetzt sowieso nicht.
+  - clip: {fileID: 8300000, guid: 8a2fdd9223e86ad4fb0529fca7e5c34d, type: 3}
+    name: VersuchsNochmal1
+    volume: 1
+    source: {fileID: 0}
+    loop: 0
+    text: Versuch es nochmal.
+  - clip: {fileID: 8300000, guid: a8c3ac819067dde48a79c8058dd74286, type: 3}
+    name: VersuchsNochmal2
+    volume: 1
+    source: {fileID: 0}
+    loop: 0
+    text: Versuch es nochmal.
+  - clip: {fileID: 8300000, guid: b74190ae1ffc81a40a575e521f0857ae, type: 3}
+    name: VersuchsNochmal3
+    volume: 1
+    source: {fileID: 0}
+    loop: 0
+    text: Versuch es nochmal.
+  speechBubble: {fileID: 3118910266766277152}
+--- !u!1 &4064632508937288452
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8489062230740427901}
+  - component: {fileID: 948538276143459304}
+  - component: {fileID: 1445600602447968573}
+  - component: {fileID: 4323452474224347001}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -436,19 +631,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &4201344269572278909
+--- !u!224 &8489062230740427901
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8640544004263073028}
+  m_GameObject: {fileID: 4064632508937288452}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
-  - {fileID: 4530714490475058975}
-  m_Father: {fileID: 9204639095623475713}
+  - {fileID: 8169896506924890399}
+  m_Father: {fileID: 3475770902594063361}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -456,13 +651,13 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!223 &4803365856466241000
+--- !u!223 &948538276143459304
 Canvas:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8640544004263073028}
+  m_GameObject: {fileID: 4064632508937288452}
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 0
@@ -477,18 +672,18 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
---- !u!114 &6597447259679168317
+--- !u!114 &1445600602447968573
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8640544004263073028}
+  m_GameObject: {fileID: 4064632508937288452}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
@@ -499,24 +694,24 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
---- !u!114 &8394397835711244665
+--- !u!114 &4323452474224347001
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8640544004263073028}
+  m_GameObject: {fileID: 4064632508937288452}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 1301386320, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   m_IgnoreReversedGraphics: 1
   m_BlockingObjects: 0
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!1 &9204639095623475727
+--- !u!1 &6016450849677581252
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -524,341 +719,163 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 9204639095623475713}
-  - component: {fileID: 9204639095623475712}
-  m_Layer: 0
-  m_Name: AudioManager
+  - component: {fileID: 7125463247053532751}
+  - component: {fileID: 5166582672965030467}
+  - component: {fileID: 1011551120069468769}
+  - component: {fileID: 4063024543565769557}
+  m_Layer: 5
+  m_Name: Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &9204639095623475713
-Transform:
+--- !u!224 &7125463247053532751
+RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9204639095623475727}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_GameObject: {fileID: 6016450849677581252}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 4201344269572278909}
-  m_Father: {fileID: 0}
+  - {fileID: 1720481954650477617}
+  m_Father: {fileID: 8169896506924890399}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &9204639095623475712
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 41.268, y: 0.025024414}
+  m_SizeDelta: {x: -198.46, y: -29.4}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &5166582672965030467
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6016450849677581252}
+  m_CullTransparentMesh: 0
+--- !u!114 &1011551120069468769
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9204639095623475727}
+  m_GameObject: {fileID: 6016450849677581252}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a5567de5177fa464eaa03e63ea0fd4c1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sounds:
-  - clip: {fileID: 8300000, guid: a391c33f91293af44bce142b7ec1837e, type: 3}
-    name: AmbientMusic
-    volume: 1
-    source: {fileID: 0}
-    loop: 1
-    text: 
-  - clip: {fileID: 8300000, guid: 24d6315af2a972644955c4c13724a447, type: 3}
-    name: Hover
-    volume: 1
-    source: {fileID: 0}
-    loop: 0
-    text: 
-  - clip: {fileID: 8300000, guid: 5fd5bb8545c26e44cb4b632f463b837c, type: 3}
-    name: Click
-    volume: 1
-    source: {fileID: 0}
-    loop: 0
-    text: 
-  - clip: {fileID: 8300000, guid: e90b444bc8453c148a781f271c10ab02, type: 3}
-    name: Door
-    volume: 1
-    source: {fileID: 0}
-    loop: 0
-    text: 
-  - clip: {fileID: 8300000, guid: 9cb1b3ca2a710194d9559c9fb55226ae, type: 3}
-    name: RadioFrage1
-    volume: 1
-    source: {fileID: 0}
-    loop: 0
-    text: 
-  - clip: {fileID: 8300000, guid: 980e2fa9931c65e48bf3c94145c1b0f1, type: 3}
-    name: RadioFrage2
-    volume: 1
-    source: {fileID: 0}
-    loop: 0
-    text: 
-  - clip: {fileID: 8300000, guid: 0d6f471ec9d41a447abd4b7ecf31b576, type: 3}
-    name: RadioFrage3
-    volume: 1
-    source: {fileID: 0}
-    loop: 0
-    text: 
-  - clip: {fileID: 8300000, guid: ca38ded02bc646047a364415531ae10a, type: 3}
-    name: RadioFrage4
-    volume: 1
-    source: {fileID: 0}
-    loop: 0
-    text: 
-  - clip: {fileID: 8300000, guid: 343b877e9ed830b46b9466415ddce299, type: 3}
-    name: RadioFrage5
-    volume: 1
-    source: {fileID: 0}
-    loop: 0
-    text: 
-  - clip: {fileID: 8300000, guid: ea4ba6a739acf624987f0e8bc90fd7a9, type: 3}
-    name: RadioAbgeschlossen
-    volume: 1
-    source: {fileID: 0}
-    loop: 0
-    text: 
-  - clip: {fileID: 8300000, guid: ed0317b3537fbac4faabed8a58763804, type: 3}
-    name: FlurBetreten
-    volume: 1
-    source: {fileID: 0}
-    loop: 0
-    text: 
-  - clip: {fileID: 8300000, guid: 4354f6c9d3f5330458be2fda4a24cad0, type: 3}
-    name: FlurErstesBetreten1
-    volume: 1
-    source: {fileID: 0}
-    loop: 0
-    text: 
-  - clip: {fileID: 8300000, guid: e14f19bd3bfa8b4458d6dbdefbfd8728, type: 3}
-    name: FlurErstesBetreten2
-    volume: 1
-    source: {fileID: 0}
-    loop: 0
-    text: 
-  - clip: {fileID: 8300000, guid: 2889ec053819a94489e684dc421e4146, type: 3}
-    name: FlurErstesBetreten3
-    volume: 1
-    source: {fileID: 0}
-    loop: 0
-    text: 
-  - clip: {fileID: 8300000, guid: 7c3c2ae40f8c1cd40bb46291c1e69fb1, type: 3}
-    name: FlurHut
-    volume: 1
-    source: {fileID: 0}
-    loop: 0
-    text: 
-  - clip: {fileID: 8300000, guid: 238670df8ff16a04f91b2b51d485fa1f, type: 3}
-    name: KuecheErstesBetreten
-    volume: 1
-    source: {fileID: 0}
-    loop: 0
-    text: 
-  - clip: {fileID: 8300000, guid: 5fd92b5eed435c949a6e7f86c52cf2cc, type: 3}
-    name: KuecheBetreten
-    volume: 1
-    source: {fileID: 0}
-    loop: 0
-    text: 
-  - clip: {fileID: 8300000, guid: 1d056edbedb92c94a8776507934b8e21, type: 3}
-    name: Milestone11
-    volume: 1
-    source: {fileID: 0}
-    loop: 0
-    text: 
-  - clip: {fileID: 8300000, guid: e1ba39e6641ce5b499a61efd966c059a, type: 3}
-    name: Milestone12
-    volume: 1
-    source: {fileID: 0}
-    loop: 0
-    text: 
-  - clip: {fileID: 8300000, guid: 798e579b67f370a4c9f2e53ca5910aa7, type: 3}
-    name: Milestone13
-    volume: 1
-    source: {fileID: 0}
-    loop: 0
-    text: 
-  - clip: {fileID: 8300000, guid: 15cb0609820090941b07b72d2b420087, type: 3}
-    name: Milestone21
-    volume: 1
-    source: {fileID: 0}
-    loop: 0
-    text: 
-  - clip: {fileID: 8300000, guid: 3fb6a285163674e4a835a18920177665, type: 3}
-    name: Milestone22
-    volume: 1
-    source: {fileID: 0}
-    loop: 0
-    text: 
-  - clip: {fileID: 8300000, guid: a98f13013c961ae449ffff8da3d31d4e, type: 3}
-    name: Milestone23
-    volume: 1
-    source: {fileID: 0}
-    loop: 0
-    text: 
-  - clip: {fileID: 8300000, guid: 214de8669f0338b4c835154e6357b712, type: 3}
-    name: Milestone31
-    volume: 1
-    source: {fileID: 0}
-    loop: 0
-    text: 
-  - clip: {fileID: 8300000, guid: e1e789f76f4fcce45859a23b78345dd2, type: 3}
-    name: TVErstesBetreten1
-    volume: 1
-    source: {fileID: 0}
-    loop: 0
-    text: 
-  - clip: {fileID: 8300000, guid: d6e06d375ca708049bbd77e15b6a630c, type: 3}
-    name: TVErstesBetreten2
-    volume: 1
-    source: {fileID: 0}
-    loop: 0
-    text: 
-  - clip: {fileID: 8300000, guid: 69902a7fefa55ae48833d10e91db907a, type: 3}
-    name: TVErstesBetreten3
-    volume: 1
-    source: {fileID: 0}
-    loop: 0
-    text: 
-  - clip: {fileID: 8300000, guid: 1dbc176b7ac6602409b8bbc9ded63eab, type: 3}
-    name: TVAbgeschlossen
-    volume: 1
-    source: {fileID: 0}
-    loop: 0
-    text: 
-  - clip: {fileID: 8300000, guid: d430dc9e94b888c4f8a96802fe5ce464, type: 3}
-    name: OfenErstesBetreten
-    volume: 1
-    source: {fileID: 0}
-    loop: 0
-    text: 
-  - clip: {fileID: 8300000, guid: ba045376adbe89c4494289861cf50611, type: 3}
-    name: OfenHeizstab
-    volume: 1
-    source: {fileID: 0}
-    loop: 0
-    text: 
-  - clip: {fileID: 8300000, guid: f92ec02ad63c3254bb43d10a2053221d, type: 3}
-    name: OfenHeizstabAbgeschlossen
-    volume: 1
-    source: {fileID: 0}
-    loop: 0
-    text: 
-  - clip: {fileID: 8300000, guid: e40a8774d08b64644b532e9d275d0d3b, type: 3}
-    name: OfenLampe
-    volume: 1
-    source: {fileID: 0}
-    loop: 0
-    text: 
-  - clip: {fileID: 8300000, guid: a031878f51235ee448518a2bd915d7bf, type: 3}
-    name: OfenLampeAbgeschlossen
-    volume: 1
-    source: {fileID: 0}
-    loop: 0
-    text: 
-  - clip: {fileID: 8300000, guid: 3c9733e72d393074caa3613d6eda308c, type: 3}
-    name: OfenVentilator
-    volume: 1
-    source: {fileID: 0}
-    loop: 0
-    text: 
-  - clip: {fileID: 8300000, guid: 97494293be7d4504a8609f485bdef446, type: 3}
-    name: OfenVentilatorAbgeschlossen
-    volume: 1
-    source: {fileID: 0}
-    loop: 0
-    text: 
-  - clip: {fileID: 8300000, guid: e6d1bbc73bd5bc84eb45d8eb34af9845, type: 3}
-    name: OfenAbgeschlossen
-    volume: 1
-    source: {fileID: 0}
-    loop: 0
-    text: 
-  - clip: {fileID: 8300000, guid: 82c6c2c764b004249beee5d4c91020b3, type: 3}
-    name: StaubsaugerFilter
-    volume: 1
-    source: {fileID: 0}
-    loop: 0
-    text: 
-  - clip: {fileID: 8300000, guid: 84ec371c601d65745a3583840466c1d8, type: 3}
-    name: StaubsaugerRohr
-    volume: 1
-    source: {fileID: 0}
-    loop: 0
-    text: 
-  - clip: {fileID: 8300000, guid: 1082e3200ac6b9b44893d0680322c80a, type: 3}
-    name: StaubsaugerTurbine
-    volume: 1
-    source: {fileID: 0}
-    loop: 0
-    text: 
-  - clip: {fileID: 8300000, guid: 35ac7422ee59c1d48ac23de81e7e5f4d, type: 3}
-    name: StaubsaugerBeutel
-    volume: 1
-    source: {fileID: 0}
-    loop: 0
-    text: 
-  - clip: {fileID: 8300000, guid: febf8435e04d58d49b6eb99ef5c7c079, type: 3}
-    name: StaubsaugerBetreten1
-    volume: 1
-    source: {fileID: 0}
-    loop: 0
-    text: 
-  - clip: {fileID: 8300000, guid: 7c3057848da0b6846b847bca2a367593, type: 3}
-    name: StaubsaugerBetreten2
-    volume: 1
-    source: {fileID: 0}
-    loop: 0
-    text: 
-  - clip: {fileID: 8300000, guid: 3f71e4c3bbc2c3241b53acb67574462e, type: 3}
-    name: StaubsaugerFalsch
-    volume: 1
-    source: {fileID: 0}
-    loop: 0
-    text: 
-  - clip: {fileID: 8300000, guid: aac8b358c08aec743a3d3d2265366a59, type: 3}
-    name: StaubsaugerRichtig
-    volume: 1
-    source: {fileID: 0}
-    loop: 0
-    text: 
-  - clip: {fileID: 8300000, guid: d1743e8d6d098364da6ddd749893f0f1, type: 3}
-    name: StaubsaugerAbgeschlossen
-    volume: 1
-    source: {fileID: 0}
-    loop: 0
-    text: 
-  - clip: {fileID: 8300000, guid: 578e3a54ceb28434aa69258c813b2643, type: 3}
-    name: SchlafzimmerErstesBetreten
-    volume: 1
-    source: {fileID: 0}
-    loop: 0
-    text: 
-  - clip: {fileID: 8300000, guid: 6f7ad77c9ee4937428aeb1448c55d5cf, type: 3}
-    name: WohnzimmerErstesBetreten
-    volume: 1
-    source: {fileID: 0}
-    loop: 0
-    text: 
-  - clip: {fileID: 8300000, guid: 8a2fdd9223e86ad4fb0529fca7e5c34d, type: 3}
-    name: VersuchsNochmal1
-    volume: 1
-    source: {fileID: 0}
-    loop: 0
-    text: 
-  - clip: {fileID: 8300000, guid: a8c3ac819067dde48a79c8058dd74286, type: 3}
-    name: VersuchsNochmal2
-    volume: 1
-    source: {fileID: 0}
-    loop: 0
-    text: 
-  - clip: {fileID: 8300000, guid: b74190ae1ffc81a40a575e521f0857ae, type: 3}
-    name: VersuchsNochmal3
-    volume: 1
-    source: {fileID: 0}
-    loop: 0
-    text: 
-  speechBubble: {fileID: 7262477821260420128}
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+--- !u!114 &4063024543565769557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6016450849677581252}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1200242548, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  m_ShowMaskGraphic: 0
+--- !u!1 &7641430066593660642
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1720481954650477617}
+  - component: {fileID: 1465735468397293049}
+  - component: {fileID: 6449067737645798121}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1720481954650477617
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7641430066593660642}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7125463247053532751}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 2.67, y: -139.5}
+  m_SizeDelta: {x: 563.6, y: 361.6}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &1465735468397293049
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7641430066593660642}
+  m_CullTransparentMesh: 0
+--- !u!114 &6449067737645798121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7641430066593660642}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 22
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 59
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: New Text
