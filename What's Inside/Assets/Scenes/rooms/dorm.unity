@@ -417,7 +417,7 @@ PrefabInstance:
   m_SourcePrefab: {fileID: 100100000, guid: 6f0687fe9a709b447855cd9c5047024e, type: 3}
 --- !u!114 &126189251 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 9204639095623475712, guid: 6f0687fe9a709b447855cd9c5047024e,
+  m_CorrespondingSourceObject: {fileID: 3475770902594063360, guid: 6f0687fe9a709b447855cd9c5047024e,
     type: 3}
   m_PrefabInstance: {fileID: 126189250}
   m_PrefabAsset: {fileID: 0}
@@ -1117,7 +1117,7 @@ RectTransform:
   m_Children:
   - {fileID: 227184091}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1178,8 +1178,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Eingangsfilter
   info: 
-  available: 0
-  found: 0
+  status: 0
+  inventoryItem: 0
 --- !u!114 &1366124307
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1717,7 +1717,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1894144557
 GameObject:
@@ -1783,7 +1783,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2001902893
 GameObject:
@@ -1839,8 +1839,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Demodulator
   info: 
-  available: 0
-  found: 0
+  status: 0
+  inventoryItem: 0
 --- !u!114 &2001902896
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -5,18 +5,21 @@ using UnityEngine;
 
 public class Item : MonoBehaviour {
 
-
+    
     public String name;
     public String info;
-	public bool available;
-	public bool found;
-	
-	//private bool selected;
-    
+
+    public enum Status { AVAILABLE, INVENTORY, USED};
+    public Status status;
+
+    public bool inventoryItem;
+
+    //private bool selected;
+
 
     void Start() {
 		// Debug.Log(name);
-        if(Inventory.Instance.wasFound(this)) gameObject.SetActive(false);
+        if(Inventory.Instance.wasFound(name) && !inventoryItem) gameObject.SetActive(false);
     }
 	
     /*void Update() {
@@ -32,10 +35,9 @@ public class Item : MonoBehaviour {
 
 	
     public void addToInventory() {
-        if (!available){
+        if (status == Status.AVAILABLE){
 			Inventory.Instance.activateItem(this);
-			available = true;
-			found = true;
+            status = Status.INVENTORY;
 			gameObject.SetActive(false);
 		}
     }

@@ -263,7 +263,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 0}
+        - m_Target: {fileID: 1630361976}
           m_MethodName: Play
           m_Mode: 5
           m_Arguments:
@@ -358,7 +358,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1630361976}
         m_MethodName: Play
         m_Mode: 5
         m_Arguments:
@@ -573,6 +573,11 @@ PrefabInstance:
         type: 3}
       propertyPath: info
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6606403324689514070, guid: 150c478ef8ef0ce45932115c3703585f,
+        type: 3}
+      propertyPath: inventoryItem
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3982914245741136959, guid: 150c478ef8ef0ce45932115c3703585f,
         type: 3}
@@ -1612,8 +1617,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Ventilator
   info: 
-  available: 0
-  found: 0
+  status: 0
+  inventoryItem: 1
 --- !u!114 &347939649
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1726,441 +1731,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 436608955}
   m_CullTransparentMesh: 0
---- !u!1 &551095737
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 3475770902594063375, guid: 80992b2a705a22a46b2cc2e53b2543da,
-    type: 3}
-  m_PrefabInstance: {fileID: 559529438}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 551095739}
-  - component: {fileID: 551095738}
-  m_Layer: 0
-  m_Name: AudioManager 1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &551095738
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 3475770902594063360, guid: 80992b2a705a22a46b2cc2e53b2543da,
-    type: 3}
-  m_PrefabInstance: {fileID: 559529438}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 551095737}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a5567de5177fa464eaa03e63ea0fd4c1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sounds:
-  - clip: {fileID: 8300000, guid: a391c33f91293af44bce142b7ec1837e, type: 3}
-    name: AmbientMusic
-    volume: 1
-    source: {fileID: 0}
-    loop: 1
-    text: 
-  - clip: {fileID: 8300000, guid: 24d6315af2a972644955c4c13724a447, type: 3}
-    name: Hover
-    volume: 1
-    source: {fileID: 0}
-    loop: 0
-    text: 
-  - clip: {fileID: 8300000, guid: 5fd5bb8545c26e44cb4b632f463b837c, type: 3}
-    name: Click
-    volume: 1
-    source: {fileID: 0}
-    loop: 0
-    text: 
-  - clip: {fileID: 8300000, guid: e90b444bc8453c148a781f271c10ab02, type: 3}
-    name: Door
-    volume: 1
-    source: {fileID: 0}
-    loop: 0
-    text: 
-  - clip: {fileID: 8300000, guid: 9cb1b3ca2a710194d9559c9fb55226ae, type: 3}
-    name: RadioFrage1
-    volume: 1
-    source: {fileID: 0}
-    loop: 0
-    text: 
-  - clip: {fileID: 8300000, guid: 980e2fa9931c65e48bf3c94145c1b0f1, type: 3}
-    name: RadioFrage2
-    volume: 1
-    source: {fileID: 0}
-    loop: 0
-    text: 
-  - clip: {fileID: 8300000, guid: 0d6f471ec9d41a447abd4b7ecf31b576, type: 3}
-    name: RadioFrage3
-    volume: 1
-    source: {fileID: 0}
-    loop: 0
-    text: 
-  - clip: {fileID: 8300000, guid: ca38ded02bc646047a364415531ae10a, type: 3}
-    name: RadioFrage4
-    volume: 1
-    source: {fileID: 0}
-    loop: 0
-    text: 
-  - clip: {fileID: 8300000, guid: 343b877e9ed830b46b9466415ddce299, type: 3}
-    name: RadioFrage5
-    volume: 1
-    source: {fileID: 0}
-    loop: 0
-    text: 
-  - clip: {fileID: 8300000, guid: ea4ba6a739acf624987f0e8bc90fd7a9, type: 3}
-    name: RadioAbgeschlossen
-    volume: 1
-    source: {fileID: 0}
-    loop: 0
-    text: 
-  - clip: {fileID: 8300000, guid: ed0317b3537fbac4faabed8a58763804, type: 3}
-    name: FlurBetreten
-    volume: 1
-    source: {fileID: 0}
-    loop: 0
-    text: "Der Flur - hier \xF6ffnen sich dir so viele T\xFCren!"
-  - clip: {fileID: 8300000, guid: 4354f6c9d3f5330458be2fda4a24cad0, type: 3}
-    name: FlurErstesBetreten1
-    volume: 1
-    source: {fileID: 0}
-    loop: 0
-    text: "Hallo, ich bin \xC4lexa. Deine pers\xF6nliche Sprachassistentin. Ich h\xF6re
-      dir zu, immer, und du kannst mit mir reden. "
-  - clip: {fileID: 8300000, guid: e14f19bd3bfa8b4458d6dbdefbfd8728, type: 3}
-    name: FlurErstesBetreten2
-    volume: 1
-    source: {fileID: 0}
-    loop: 0
-    text: "Wenn du Hilfe brauchst, dann z\xF6gere nicht mich einfach anzuklicken.
-      Vertrau dich mir gern an! "
-  - clip: {fileID: 8300000, guid: 2889ec053819a94489e684dc421e4146, type: 3}
-    name: FlurErstesBetreten3
-    volume: 1
-    source: {fileID: 0}
-    loop: 0
-    text: "Es k\xF6nnten vielleicht eventuell alle deine Daten an \xC4mazon geschickt,
-      gespeichert und weiterverarbeitet werden."
-  - clip: {fileID: 8300000, guid: 7c3c2ae40f8c1cd40bb46291c1e69fb1, type: 3}
-    name: FlurHut
-    volume: 1
-    source: {fileID: 0}
-    loop: 0
-    text: 'Sie haben dem Hut ins Gesicht geklick '
-  - clip: {fileID: 8300000, guid: 238670df8ff16a04f91b2b51d485fa1f, type: 3}
-    name: KuecheErstesBetreten
-    volume: 1
-    source: {fileID: 0}
-    loop: 0
-    text: "Backe backe Kuchen\u2026 - Oh nein, der Ofen ist kaputt!"
-  - clip: {fileID: 8300000, guid: 5fd92b5eed435c949a6e7f86c52cf2cc, type: 3}
-    name: KuecheBetreten
-    volume: 1
-    source: {fileID: 0}
-    loop: 0
-    text: "Die K\xFCche. Aber Zeit zum Essen hast du jetzt nicht!"
-  - clip: {fileID: 8300000, guid: 1d056edbedb92c94a8776507934b8e21, type: 3}
-    name: Milestone11
-    volume: 1
-    source: {fileID: 0}
-    loop: 0
-    text: "Was ist denn hier passiert? Sieht aus als h\xE4tte irgendein Schelm deine
-      Elektroger\xE4te auseinandergebaut. "
-  - clip: {fileID: 8300000, guid: e1ba39e6641ce5b499a61efd966c059a, type: 3}
-    name: Milestone12
-    volume: 1
-    source: {fileID: 0}
-    loop: 0
-    text: "Sieh zu, dass du alle Teile f\xFCr den Staubsauger findest. Sie befinden
-      sich dann in deinem Inventar, das du mit \u201Ci\u201D aufrufen kannst."
-  - clip: {fileID: 8300000, guid: 798e579b67f370a4c9f2e53ca5910aa7, type: 3}
-    name: Milestone13
-    volume: 1
-    source: {fileID: 0}
-    loop: 0
-    text: 'Falls du alle Teile gefunden hast kannst du dich an die Reparatur des Staubsaugers
-      setzen, indem du auf ihn klickst. '
-  - clip: {fileID: 8300000, guid: 15cb0609820090941b07b72d2b420087, type: 3}
-    name: Milestone21
-    volume: 1
-    source: {fileID: 0}
-    loop: 0
-    text: "Oh, es scheint als w\xFCrde das dort nicht hingeh\xF6ren."
-  - clip: {fileID: 8300000, guid: 3fb6a285163674e4a835a18920177665, type: 3}
-    name: Milestone22
-    volume: 1
-    source: {fileID: 0}
-    loop: 0
-    text: "In den anderen Zimmern befinden sich auch noch Ger\xE4te, die wieder zusammengebaut
-      werden m\xFCssen."
-  - clip: {fileID: 8300000, guid: a98f13013c961ae449ffff8da3d31d4e, type: 3}
-    name: Milestone23
-    volume: 1
-    source: {fileID: 0}
-    loop: 0
-    text: "Was war das denn? Hast du das auch geh\xF6rt?"
-  - clip: {fileID: 8300000, guid: 214de8669f0338b4c835154e6357b712, type: 3}
-    name: Milestone31
-    volume: 1
-    source: {fileID: 0}
-    loop: 0
-    text: "Na sowas! Ich hab schon wieder was geh\xF6rt. Scheint so als w\xE4ren wir
-      nicht alleine... "
-  - clip: {fileID: 8300000, guid: e1e789f76f4fcce45859a23b78345dd2, type: 3}
-    name: TVErstesBetreten1
-    volume: 1
-    source: {fileID: 0}
-    loop: 0
-    text: Die Kabel sind nicht verbunden.
-  - clip: {fileID: 8300000, guid: d6e06d375ca708049bbd77e15b6a630c, type: 3}
-    name: TVErstesBetreten2
-    volume: 1
-    source: {fileID: 0}
-    loop: 0
-    text: 'Klicke auf ein Kabel, um es zu drehen. Aber pass auf: du hast nicht unbegrenzt
-      Zeit.'
-  - clip: {fileID: 8300000, guid: 69902a7fefa55ae48833d10e91db907a, type: 3}
-    name: TVErstesBetreten3
-    volume: 1
-    source: {fileID: 0}
-    loop: 0
-    text: Wenn du denkst, dass du fertig bist, schalte den Fernseher mit der Fernbedienung
-      ein.
-  - clip: {fileID: 8300000, guid: 1dbc176b7ac6602409b8bbc9ded63eab, type: 3}
-    name: TVAbgeschlossen
-    volume: 1
-    source: {fileID: 0}
-    loop: 0
-    text: "Endlich wieder N\xE4tflix\u2019n\u2019chill!"
-  - clip: {fileID: 8300000, guid: d430dc9e94b888c4f8a96802fe5ce464, type: 3}
-    name: OfenErstesBetreten
-    volume: 1
-    source: {fileID: 0}
-    loop: 0
-    text: Der Ofen funktioniert nicht. Schau dir die Teile genau an!
-  - clip: {fileID: 8300000, guid: ba045376adbe89c4494289861cf50611, type: 3}
-    name: OfenHeizstab
-    volume: 1
-    source: {fileID: 0}
-    loop: 0
-    text: "Die Heizst\xE4be sind kalt. Hast du in Physik aufgepasst? Durch Reibung
-      entsteht W\xE4rme!"
-  - clip: {fileID: 8300000, guid: f92ec02ad63c3254bb43d10a2053221d, type: 3}
-    name: OfenHeizstabAbgeschlossen
-    volume: 1
-    source: {fileID: 0}
-    loop: 0
-    text: Sehr gut. Du hast dem Ofen wieder ordentlich eingeheizt!
-  - clip: {fileID: 8300000, guid: e40a8774d08b64644b532e9d275d0d3b, type: 3}
-    name: OfenLampe
-    volume: 1
-    source: {fileID: 0}
-    loop: 0
-    text: "Die Lampe leuchtet nicht\u2026 Ich bin fassungslos!"
-  - clip: {fileID: 8300000, guid: a031878f51235ee448518a2bd915d7bf, type: 3}
-    name: OfenLampeAbgeschlossen
-    volume: 1
-    source: {fileID: 0}
-    loop: 0
-    text: Du hast den Dreh raus!
-  - clip: {fileID: 8300000, guid: 3c9733e72d393074caa3613d6eda308c, type: 3}
-    name: OfenVentilator
-    volume: 1
-    source: {fileID: 0}
-    loop: 0
-    text: Der scheint zu klemmen. Vielleicht muss der mal ordentlich angepustet werden!
-  - clip: {fileID: 8300000, guid: 97494293be7d4504a8609f485bdef446, type: 3}
-    name: OfenVentilatorAbgeschlossen
-    volume: 1
-    source: {fileID: 0}
-    loop: 0
-    text: "Manchmal braucht es nur einen Windsto\xDF in die richtige Richtung."
-  - clip: {fileID: 8300000, guid: e6d1bbc73bd5bc84eb45d8eb34af9845, type: 3}
-    name: OfenAbgeschlossen
-    volume: 1
-    source: {fileID: 0}
-    loop: 0
-    text: Der Ofen kann wieder Ofen sein, ich bin stolz auf dich!
-  - clip: {fileID: 8300000, guid: 82c6c2c764b004249beee5d4c91020b3, type: 3}
-    name: StaubsaugerFilter
-    volume: 1
-    source: {fileID: 0}
-    loop: 0
-    text: Ein sehr feiner Filter. Damit kann man ja nicht einmal Sand sieben!
-  - clip: {fileID: 8300000, guid: 84ec371c601d65745a3583840466c1d8, type: 3}
-    name: StaubsaugerRohr
-    volume: 1
-    source: {fileID: 0}
-    loop: 0
-    text: "Das ist aber ein langes Rohr! Wo k\xF6nnte man das hin verlegen?"
-  - clip: {fileID: 8300000, guid: 1082e3200ac6b9b44893d0680322c80a, type: 3}
-    name: StaubsaugerTurbine
-    volume: 1
-    source: {fileID: 0}
-    loop: 0
-    text: "Sieht aus als k\xF6nnte man damit einen starken Unterdruck erzeugen. Ob
-      das auch unter Druck funktioniert?"
-  - clip: {fileID: 8300000, guid: 35ac7422ee59c1d48ac23de81e7e5f4d, type: 3}
-    name: StaubsaugerBeutel
-    volume: 1
-    source: {fileID: 0}
-    loop: 0
-    text: "Das scheint ein Beutel zu sein. Ein sehr kleiner, aber daf\xFCr auch ein
-      Feiner!"
-  - clip: {fileID: 8300000, guid: febf8435e04d58d49b6eb99ef5c7c079, type: 3}
-    name: StaubsaugerBetreten1
-    volume: 1
-    source: {fileID: 0}
-    loop: 0
-    text: 'Was ist denn hier passiert? '
-  - clip: {fileID: 8300000, guid: 7c3057848da0b6846b847bca2a367593, type: 3}
-    name: StaubsaugerBetreten2
-    volume: 1
-    source: {fileID: 0}
-    loop: 0
-    text: Nimm die einzelnen Teile und versuche sie wieder richtig in den Staubsauger
-      zu bauen.
-  - clip: {fileID: 8300000, guid: 3f71e4c3bbc2c3241b53acb67574462e, type: 3}
-    name: StaubsaugerFalsch
-    volume: 1
-    source: {fileID: 0}
-    loop: 0
-    text: "Selbst ich merke, dass das hier nicht hingeh\xF6rt\u2026 Und ich bin nur
-      eine k\xFCnstliche Intelligenz!"
-  - clip: {fileID: 8300000, guid: aac8b358c08aec743a3d3d2265366a59, type: 3}
-    name: StaubsaugerRichtig
-    volume: 1
-    source: {fileID: 0}
-    loop: 0
-    text: Das sieht korrekt aus, weiter so!
-  - clip: {fileID: 8300000, guid: d1743e8d6d098364da6ddd749893f0f1, type: 3}
-    name: StaubsaugerAbgeschlossen
-    volume: 1
-    source: {fileID: 0}
-    loop: 0
-    text: Der Staubsauger kann wieder saugen, toll gemacht!
-  - clip: {fileID: 8300000, guid: 578e3a54ceb28434aa69258c813b2643, type: 3}
-    name: SchlafzimmerErstesBetreten
-    volume: 1
-    source: {fileID: 0}
-    loop: 0
-    text: Das Schlafzimmer.  Zum Hinlegen ist jetzt keine Zeit! Das Radio scheint
-      kaputt zu sein.
-  - clip: {fileID: 8300000, guid: 6f7ad77c9ee4937428aeb1448c55d5cf, type: 3}
-    name: WohnzimmerErstesBetreten
-    volume: 1
-    source: {fileID: 0}
-    loop: 0
-    text: Der Fernseher sieht kaputt aus. Vielleicht auch besser so. Zddddddefeeit
-      zum Fernsehen hast du jetzt sowieso nicht.
-  - clip: {fileID: 8300000, guid: 8a2fdd9223e86ad4fb0529fca7e5c34d, type: 3}
-    name: VersuchsNochmal1
-    volume: 1
-    source: {fileID: 0}
-    loop: 0
-    text: Versuch es nochmal.
-  - clip: {fileID: 8300000, guid: a8c3ac819067dde48a79c8058dd74286, type: 3}
-    name: VersuchsNochmal2
-    volume: 1
-    source: {fileID: 0}
-    loop: 0
-    text: Versuch es nochmal.
-  - clip: {fileID: 8300000, guid: b74190ae1ffc81a40a575e521f0857ae, type: 3}
-    name: VersuchsNochmal3
-    volume: 1
-    source: {fileID: 0}
-    loop: 0
-    text: Versuch es nochmal.
-  speechBubble: {fileID: 781690238}
---- !u!4 &551095739
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 3475770902594063361, guid: 80992b2a705a22a46b2cc2e53b2543da,
-    type: 3}
-  m_PrefabInstance: {fileID: 559529438}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 551095737}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 2083635402}
-  m_Father: {fileID: 0}
-  m_RootOrder: 9
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &559529438
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 3475770902594063375, guid: 80992b2a705a22a46b2cc2e53b2543da,
-        type: 3}
-      propertyPath: m_Name
-      value: AudioManager 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3475770902594063361, guid: 80992b2a705a22a46b2cc2e53b2543da,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3475770902594063361, guid: 80992b2a705a22a46b2cc2e53b2543da,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3475770902594063361, guid: 80992b2a705a22a46b2cc2e53b2543da,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3475770902594063361, guid: 80992b2a705a22a46b2cc2e53b2543da,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3475770902594063361, guid: 80992b2a705a22a46b2cc2e53b2543da,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3475770902594063361, guid: 80992b2a705a22a46b2cc2e53b2543da,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3475770902594063361, guid: 80992b2a705a22a46b2cc2e53b2543da,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3475770902594063361, guid: 80992b2a705a22a46b2cc2e53b2543da,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 3475770902594063361, guid: 80992b2a705a22a46b2cc2e53b2543da,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3475770902594063361, guid: 80992b2a705a22a46b2cc2e53b2543da,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3475770902594063361, guid: 80992b2a705a22a46b2cc2e53b2543da,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 80992b2a705a22a46b2cc2e53b2543da, type: 3}
 --- !u!1 &661838897
 GameObject:
   m_ObjectHideFlags: 0
@@ -2351,8 +1921,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Heizstab
   info: 
-  available: 0
-  found: 0
+  status: 0
+  inventoryItem: 1
 --- !u!114 &661838902
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2389,100 +1959,6 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 661838897}
-  m_CullTransparentMesh: 0
---- !u!1 &684849059
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 6016450849677581252, guid: 80992b2a705a22a46b2cc2e53b2543da,
-    type: 3}
-  m_PrefabInstance: {fileID: 559529438}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 684849060}
-  - component: {fileID: 684849063}
-  - component: {fileID: 684849062}
-  - component: {fileID: 684849061}
-  m_Layer: 5
-  m_Name: Panel
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &684849060
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 7125463247053532751, guid: 80992b2a705a22a46b2cc2e53b2543da,
-    type: 3}
-  m_PrefabInstance: {fileID: 559529438}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 684849059}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1141349521}
-  m_Father: {fileID: 781690241}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 41.268, y: 0.025024414}
-  m_SizeDelta: {x: -198.46, y: -29.4}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &684849061
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 4063024543565769557, guid: 80992b2a705a22a46b2cc2e53b2543da,
-    type: 3}
-  m_PrefabInstance: {fileID: 559529438}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 684849059}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1200242548, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_ShowMaskGraphic: 0
---- !u!114 &684849062
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 1011551120069468769, guid: 80992b2a705a22a46b2cc2e53b2543da,
-    type: 3}
-  m_PrefabInstance: {fileID: 559529438}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 684849059}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
---- !u!222 &684849063
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 5166582672965030467, guid: 80992b2a705a22a46b2cc2e53b2543da,
-    type: 3}
-  m_PrefabInstance: {fileID: 559529438}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 684849059}
   m_CullTransparentMesh: 0
 --- !u!1 &695338940
 GameObject:
@@ -2538,8 +2014,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Staubsaugerbeutel
   info: 
-  available: 0
-  found: 0
+  status: 0
+  inventoryItem: 0
 --- !u!114 &695338943
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2594,7 +2070,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1630361976}
         m_MethodName: Play
         m_Mode: 5
         m_Arguments:
@@ -2672,7 +2148,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
+        - m_Target: {fileID: 1630361976}
           m_MethodName: Play
           m_Mode: 5
           m_Arguments:
@@ -2903,8 +2379,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Lampe
   info: 
-  available: 0
-  found: 0
+  status: 0
+  inventoryItem: 1
 --- !u!114 &699138848
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2942,86 +2418,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 699138843}
   m_CullTransparentMesh: 0
---- !u!1 &781690238
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 3118910266766277152, guid: 80992b2a705a22a46b2cc2e53b2543da,
-    type: 3}
-  m_PrefabInstance: {fileID: 559529438}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 781690241}
-  - component: {fileID: 781690240}
-  - component: {fileID: 781690239}
-  m_Layer: 5
-  m_Name: TextBubble
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!114 &781690239
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 8288467621336498502, guid: 80992b2a705a22a46b2cc2e53b2543da,
-    type: 3}
-  m_PrefabInstance: {fileID: 559529438}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 781690238}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: a21ff00ecc3240b4795296551bafb592, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
---- !u!222 &781690240
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 6923025373750911014, guid: 80992b2a705a22a46b2cc2e53b2543da,
-    type: 3}
-  m_PrefabInstance: {fileID: 559529438}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 781690238}
-  m_CullTransparentMesh: 0
---- !u!224 &781690241
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 8169896506924890399, guid: 80992b2a705a22a46b2cc2e53b2543da,
-    type: 3}
-  m_PrefabInstance: {fileID: 559529438}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 781690238}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 684849060}
-  - {fileID: 1339009836}
-  m_Father: {fileID: 2083635402}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 394, y: 73}
-  m_SizeDelta: {x: 768.76, y: 133.7}
-  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &803620280
 GameObject:
   m_ObjectHideFlags: 0
@@ -3212,8 +2608,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Eingangsfilter
   info: 
-  available: 0
-  found: 0
+  status: 0
+  inventoryItem: 1
 --- !u!114 &803620285
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3307,7 +2703,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
+        - m_Target: {fileID: 1630361976}
           m_MethodName: Play
           m_Mode: 5
           m_Arguments:
@@ -3391,7 +2787,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1630361976}
         m_MethodName: Play
         m_Mode: 5
         m_Arguments:
@@ -3504,7 +2900,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
+        - m_Target: {fileID: 1630361976}
           m_MethodName: Play
           m_Mode: 5
           m_Arguments:
@@ -3559,8 +2955,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Heizstab
   info: 
-  available: 0
-  found: 0
+  status: 0
+  inventoryItem: 0
 --- !u!114 &966223192
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3615,7 +3011,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1630361976}
         m_MethodName: Play
         m_Mode: 5
         m_Arguments:
@@ -3866,8 +3262,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: "Verst\xE4rker"
   info: 
-  available: 0
-  found: 0
+  status: 0
+  inventoryItem: 1
 --- !u!114 &969184018
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4174,8 +3570,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Demodulator
   info: 
-  available: 0
-  found: 0
+  status: 0
+  inventoryItem: 1
 --- !u!114 &1016340889
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4287,89 +3683,6 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1059670030}
-  m_CullTransparentMesh: 0
---- !u!1 &1141349520
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 7641430066593660642, guid: 80992b2a705a22a46b2cc2e53b2543da,
-    type: 3}
-  m_PrefabInstance: {fileID: 559529438}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1141349521}
-  - component: {fileID: 1141349523}
-  - component: {fileID: 1141349522}
-  m_Layer: 5
-  m_Name: Text
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1141349521
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 1720481954650477617, guid: 80992b2a705a22a46b2cc2e53b2543da,
-    type: 3}
-  m_PrefabInstance: {fileID: 559529438}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1141349520}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 684849060}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2.67, y: -139.5}
-  m_SizeDelta: {x: 563.6, y: 361.6}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1141349522
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 6449067737645798121, guid: 80992b2a705a22a46b2cc2e53b2543da,
-    type: 3}
-  m_PrefabInstance: {fileID: 559529438}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1141349520}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 22
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 0
-    m_MaxSize: 59
-    m_Alignment: 0
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: New Text
---- !u!222 &1141349523
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 1465735468397293049, guid: 80992b2a705a22a46b2cc2e53b2543da,
-    type: 3}
-  m_PrefabInstance: {fileID: 559529438}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1141349520}
   m_CullTransparentMesh: 0
 --- !u!1 &1184192952
 GameObject:
@@ -4660,8 +3973,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Saugturbine
   info: 
-  available: 0
-  found: 0
+  status: 0
+  inventoryItem: 1
 --- !u!114 &1194967563
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4964,8 +4277,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Rohr
   info: 
-  available: 0
-  found: 0
+  status: 0
+  inventoryItem: 1
 --- !u!114 &1229566759
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5077,185 +4390,6 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1313700201}
-  m_CullTransparentMesh: 0
---- !u!1 &1339009835
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 1242679400534428023, guid: 80992b2a705a22a46b2cc2e53b2543da,
-    type: 3}
-  m_PrefabInstance: {fileID: 559529438}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1339009836}
-  - component: {fileID: 1339009840}
-  - component: {fileID: 1339009839}
-  - component: {fileID: 1339009838}
-  - component: {fileID: 1339009837}
-  m_Layer: 5
-  m_Name: Button
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1339009836
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 2823481037152175436, guid: 80992b2a705a22a46b2cc2e53b2543da,
-    type: 3}
-  m_PrefabInstance: {fileID: 559529438}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1339009835}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 781690241}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 375, y: 44.65}
-  m_SizeDelta: {x: 44.4, y: 44.4}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1339009837
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 11520915160517410, guid: 80992b2a705a22a46b2cc2e53b2543da,
-    type: 3}
-  m_PrefabInstance: {fileID: 559529438}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1339009835}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 0
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 551095738}
-          m_MethodName: Play
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Hover
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
-        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
---- !u!114 &1339009838
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 9064516468143932351, guid: 80992b2a705a22a46b2cc2e53b2543da,
-    type: 3}
-  m_PrefabInstance: {fileID: 559529438}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1339009835}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 1, g: 0.30980393, b: 0.32156864, a: 1}
-    m_PressedColor: {r: 1, g: 0.9882353, b: 0.42352942, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 1339009839}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 551095738}
-        m_MethodName: StopDialog
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 551095738}
-        m_MethodName: Play
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Click
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
---- !u!114 &1339009839
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 7803524821660225217, guid: 80992b2a705a22a46b2cc2e53b2543da,
-    type: 3}
-  m_PrefabInstance: {fileID: 559529438}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1339009835}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 731a44447a91fc142909062e541797a5, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
---- !u!222 &1339009840
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 1894793793204641918, guid: 80992b2a705a22a46b2cc2e53b2543da,
-    type: 3}
-  m_PrefabInstance: {fileID: 559529438}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1339009835}
   m_CullTransparentMesh: 0
 --- !u!1 &1414827786
 GameObject:
@@ -5528,8 +4662,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Lautsprecher
   info: 
-  available: 0
-  found: 0
+  status: 0
+  inventoryItem: 1
 --- !u!114 &1490505679
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5907,8 +5041,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Antenne
   info: 
-  available: 0
-  found: 0
+  status: 0
+  inventoryItem: 1
 --- !u!114 &1594769360
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6318,8 +5452,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Fernseherkabel
   info: 
-  available: 0
-  found: 0
+  status: 0
+  inventoryItem: 1
 --- !u!114 &1733892035
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6911,8 +6045,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Staubsaugerbeutel
   info: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-  available: 0
-  found: 0
+  status: 0
+  inventoryItem: 1
 --- !u!114 &1937283777
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7043,110 +6177,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7bdf73b497551246ab4fa45b293e6f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &2083635401
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 4064632508937288452, guid: 80992b2a705a22a46b2cc2e53b2543da,
-    type: 3}
-  m_PrefabInstance: {fileID: 559529438}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2083635402}
-  - component: {fileID: 2083635405}
-  - component: {fileID: 2083635404}
-  - component: {fileID: 2083635403}
-  m_Layer: 5
-  m_Name: Canvas
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &2083635402
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 8489062230740427901, guid: 80992b2a705a22a46b2cc2e53b2543da,
-    type: 3}
-  m_PrefabInstance: {fileID: 559529438}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2083635401}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
-  m_Children:
-  - {fileID: 781690241}
-  m_Father: {fileID: 551095739}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0, y: 0}
---- !u!114 &2083635403
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 4323452474224347001, guid: 80992b2a705a22a46b2cc2e53b2543da,
-    type: 3}
-  m_PrefabInstance: {fileID: 559529438}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2083635401}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1301386320, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_IgnoreReversedGraphics: 1
-  m_BlockingObjects: 0
-  m_BlockingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
---- !u!114 &2083635404
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 1445600602447968573, guid: 80992b2a705a22a46b2cc2e53b2543da,
-    type: 3}
-  m_PrefabInstance: {fileID: 559529438}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2083635401}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_UiScaleMode: 1
-  m_ReferencePixelsPerUnit: 100
-  m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
-  m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
-  m_PhysicalUnit: 3
-  m_FallbackScreenDPI: 96
-  m_DefaultSpriteDPI: 96
-  m_DynamicPixelsPerUnit: 1
---- !u!223 &2083635405
-Canvas:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 948538276143459304, guid: 80992b2a705a22a46b2cc2e53b2543da,
-    type: 3}
-  m_PrefabInstance: {fileID: 559529438}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2083635401}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
-  m_PlaneDistance: 100
-  m_PixelPerfect: 0
-  m_ReceivesEvents: 1
-  m_OverrideSorting: 0
-  m_OverridePixelPerfect: 0
-  m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 0
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
-  m_TargetDisplay: 0
 --- !u!1001 &1481997311353162727
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7273,7 +6303,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1630361976}
     - target: {fileID: 1481997310654995337, guid: 0496cab47cc3cad468e0794176148a0c,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
@@ -7333,7 +6363,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1630361976}
     - target: {fileID: 1481997310654995338, guid: 0496cab47cc3cad468e0794176148a0c,
         type: 3}
       propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -7626,7 +6656,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1630361976}
     - target: {fileID: 7931688347801715146, guid: 35d4a5d1504ac0145ab9353381aae94e,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
@@ -7686,7 +6716,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1630361976}
     - target: {fileID: 7931688347801715147, guid: 35d4a5d1504ac0145ab9353381aae94e,
         type: 3}
       propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -7856,7 +6886,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1630361976}
     - target: {fileID: 9101429370584162955, guid: 4a2068494e7aff749b8d1e9a65d2c33c,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
@@ -7916,7 +6946,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1630361976}
     - target: {fileID: 9101429370584162950, guid: 4a2068494e7aff749b8d1e9a65d2c33c,
         type: 3}
       propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
