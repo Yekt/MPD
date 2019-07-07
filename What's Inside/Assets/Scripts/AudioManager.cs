@@ -42,32 +42,19 @@ public class AudioManager : MonoBehaviour {
    public void Play(string name){
 	   Audio a = Array.Find(sounds, sound => sound.name == name);
 	   //Debug.Log(name);
-	   if(a != null) a.source.Play();
+	   if (a != null)
+	   {
+		   a.source.Play();
+		   if (a.text.Length > 0)
+		   {
+			   speechBubble.transform.GetChild(0).transform.GetChild(0).GetComponent<Text>().text = a.text;
+			   speechBubble.SetActive(true);
+		   }
+	   }
 	   else Debug.LogWarning("sound " + name + " not found!");
    }
 
-   public void PlayDialog(string name)
-   {
-	   Debug.Log("drin");
-	   if (!dialogPlays)
-	   {
-		   Audio a = Array.Find(sounds, sound => sound.name == name);
-		   if (a != null)
-		   {
-			   a.source.Play();
-			   dialogPlays = true;
-			   if (a.text.Length > 0)
-			   {
-				   speechBubble.transform.GetChild(0).transform.GetChild(0).GetComponent<Text>().text = a.text;
-				   speechBubble.SetActive(true);
-			   }
-		   }
-		   else
-		   {
-			   Debug.Log("kein file");
-		   }
-	   }
-   }
+
 
    public void StopDialog()
    {
