@@ -32,6 +32,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/miniGames/vacuumCleaner.unity
     guid: 3088c9412a8293c4a81209db8886a597
+  - enabled: 1
+    path: Assets/Scenes/miniGames/radio.unity
+    guid: 8389d302c5c1cbe40b0e4a244f489700
   - enabled: 0
     path: Assets/Scenes/InventoryTest.unity
     guid: 2cda990e2423bbf4892e6590ba056729
