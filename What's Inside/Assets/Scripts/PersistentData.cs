@@ -15,6 +15,12 @@ public class PersistentData : MonoBehaviour {
 	
 	public bool vacuumFixed;
     public bool radioFixed;
+    public bool ovenFixed;
+    public bool tvFixed;
+    public bool enteredHallway;
+    public bool enteredKitchen;
+    public bool enteredDorm;
+    public bool enteredLivingroom;
 	
 	
 	private void Awake(){
@@ -29,7 +35,13 @@ public class PersistentData : MonoBehaviour {
 			volume = 0.5f;
 			vacuumFixed = false;
             radioFixed = false;
-		}
+            ovenFixed = false;
+            tvFixed = false;
+            enteredHallway = false;
+            enteredKitchen = false;
+            enteredDorm = false;
+            enteredLivingroom = false;
+}
 		else Destroy(gameObject);
 	}
 }

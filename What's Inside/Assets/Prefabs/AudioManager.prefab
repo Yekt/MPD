@@ -100,7 +100,7 @@ MonoBehaviour:
     source: {fileID: 0}
     loop: 0
   - clip: {fileID: 8300000, guid: 4354f6c9d3f5330458be2fda4a24cad0, type: 3}
-    name: FlurErstesBetresten1
+    name: FlurErstesBetreten1
     volume: 1
     source: {fileID: 0}
     loop: 0

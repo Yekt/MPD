@@ -1,9 +1,6 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using System;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using System.Linq;
 
 public class SceneChangerAnimated : MonoBehaviour {
 	
@@ -42,7 +39,51 @@ public class SceneChangerAnimated : MonoBehaviour {
 	private void onFadeComplete(){
 		//print()
 		SceneManager.LoadScene(nextScene);
+
+        aelexaTalk();        
 	}
+
+    private void aelexaTalk()
+    {
+        PersistentData persistentData = PersistentData.Instance;
+        AudioManager audioManager = AudioManager.Instance;
+        switch (nextScene) {
+            case (3):   // Flur
+                if (!persistentData.enteredHallway) {
+                    persistentData.enteredHallway = true;
+                    audioManager.Play("FlurErstesBetreten1");
+                }
+                else {
+                    audioManager.Play("FlurBetreten");
+                }
+                break;
+            case (4):   // Schlafzimmer
+                if (!persistentData.enteredDorm)
+                {
+                    persistentData.enteredDorm = true;
+                    audioManager.Play("SchlafzimmerErstesBetreten");
+                }
+                break;
+            case (5):   // Wohnzimmer
+                if (!persistentData.enteredLivingroom)
+                {
+                    persistentData.enteredLivingroom = true;
+                    audioManager.Play("WohnzimmerErstesBetreten");
+                }
+                break;
+            case (6):   // Küche
+                if (!persistentData.ovenFixed)
+                {
+                    persistentData.enteredKitchen = true;
+                    audioManager.Play("KuecheErstesBetreten");
+                }
+                else
+                {
+                    audioManager.Play("KuecheBetreten");
+                }
+                break;
+        }
+    }
 	
 	private void print(){
 		string str = "sceneLog:";
