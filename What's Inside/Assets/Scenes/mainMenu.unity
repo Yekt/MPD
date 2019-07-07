@@ -1733,15 +1733,15 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3270636250712195151, guid: 6f0687fe9a709b447855cd9c5047024e,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -0.5999756
-      objectReference: {fileID: 0}
     - target: {fileID: 9204639095623475727, guid: 6f0687fe9a709b447855cd9c5047024e,
         type: 3}
       propertyPath: m_Name
       value: AudioManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 9204639095623475712, guid: 6f0687fe9a709b447855cd9c5047024e,
+        type: 3}
+      propertyPath: sounds.Array.data[0].loop
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9204639095623475713, guid: 6f0687fe9a709b447855cd9c5047024e,
         type: 3}
@@ -1798,15 +1798,40 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 9204639095623475712, guid: 6f0687fe9a709b447855cd9c5047024e,
+    - target: {fileID: 7262477821260420128, guid: 6f0687fe9a709b447855cd9c5047024e,
         type: 3}
-      propertyPath: sounds.Array.data[0].loop
-      value: 1
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3270636250712195151, guid: 6f0687fe9a709b447855cd9c5047024e,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.5999756
+      objectReference: {fileID: 0}
+    - target: {fileID: 6368503829178366513, guid: 6f0687fe9a709b447855cd9c5047024e,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6368503829178366513, guid: 6f0687fe9a709b447855cd9c5047024e,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 558.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6368503829178366513, guid: 6f0687fe9a709b447855cd9c5047024e,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -141
+      objectReference: {fileID: 0}
+    - target: {fileID: 6368503829178366513, guid: 6f0687fe9a709b447855cd9c5047024e,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 358.6
       objectReference: {fileID: 0}
     - target: {fileID: 1656948308297530601, guid: 6f0687fe9a709b447855cd9c5047024e,
         type: 3}
       propertyPath: m_FontData.m_FontSize
-      value: 27
+      value: 20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6f0687fe9a709b447855cd9c5047024e, type: 3}
