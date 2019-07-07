@@ -6,6 +6,7 @@ public class VacuumComponent : MonoBehaviour
     public GameObject component;
     public GameObject position;
     public GameObject solution;
+    public string name;
     [HideInInspector]
     private Vector3 startPosition;
 

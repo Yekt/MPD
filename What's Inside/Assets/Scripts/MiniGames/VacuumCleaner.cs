@@ -31,11 +31,26 @@ public class VacuumCleaner : MonoBehaviour
                     component.solution.SetActive(true);
                     toRemove = component;
                     //TODO Älexa: Minispiel-Staubsauger_Richtiges-Bauteil-Ausgewählt
+                    switch (component.name)
+                    {
+                        case "Rohr":
+                            AudioManager.Instance.Play("StaubsaugerRohrAbgeschlossen");
+                            break;
+                        case "Filter":
+                            AudioManager.Instance.Play("StaubsaugerFilterAbgeschlossen");
+                            break;
+                        case "Staubsaugerbeutel":
+                            AudioManager.Instance.Play("StaubsaugerBeutelAbgeschlossen");
+                            break;
+                        case "Saugturbine":
+                            AudioManager.Instance.Play("StaubsaugerTurbineAbgeschlossen");
+                            break;
+                    }
                 }
                 if (ComponentPlacedInWrongPosition(component))
                 {
                     component.ResetPosition();
-                    //TODO Älexa: Minispiel-Staubsauger_Falsches-Bauteil-Ausgewählt
+                    AudioManager.Instance.Play("VersuchsNochmal1");
                 }
                 if (toRemove != null)
                 {
@@ -46,6 +61,8 @@ public class VacuumCleaner : MonoBehaviour
                 if (components.Count == 0)
                 {
                     PersistentData.Instance.vacuumFixed = true;
+                    AudioManager.Instance.Play("StaubsaugerAbgeschlossen");
+                    // TODO Items aus dem Inventar löschen und neues Item hinzufügen
                 }
             }
         }
