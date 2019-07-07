@@ -11,7 +11,6 @@ public class AudioManager : MonoBehaviour {
 	public Audio[] sounds;
 	
 	private float lastVolume;
-	private bool dialogPlays = false;
 	public GameObject speechBubble;
 	
 	void Start(){
@@ -40,13 +39,17 @@ public class AudioManager : MonoBehaviour {
 	}
 	
    public void Play(string name){
+	   Debug.Log("searches audio");
 	   Audio a = Array.Find(sounds, sound => sound.name == name);
 	   //Debug.Log(name);
 	   if (a != null)
 	   {
+		   Debug.Log("plays audio");
 		   a.source.Play();
+		   
 		   if (a.text.Length > 0)
 		   {
+			   Debug.Log("sets Text");
 			   speechBubble.transform.GetChild(0).transform.GetChild(0).GetComponent<Text>().text = a.text;
 			   speechBubble.SetActive(true);
 		   }

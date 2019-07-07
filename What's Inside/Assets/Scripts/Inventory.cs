@@ -40,7 +40,7 @@ public class Inventory : MonoBehaviour
 	void Update(){
 		if(Input.GetKeyDown(KeyCode.I)){
 			int s = SceneManager.GetActiveScene().buildIndex;
-			if (itemWin.active)
+			if (itemWin)
 			{
 				itemWin.SetActive(false);
 				textWin.SetActive(false);
