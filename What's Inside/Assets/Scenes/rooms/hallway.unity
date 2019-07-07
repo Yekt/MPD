@@ -569,7 +569,17 @@ PrefabInstance:
     - target: {fileID: 9204639095623475712, guid: 6f0687fe9a709b447855cd9c5047024e,
         type: 3}
       propertyPath: sounds.Array.data[47].text
-      value: 
+      value: Versuch es nochmal.
+      objectReference: {fileID: 0}
+    - target: {fileID: 9204639095623475712, guid: 6f0687fe9a709b447855cd9c5047024e,
+        type: 3}
+      propertyPath: sounds.Array.data[48].text
+      value: Versuch es nochmal.
+      objectReference: {fileID: 0}
+    - target: {fileID: 9204639095623475712, guid: 6f0687fe9a709b447855cd9c5047024e,
+        type: 3}
+      propertyPath: sounds.Array.data[49].text
+      value: Versuch es nochmal.
       objectReference: {fileID: 0}
     - target: {fileID: 3270636250712195151, guid: 6f0687fe9a709b447855cd9c5047024e,
         type: 3}
