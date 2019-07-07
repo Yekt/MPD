@@ -39,7 +39,7 @@ public class LightBulb : OvenComponent
                 {
                     lightBulbOn.SetActive(true);
                     counter += 1;
-                    if (counter == 5)
+                    if (counter == 15)
                     {
                         isCompleted = true;
                     }
