@@ -38,4 +38,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/miniGames/fernseher.unity
     guid: 4e568ed628af7a742a65058806111f47
+  - enabled: 1
+    path: Assets/Scenes/miniGames/oven.unity
+    guid: cdc43dc43581c074da8408a38dd249d0
   m_configObjects: {}

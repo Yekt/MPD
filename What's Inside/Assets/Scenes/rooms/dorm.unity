@@ -359,12 +359,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96880b6108a419f4c87c9533d146ad5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  items:
+  dumbFuckers:
   - Antenne
   - Demodulator
   - Eingangsfilter
-  - Lautsprecher
   - "Verst\xE4rker"
+  - Lautsprecher
   szene: 9
   sceneChanger: {fileID: 947472125}
 --- !u!1001 &126189250

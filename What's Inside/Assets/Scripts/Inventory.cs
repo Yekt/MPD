@@ -140,7 +140,9 @@ public class Inventory : MonoBehaviour
 		foreach (GameObject itemObject in items){
 			Item item = itemObject.GetComponent<Item>();
             if (item.name.Equals(name)) {
+                //Debug.Log(name + ":");
                 if (item.status != Item.Status.AVAILABLE) {
+                    //Debug.Log("found in invetory");
                     return true;
                 }
             }

@@ -981,7 +981,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96880b6108a419f4c87c9533d146ad5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  items:
+  dumbFuckers:
   - Fernseherkabel
   szene: 10
   sceneChanger: {fileID: 857042594}

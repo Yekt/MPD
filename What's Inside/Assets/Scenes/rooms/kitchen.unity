@@ -752,7 +752,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96880b6108a419f4c87c9533d146ad5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  items:
+  dumbFuckers:
   - Lampe
   - Ventilator
   - Heizstab
@@ -1740,8 +1740,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 488.3, y: -171.3}
-  m_SizeDelta: {x: 145.8, y: 145.8}
+  m_AnchoredPosition: {x: 451.6, y: -125.1}
+  m_SizeDelta: {x: 185.6, y: 178.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2095955158
 MonoBehaviour:

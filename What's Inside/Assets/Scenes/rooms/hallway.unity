@@ -337,15 +337,15 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1606559277}
-        m_MethodName: loadScene
-        m_Mode: 3
+      - m_Target: {fileID: 1630361976}
+        m_MethodName: Play
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 8
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Click
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 2071440727}
@@ -434,11 +434,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96880b6108a419f4c87c9533d146ad5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  items:
-  - Rohr
-  - Staubsaugerbeutel
+  dumbFuckers:
   - Filter
+  - Staubsaugerbeutel
   - Saugturbine
+  - Rohr
   szene: 8
   sceneChanger: {fileID: 1606559277}
 --- !u!1001 &177211877
@@ -1075,6 +1075,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_ScrollSensitivity
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 223617532095796103, guid: 150c478ef8ef0ce45932115c3703585f,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 70
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 150c478ef8ef0ce45932115c3703585f, type: 3}
@@ -2663,7 +2668,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: d2ec65af4f1cb66498ebe07d4d8b471f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: beda5458d8ee9de40a7faf4e78ea844e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3320,7 +3325,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: d2ec65af4f1cb66498ebe07d4d8b471f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e2ae251e19f75214f8149ea8e9667703, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3632,7 +3637,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: d2ec65af4f1cb66498ebe07d4d8b471f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 608c4795e49ea6841adb6bc34a0b7c6b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

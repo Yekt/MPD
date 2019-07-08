@@ -616,10 +616,9 @@ MonoBehaviour:
     volume: 1
     source: {fileID: 0}
     loop: 0
-    text: "Das ist doch dein Mitbewohner. Anscheinend wollte er dich pranken!  Zum
-      Gl\xFCck ist nichts Schlimmeres passiert!  Man sollte Elektroger\xE4te niemals
-      alleine auseinanderschrauben, schon gar nicht, wenn sie an den Strom angeschlossen
-      sind. "
+    text: "Das ist doch dein Mitbewohner. Anscheinend wollte er dich pranken! Man
+      sollte Elektroger\xE4te niemals alleine auseinanderschrauben, schon gar nicht,
+      wenn sie an den Strom angeschlossen sind. "
   speechBubble: {fileID: 3118910266766277152}
 --- !u!1 &4064632508937288452
 GameObject:

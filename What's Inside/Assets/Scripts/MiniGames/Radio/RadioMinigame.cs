@@ -122,6 +122,7 @@ public class RadioMinigame : MonoBehaviour {
             while (newQuestion.solved)
             {
                 currentQuestion = (currentQuestion + 1) % 5;
+                newQuestion = questions[currentQuestion];
             }
             askQuestion();
         }
