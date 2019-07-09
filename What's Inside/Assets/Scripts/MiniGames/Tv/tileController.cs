@@ -12,6 +12,8 @@ public class tileController : MonoBehaviour
     public tileHandler[,] tiles;
     public GameObject controller;
 
+    private float timerSpeed = 15f;
+
     GameObject[] tmpTiles;
 
     // Start is called before the first frame update
@@ -39,9 +41,9 @@ public class tileController : MonoBehaviour
                 counter++;
             }
         }
-        
-        
 
+
+        InvokeRepeating("rerollTiles", timerSpeed, timerSpeed);
     }
 
     // Update is called once per frame
