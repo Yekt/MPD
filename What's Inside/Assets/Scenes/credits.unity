@@ -696,8 +696,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -349, y: -648}
-  m_SizeDelta: {x: 538.3, y: 1551.4}
+  m_AnchoredPosition: {x: -349, y: -733.2}
+  m_SizeDelta: {x: 538.3, y: 1721.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1394146961
 MonoBehaviour:
@@ -733,7 +733,7 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "Developed by\n\n\n\nGraphics Design\n\n\nStory and Sound\n\n\nLead Developer\n\n\n\nMusic
-    by\n\nSounds from\n\n\n\n\n\xC4lexa voiced by"
+    by\n\nSounds from\n\n\n\n\n\n\n\n\n\xC4lexa voiced by"
 --- !u!222 &1394146962
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1453,8 +1453,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 529, y: -648.05}
-  m_SizeDelta: {x: 906.5, y: 1551.3}
+  m_AnchoredPosition: {x: 529, y: -733.2}
+  m_SizeDelta: {x: 906.5, y: 1721.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &2065596323
 Animator:
@@ -1510,8 +1510,9 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: "Gruppe Eins\n\n\n\nMarkus Vogel \nMaximilian Taube  \r \r\n\nTill Simon
     Michels \nBenjamin Strathmeier  \r\n\nLukas Sauter\nRobert Ludwig  \r\n\n\nwww.bensound.com\n\nwww.freesound.org\n\"Wet
-    Click\" by Breviceps\n\"Hover 1\" by plasterbrain\n\"dorm door opening\" by pagancow\n\nLuzia
-    Franke\n"
+    Click\" by Breviceps\n\"Hover 1\" by plasterbrain\n\"dorm door opening\" by pagancow\n\"Toilet
+    Flushing\" by lorenzgillner\n\"ui interface positive\" by JavierZumer\n\"Inharmonic
+    Negative Backwards Caution Sound\" by Heshl\n\nLuzia Franke\n"
 --- !u!222 &2065596325
 CanvasRenderer:
   m_ObjectHideFlags: 0

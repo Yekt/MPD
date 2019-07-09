@@ -95,4 +95,12 @@ public class AudioManager : MonoBehaviour {
 	   }
 	   lastVolume = volume;
    }
+
+    public void giveHint()
+    {
+        Play("Click");
+        if (!PersistentData.Instance.vacuumFixed) Play("milestone1+2");
+        else if (PersistentData.Instance.radioFixed) Play("milestone23");
+        else Play("Milestone22");
+    }
 }
