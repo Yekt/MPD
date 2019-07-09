@@ -38,11 +38,13 @@ public class AudioManager : MonoBehaviour {
 			AdjustVolume(PersistentData.Instance.volume);
 	}
 	
-   public void Play(string name){
+   public void Play(string name) {
 	   Audio a = Array.Find(sounds, sound => sound.name == name);
 	   //Debug.Log(name);
 	   if (a != null)
 	   {
+           if (!name.Equals("Hover") && !name.Equals("Click") && !name.Equals("AmbientMusic")) Stop();
+
 		   a.source.Play();
 		   
 		   if (a.text.Length > 0)
@@ -54,11 +56,17 @@ public class AudioManager : MonoBehaviour {
 	   else Debug.LogWarning("sound " + name + " not found!");
    }
 
+    public void Stop() {
+        foreach (Audio a in sounds) {
+            if (!a.name.Equals("AmbientMusic")) a.source.Stop();
+        }
+        StopDialog();
+    }
+
 
 
    public void StopDialog()
    {
-	   // todo: audio stoppen wenns läuft, Sprechblase ausblenden
 	   speechBubble.SetActive(false);
    }
 
