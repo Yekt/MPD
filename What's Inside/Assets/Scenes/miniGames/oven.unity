@@ -643,6 +643,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1050658850}
   - component: {fileID: 1050658851}
+  - component: {fileID: 1050658852}
   m_Layer: 0
   m_Name: Ventilator
   m_TagString: Untagged
@@ -712,6 +713,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1050658852
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1050658849}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.5590403}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.89, y: 1.89}
+    newSize: {x: 1.89, y: 1.89}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.00808, y: 3.00808}
+  m_EdgeRadius: 0
 --- !u!1 &1300635432
 GameObject:
   m_ObjectHideFlags: 0
@@ -1252,7 +1279,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.066435546, y: -0.13287067}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1263,7 +1290,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.43, y: 2.8}
+  m_Size: {x: 1.3600979, y: 4.6018295}
   m_EdgeRadius: 0
 --- !u!1 &1729550933
 GameObject:
@@ -1505,7 +1532,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.036868423, y: -0.11060476}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1516,7 +1543,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.43, y: 2.8}
+  m_Size: {x: 1.1526179, y: 4.6029434}
   m_EdgeRadius: 0
 --- !u!1 &1847827308
 GameObject:
@@ -1832,6 +1859,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isCompleted: 0
   ventilator: {fileID: 1050658849}
+  angle: 0
+  speed: 0
 --- !u!1 &2120066886
 GameObject:
   m_ObjectHideFlags: 0

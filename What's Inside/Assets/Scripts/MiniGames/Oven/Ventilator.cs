@@ -5,22 +5,16 @@ using UnityEngine;
 public class Ventilator : OvenComponent
 {
     public GameObject ventilator;
-    private float angle;
-    private float speed;
+    public float angle;
+    public float speed;
     private float decibel;
     private int timeCounter;
 
     // Start is called before the first frame update
     void Start()
     {
-        angle = 0;
-
-        //if (Microphone.devices.Length == 0)
-        //{
-            angle = 0;
-            speed = 10;
-            isCompleted = true;
-        //}
+        angle = 360;
+        speed = 0f;
     }
 
     // Update is called once per frame
@@ -28,46 +22,34 @@ public class Ventilator : OvenComponent
     {
         if (isCompleted)
         {
-            angle = (angle + 10) % 360;
+            angle = (angle + 350) % 360;
             Quaternion rotation = Quaternion.AngleAxis(angle, Vector3.forward);
             ventilator.transform.rotation = rotation;
-        }
-
-        /*timeCounter += 1;
-
-        if (timeCounter == 2000)
-        {
-            angle = 0;
-            speed = 10;
-            isCompleted = true;
-        }*/
-
+        }       
     }
 
     public override void Action()
     {
-        /*angle = (angle + speed) % 360;
-        Quaternion rotation = Quaternion.AngleAxis(angle, Vector3.forward);
-        ventilator.transform.rotation = rotation;
-
-        decibel = 20 * Mathf.Log10(Mathf.Abs(MicInput.MicLoudness));
-
-        //Debug.Log(decibel);
-
-        if (decibel > -20)
+        if (!isCompleted)
         {
-            speed = speed + 0.1f;
-        } else
-        {
-            if (speed >= 0.1)
+            if (Input.GetMouseButton(0))
             {
-                speed = speed - 0.1f;
+                Vector2 position = new Vector2(Camera.main.ScreenToWorldPoint(Input.mousePosition).x, Camera.main.ScreenToWorldPoint(Input.mousePosition).y);
+                if (ventilator.GetComponent<Collider2D>().bounds.Contains(position))
+                {
+                    speed += 0.005f;
+                    if (speed >= 4)
+                    {
+                        isCompleted = true;
+                        AudioManager.Instance.Play("OfenVentilatorAbgeschlossen");
+                    }
+
+                    Vector2 direction = Camera.main.ScreenToWorldPoint(Input.mousePosition) - ventilator.transform.position;
+                    angle = (Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg + 360) % 360;
+                    Quaternion rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+                    ventilator.transform.rotation = Quaternion.Slerp(ventilator.transform.rotation, rotation, speed * Time.deltaTime);
+                }
             }
         }
-        if (speed >= 10)
-        {
-            isCompleted = true;
-            AudioManager.Instance.Play("OfenVentilatorAbgeschlossen");
-        }*/
     }
 }

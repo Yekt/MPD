@@ -6,6 +6,7 @@ public class Oven : MonoBehaviour
 {
     public List<OvenComponent> components = new List<OvenComponent>();
     private OvenComponent toRemove;
+    private bool firstHeatingRodCompleted = false;
 
     // Start is called before the first frame update
     void Start()
@@ -28,14 +29,19 @@ public class Oven : MonoBehaviour
         }
         if (toRemove != null)
         {
+            if (toRemove is HeatingRod && !firstHeatingRodCompleted)
+            {
+                firstHeatingRodCompleted = true;
+            } else if (toRemove is HeatingRod && firstHeatingRodCompleted)
+            {
+                AudioManager.Instance.Play("OfenHeizstabAbgeschlossen");
+            }
             components.Remove(toRemove);
             toRemove = null;
         }
         if (components.Count == 0)
         {
-            //TODO
-            //PersistentData.Instance.ovenFixed = true;
-            //Älexa: Minispiel-Ofen_Minispiel-Abgeschlossen
+            AudioManager.Instance.Play("OfenAbgeschlossen");
             PersistentData.Instance.ovenFixed = true;
             Inventory.Instance.deactivateItem("Lampe");
             Inventory.Instance.deactivateItem("Ventilator");
