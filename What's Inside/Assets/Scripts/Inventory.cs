@@ -51,11 +51,14 @@ public class Inventory : MonoBehaviour
 				ShowText(null);
 				itemWin.SetActive(true);
 				textWin.SetActive(true);
-			}
+
+                SortItems();
+                showItems();
+            }
 		}
-		SortItems();
-		showItems();
-	}
+        //SortItems();
+        //showItems();
+    }
 	
 	
 	private void SortItems(){
@@ -63,14 +66,14 @@ public class Inventory : MonoBehaviour
 		
 		int j = 0;
 		for (int i = 0; i < items.Length; i++){
-			if (items[i].GetComponent<Item>().available){
+			if (items[i].GetComponent<Item>().status == Item.Status.INVENTORY){
 				tmp[j] = items[i];
 				j++;
 			}
 			
 		}
 		for (int i = 0; i < items.Length; i++){
-			if (!items[i].GetComponent<Item>().available){
+			if (items[i].GetComponent<Item>().status != Item.Status.INVENTORY){
 				tmp[j] = items[i];
 				j++;
 			}
@@ -85,7 +88,7 @@ public class Inventory : MonoBehaviour
 			GameObject slot = slots[i];
 			item.transform.SetParent(slot.transform, false);
 			
-			if (item.GetComponent<Item>().available) {
+			if (item.GetComponent<Item>().status == Item.Status.INVENTORY) {
 				//Debug.Log(item.GetComponent<Item>().name + " should be visible in " + slot);
 				item.SetActive(true);
 			}
@@ -97,13 +100,11 @@ public class Inventory : MonoBehaviour
 	public void activateItem(Item newItem){
 		foreach (GameObject itemObject in items){
 			Item item = itemObject.GetComponent<Item>();
-			if (!item.available){
-				if (item.name.Equals(newItem.name)){
-					item.available = true;
-					item.found = true;
-					SortItems();
-					showItems();
-				}
+			if (item.status == Item.Status.AVAILABLE && item.name.Equals(newItem.name))
+            {
+                item.status = Item.Status.INVENTORY;
+				SortItems();
+				showItems();
 			}
 		}
 	}
@@ -112,37 +113,39 @@ public class Inventory : MonoBehaviour
 	{
 		foreach (GameObject itemObject in items){
 			Item item = itemObject.GetComponent<Item>();
-			if (!item.available){
-				if (item.name.Equals(itemName)){
-					item.available = true;
-					item.found = true;
-					SortItems();
-					showItems();
-				}
-			}
-		}
+            if (item.status == Item.Status.AVAILABLE && item.name.Equals(itemName))
+            {
+                item.status = Item.Status.INVENTORY;
+                SortItems();
+                showItems();
+            }
+        }
 	}
 
 	// removes an Item from your inventory after it has been used
 	public void deactivateItem(String itemName){
 		foreach (GameObject itemObject in items){
 			Item item = itemObject.GetComponent<Item>();
-			if (item.available){
-				if (item.name.Equals(itemName)){
-					item.available = false;
-					SortItems();
-					showItems();
-				}
+            //Debug.Log(item.name + ":");
+			if (item.name.Equals(itemName) && item.status == Item.Status.INVENTORY){
+                item.status = Item.Status.USED;
+                itemObject.SetActive(false);
+				SortItems();
+				showItems();
 			}
 		}
 	}
 	
-	public bool wasFound(Item itemInQuestion){
+	public bool wasFound(string name){
 		foreach (GameObject itemObject in items){
 			Item item = itemObject.GetComponent<Item>();
-			if (item.name.Equals(itemInQuestion.name)){
-				return item.found;
-			}
+            if (item.name.Equals(name)) {
+                //Debug.Log(name + ":");
+                if (item.status != Item.Status.AVAILABLE) {
+                    //Debug.Log("found in invetory");
+                    return true;
+                }
+            }
 		}
 		return false;
 	}

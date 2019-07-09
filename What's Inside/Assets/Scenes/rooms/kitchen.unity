@@ -423,7 +423,7 @@ PrefabInstance:
   m_SourcePrefab: {fileID: 100100000, guid: 6f0687fe9a709b447855cd9c5047024e, type: 3}
 --- !u!114 &126189251 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 9204639095623475712, guid: 6f0687fe9a709b447855cd9c5047024e,
+  m_CorrespondingSourceObject: {fileID: 3475770902594063360, guid: 6f0687fe9a709b447855cd9c5047024e,
     type: 3}
   m_PrefabInstance: {fileID: 126189250}
   m_PrefabAsset: {fileID: 0}
@@ -526,6 +526,8 @@ GameObject:
   - component: {fileID: 612101766}
   - component: {fileID: 612101765}
   - component: {fileID: 612101768}
+  - component: {fileID: 612101769}
+  - component: {fileID: 612101770}
   m_Layer: 5
   m_Name: Oven Broken
   m_TagString: Untagged
@@ -594,7 +596,40 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 612101766}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 126189251}
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Click
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1550741723}
+        m_MethodName: setRegular
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 612101770}
+        m_MethodName: enterGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &612101766
@@ -647,6 +682,82 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isFixedSprite: 0
+--- !u!114 &612101769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 612101763}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 126189251}
+          m_MethodName: Play
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Hover
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1550741723}
+          m_MethodName: setSignal
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1550741723}
+          m_MethodName: setRegular
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+--- !u!114 &612101770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 612101763}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96880b6108a419f4c87c9533d146ad5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dumbFuckers:
+  - Lampe
+  - Ventilator
+  - Heizstab
+  szene: 11
+  sceneChanger: {fileID: 2136337711}
 --- !u!1001 &796446694
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -916,8 +1027,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Ventilator
   info: 
-  available: 0
-  found: 0
+  status: 0
+  inventoryItem: 0
 --- !u!114 &1117794049
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1125,7 +1236,7 @@ RectTransform:
   m_Children:
   - {fileID: 227184091}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1524,7 +1635,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1894144557
 GameObject:
@@ -1590,7 +1701,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2095955156
 GameObject:
@@ -1629,8 +1740,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 488.3, y: -171.3}
-  m_SizeDelta: {x: 145.8, y: 145.8}
+  m_AnchoredPosition: {x: 441, y: -152}
+  m_SizeDelta: {x: 185.6, y: 178.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2095955158
 MonoBehaviour:
@@ -1704,8 +1815,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Lautsprecher
   info: 
-  available: 0
-  found: 0
+  status: 0
+  inventoryItem: 0
 --- !u!114 &2095955160
 MonoBehaviour:
   m_ObjectHideFlags: 0

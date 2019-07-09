@@ -94,7 +94,6 @@ public class RadioMinigame : MonoBehaviour {
         string answer = text.text;
         Question question = questions[currentQuestion];
         if (answer.Equals( question.answer ) && solvedQuestions < 5) {
-            // Älexa play "correct"
             question.solved = true;
             solvedQuestions += 1;
             if (solvedQuestions >= 5) {
@@ -104,7 +103,12 @@ public class RadioMinigame : MonoBehaviour {
                 frage.text = "Super, das Radio funktioniert wieder!";
                 this.gameObject.transform.Find("UI Layer").Find("Quiz").Find("Antwort1").gameObject.SetActive(false);
                 this.gameObject.transform.Find("UI Layer").Find("Quiz").Find("Antwort2").gameObject.SetActive(false);
-                this.gameObject.transform.Find("UI Layer").Find("Quiz").Find("Antwort3").gameObject.SetActive(false);                
+                this.gameObject.transform.Find("UI Layer").Find("Quiz").Find("Antwort3").gameObject.SetActive(false);
+                Inventory.Instance.deactivateItem("Antenne");
+                Inventory.Instance.deactivateItem("Demodulator");
+                Inventory.Instance.deactivateItem("Verstärker");
+                Inventory.Instance.deactivateItem("Eingangsfilter");
+                Inventory.Instance.deactivateItem("Lautsprecher");
                 AudioManager.Instance.Play("RadioAbgeschlossen");
             }
             else {
@@ -112,17 +116,18 @@ public class RadioMinigame : MonoBehaviour {
                 Question newQuestion = questions[currentQuestion];
                 while (newQuestion.solved) {
                     currentQuestion = (currentQuestion + 1) % 5;
+                    newQuestion = questions[currentQuestion];
                 }
                 askQuestion();
             }            
         }
         else if (solvedQuestions < 5) {
-            // Älexa play "wrong"
             currentQuestion = (currentQuestion + 1) % 5;
             Question newQuestion = questions[currentQuestion];
             while (newQuestion.solved)
             {
                 currentQuestion = (currentQuestion + 1) % 5;
+                newQuestion = questions[currentQuestion];
             }
             askQuestion();
         }

@@ -24,6 +24,7 @@ public class SceneChangerAnimated : MonoBehaviour {
 		    Inventory.Instance.textWin.SetActive(false);
 		    AudioManager.Instance.speechBubble.SetActive(false);
 	    }
+        AudioManager.Instance.Stop();
 		animator.SetTrigger("FadeOut");
 		if(PersistentData.Instance.sceneLog[PersistentData.Instance.sceneLog.Count - 1] != scene){
 			PersistentData.Instance.sceneLog.Add(scene);
@@ -39,6 +40,7 @@ public class SceneChangerAnimated : MonoBehaviour {
 				Inventory.Instance.textWin.SetActive(false);
 				AudioManager.Instance.speechBubble.SetActive(false);
 			}
+            AudioManager.Instance.Stop();
 			animator.SetTrigger("FadeOut");
 			PersistentData.Instance.sceneLog.RemoveAt(PersistentData.Instance.sceneLog.Count - 1);
 			int scene = PersistentData.Instance.sceneLog[PersistentData.Instance.sceneLog.Count - 1];

@@ -191,7 +191,7 @@ PrefabInstance:
   m_SourcePrefab: {fileID: 100100000, guid: 6f0687fe9a709b447855cd9c5047024e, type: 3}
 --- !u!114 &126189251 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 9204639095623475712, guid: 6f0687fe9a709b447855cd9c5047024e,
+  m_CorrespondingSourceObject: {fileID: 3475770902594063360, guid: 6f0687fe9a709b447855cd9c5047024e,
     type: 3}
   m_PrefabInstance: {fileID: 126189250}
   m_PrefabAsset: {fileID: 0}
@@ -212,6 +212,7 @@ GameObject:
   - component: {fileID: 227184091}
   - component: {fileID: 227184093}
   - component: {fileID: 227184092}
+  - component: {fileID: 227184094}
   m_Layer: 5
   m_Name: Panel
   m_TagString: Untagged
@@ -276,6 +277,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 227184090}
   m_CullTransparentMesh: 0
+--- !u!114 &227184094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 227184090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cad07715a952a2944ae9ad8ca3939ab0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprite: {fileID: 21300000, guid: a3893e24ffae03d4384e65d7d1039762, type: 3}
 --- !u!1 &585948549
 GameObject:
   m_ObjectHideFlags: 0
@@ -388,8 +402,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Saugturbine
   info: 
-  available: 0
-  found: 0
+  status: 0
+  inventoryItem: 0
 --- !u!114 &585948553
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -804,7 +818,7 @@ RectTransform:
   - {fileID: 585948550}
   - {fileID: 1682106883}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1168,7 +1182,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1682106882
 GameObject:
@@ -1282,8 +1296,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: "Verst\xE4rker"
   info: 
-  available: 0
-  found: 0
+  status: 0
+  inventoryItem: 0
 --- !u!114 &1682106886
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1382,7 +1396,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: d2ec65af4f1cb66498ebe07d4d8b471f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e2ae251e19f75214f8149ea8e9667703, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1463,5 +1477,5 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
