@@ -1,4 +1,5 @@
 ﻿using UnityEngine.Audio;
+using System.Collections.Generic;
 using UnityEngine;
 using System;
 using UnityEngine.UI;
@@ -9,6 +10,7 @@ public class AudioManager : MonoBehaviour {
 	public static AudioManager Instance {get; private set;}
 	
 	public Audio[] sounds;
+    public List<Audio> playingSounds;
 	
 	private float lastVolume;
 	public GameObject speechBubble;
@@ -29,6 +31,7 @@ public class AudioManager : MonoBehaviour {
 			a.source.loop = a.loop;
 		}
 		lastVolume = PersistentData.Instance.volume;
+        playingSounds = new List<Audio>();
 			
 		if(flag)Play("AmbientMusic");
 	}
@@ -36,7 +39,21 @@ public class AudioManager : MonoBehaviour {
 	void Update() {
 		if(lastVolume != PersistentData.Instance.volume)
 			AdjustVolume(PersistentData.Instance.volume);
-	}
+        List<Audio> toRemove = new List<Audio>();
+        foreach (Audio a in playingSounds)
+        {
+            if (!a.source.isPlaying)
+            {
+                toRemove.Add(a);
+                if (!name.Equals("Hover") && !name.Equals("Click") && !name.Equals("AmbientMusic")
+                    && speechBubble.transform.GetChild(0).transform.GetChild(0).GetComponent<Text>().text.Equals(a.text)) StopDialog();
+            }
+        }
+        foreach (Audio a in toRemove)
+        {
+            playingSounds.Remove(a);
+        }
+    }
 	
    public void Play(string name) {
 	   Audio a = Array.Find(sounds, sound => sound.name == name);
@@ -46,12 +63,13 @@ public class AudioManager : MonoBehaviour {
            if (!name.Equals("Hover") && !name.Equals("Click") && !name.Equals("AmbientMusic")) Stop();
 
 		   a.source.Play();
+           playingSounds.Add(a);
 		   
 		   if (a.text.Length > 0)
 		   {
 			   speechBubble.transform.GetChild(0).transform.GetChild(0).GetComponent<Text>().text = a.text;
 			   speechBubble.SetActive(true);
-		   }
+		   }         
 	   }
 	   else Debug.LogWarning("sound " + name + " not found!");
    }
