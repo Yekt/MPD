@@ -3,6 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Serialization;
+using UnityEngine.UI;
+using Random = UnityEngine.Random;
 
 public enum TileRotation
 {
@@ -40,7 +42,9 @@ public class tileHandler : MonoBehaviour
     //
     //public int rotationOfTheTile;
 
-    public TileRotation rotation; 
+    public TileRotation rotation;
+    public GameObject handler;
+    
     
     // sortOfTile = StartTile;
     //             x
@@ -69,6 +73,8 @@ public class tileHandler : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        setRdmSortOfTile();
+        rdmRotation();
         
     }
 
@@ -77,7 +83,73 @@ public class tileHandler : MonoBehaviour
     {
         
     }
+
+
     
+    
+    
+    public void rdmRotation()
+    {
+        if (sortOfTile == SortOfTile.CURVETILE)
+        {
+            
+            int rdmNumber = Random.Range(0, 4);
+
+            for (int i = rdmNumber; i >= 0; i--)
+            {
+                rotateRight();
+            }
+
+
+        }else if (sortOfTile == SortOfTile.STREIGHTTILE)
+        {
+            int rdmNumber = Random.Range(0, 2);
+
+            for (int i = rdmNumber; i >= 0; i--)
+            {
+                rotateRight();
+            }
+        }
+    }
+
+    public void setRdmSortOfTile()
+    {
+        if (sortOfTile == SortOfTile.ENDTILE || sortOfTile == SortOfTile.STARTTILE) return;
+
+        int rdmNumber = Random.Range(0, 2);
+
+        if (rdmNumber == 0)
+        {
+            sortOfTile = SortOfTile.CURVETILE;
+            
+            
+            Texture2D myTexture = Resources.Load ("Images/curved") as Texture2D;
+            handler.AddComponent<RawImage>();
+            handler.GetComponent<RawImage> ().texture = myTexture;
+
+            
+            
+            //Resources.Load("Images/curved") as Texture2D;
+        }
+        else if(rdmNumber == 1)
+        {
+            sortOfTile = SortOfTile.STREIGHTTILE;
+            
+            
+            
+            Texture2D myTexture = Resources.Load ("Images/straight") as Texture2D;
+            handler.AddComponent<RawImage>();
+            handler.GetComponent<RawImage> ().texture = myTexture;
+
+            //Resources.Load ("Images/streight") as Texture2D;
+            
+            
+        }
+        else
+        {
+            throw new Exception("Out of Range in setRdmSOrtOfTile");
+        }
+    }
 
     
     public Direction[] getConnections()

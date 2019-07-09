@@ -5,19 +5,24 @@ using System.Linq;
 using System.Net;
 using System.Runtime.CompilerServices;
 using UnityEngine;
+using UnityEngine.UI;
 
 
 public class tileController : MonoBehaviour
 {
     public tileHandler[,] tiles;
     public GameObject controller;
-    
+    GameObject[] tmpTiles;
+
+    private float timerSpeed = 15f;
+
+ 
     // Start is called before the first frame update
     void Start()
     {
         AudioManager.Instance.Play("TVErstesBetreten1");
-
-        GameObject[] tmpTiles = new GameObject[controller.transform.childCount];
+	    
+        tmpTiles = new GameObject[controller.transform.childCount];
         this.tiles = new tileHandler[4,8];
         
         
@@ -39,14 +44,20 @@ public class tileController : MonoBehaviour
         }
         
         
-
+        InvokeRepeating("rerollTiles", timerSpeed, timerSpeed);
+	    
     }
 
     // Update is called once per frame
     void Update()
     {
+	    
+	   
     }
 
+
+    
+    
     public void checkForConnection()
     {
 
@@ -197,5 +208,20 @@ public class tileController : MonoBehaviour
 	    }
 
 	    return false;
+    }
+
+
+
+    public void rerollTiles()
+    {
+	    
+	    foreach (GameObject tileTransform in tmpTiles)
+	    {
+		    tileHandler tile = tileTransform.transform.gameObject.GetComponent(typeof(tileHandler)) as tileHandler;
+		    tile.setRdmSortOfTile();
+		    tile.rdmRotation();
+	    }
+	    
+	    
     }
 }
