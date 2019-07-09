@@ -110,6 +110,7 @@ public class RadioMinigame : MonoBehaviour {
                 Inventory.Instance.deactivateItem("Eingangsfilter");
                 Inventory.Instance.deactivateItem("Lautsprecher");
                 AudioManager.Instance.Play("RadioAbgeschlossen");
+                AudioManager.Instance.Play("Richtig");
             }
             else {
                 currentQuestion = (currentQuestion + 1) % 5;
@@ -119,6 +120,7 @@ public class RadioMinigame : MonoBehaviour {
                     newQuestion = questions[currentQuestion];
                 }
                 askQuestion();
+                AudioManager.Instance.Play("Richtig");
             }            
         }
         else if (solvedQuestions < 5) {
@@ -130,6 +132,7 @@ public class RadioMinigame : MonoBehaviour {
                 newQuestion = questions[currentQuestion];
             }
             askQuestion();
+            AudioManager.Instance.Play("Falsch");
         }
     }
 
