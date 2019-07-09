@@ -11,12 +11,14 @@ public class tileController : MonoBehaviour
 {
     public tileHandler[,] tiles;
     public GameObject controller;
+    private GameObject[] tmpTiles;
+    private List<tileHandler> tilesConnected = new List<tileHandler>();
+    
     
     // Start is called before the first frame update
     void Start()
     {
-        
-        GameObject[] tmpTiles = new GameObject[controller.transform.childCount];
+        tmpTiles = new GameObject[controller.transform.childCount];
         this.tiles = new tileHandler[4,8];
         
         
@@ -48,10 +50,16 @@ public class tileController : MonoBehaviour
 
     public void checkForConnection()
     {
-
+		tilesConnected.Clear();
 	    if (recursivCall(2, 0, Direction.RIGHT))
 	    {
-		    Debug.Log("JAAAAAAAAAAAAA");   
+		    Debug.Log("JAAAAAAAAAAAAA");
+
+
+		    foreach(tileHandler tile in tilesConnected)
+		    {
+			   Debug.Log(tile.name); 
+		    }
 	    }
 	    
     }
@@ -61,6 +69,7 @@ public class tileController : MonoBehaviour
     //recursive Call to check if Game is connected correctly (Direction we entered is the direction we entered the current tile)
     bool recursivCall(int y, int x, Direction directionWeGo)
     {
+	    
 	    //Check if Starttile was found, if yes return true
 	    if (tiles[y, x].sortOfTile == SortOfTile.STARTTILE)
 	    {
@@ -73,8 +82,9 @@ public class tileController : MonoBehaviour
 		    Debug.Log("Out of Playbox. Something went terribly wrong, you sould have a look at this.");
 		    return false;
 	    }
-
-
+	    
+		tilesConnected.Add(tiles[y,x]);
+		
 	    switch (directionWeGo)
 	    {
 		    case Direction.TOP:
@@ -93,6 +103,7 @@ public class tileController : MonoBehaviour
 
 			    if (tiles[y - 1, x].getConnections()[0] == Direction.BOT)
 			    {
+				    
 				    if (recursivCall(y - 1, x, tiles[y - 1, x].getConnections()[1])) return true;
 			    }
 			    else if (tiles[y - 1, x].getConnections()[1] == Direction.BOT)
