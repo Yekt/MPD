@@ -14,7 +14,7 @@ public class Ventilator : OvenComponent
     void Start()
     {
         angle = 360;
-        speed = 0f;
+        speed = 1f;
     }
 
     // Update is called once per frame
@@ -37,11 +37,10 @@ public class Ventilator : OvenComponent
                 Vector2 position = new Vector2(Camera.main.ScreenToWorldPoint(Input.mousePosition).x, Camera.main.ScreenToWorldPoint(Input.mousePosition).y);
                 if (ventilator.GetComponent<Collider2D>().bounds.Contains(position))
                 {
-                    speed += 0.005f;
-                    if (speed >= 4)
+                    speed += 0.02f;
+                    if (speed >= 5)
                     {
                         isCompleted = true;
-                        AudioManager.Instance.Play("OfenVentilatorAbgeschlossen");
                     }
 
                     Vector2 direction = Camera.main.ScreenToWorldPoint(Input.mousePosition) - ventilator.transform.position;

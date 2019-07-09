@@ -29,19 +29,34 @@ public class Oven : MonoBehaviour
         }
         if (toRemove != null)
         {
-            if (toRemove is HeatingRod && !firstHeatingRodCompleted)
+            if (components.Count > 1)
             {
-                firstHeatingRodCompleted = true;
-            } else if (toRemove is HeatingRod && firstHeatingRodCompleted)
+                if (toRemove is HeatingRod && !firstHeatingRodCompleted)
+                {
+                    firstHeatingRodCompleted = true;
+                }
+                else if (toRemove is HeatingRod && firstHeatingRodCompleted)
+                {
+                    AudioManager.Instance.Play("OfenHeizstabAbgeschlossen");
+                }
+                if (toRemove is LightBulb)
+                {
+                    AudioManager.Instance.Play("OfenLampeAbgeschlossen");
+                }
+                if (toRemove is Ventilator)
+                {
+                    AudioManager.Instance.Play("OfenVentilatorAbgeschlossen");
+                }
+            } else
             {
-                AudioManager.Instance.Play("OfenHeizstabAbgeschlossen");
+                AudioManager.Instance.Play("OfenAbgeschlossen");
             }
             components.Remove(toRemove);
             toRemove = null;
         }
         if (components.Count == 0)
         {
-            AudioManager.Instance.Play("OfenAbgeschlossen");
+            //AudioManager.Instance.Play("OfenAbgeschlossen");
             PersistentData.Instance.ovenFixed = true;
             Inventory.Instance.deactivateItem("Lampe");
             Inventory.Instance.deactivateItem("Ventilator");

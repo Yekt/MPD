@@ -27,7 +27,7 @@ public class LightBulb : OvenComponent
     {
         if (!isCompleted)
         {
-            if (lightBulbOn.activeSelf && timeDelay == (counter * 3))
+            if (lightBulbOn.activeSelf && timeDelay == (counter * 5))
             {
                 lightBulbOn.SetActive(false);
                 timeDelay = 0;
@@ -39,10 +39,9 @@ public class LightBulb : OvenComponent
                 {
                     lightBulbOn.SetActive(true);
                     counter += 1;
-                    if (counter == 15)
+                    if (counter == 5)
                     {
                         isCompleted = true;
-                        AudioManager.Instance.Play("OfenLampeAbgeschlossen");
                     }
                 }
             }
