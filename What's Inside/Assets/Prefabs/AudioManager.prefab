@@ -617,9 +617,10 @@ MonoBehaviour:
     volume: 1
     source: {fileID: 0}
     loop: 0
-    text: "Das ist doch dein Mitbewohner. Anscheinend wollte er dich pranken! Man
-      sollte Elektroger\xE4te niemals alleine auseinanderschrauben, schon gar nicht,
-      wenn sie an den Strom angeschlossen sind. "
+    text: "Das ist doch dein Mitbewohner. Anscheinend wollte er dich pranken! Zum
+      Gl\xFCck ist nichts Schlimmeres passiert! Man sollte Elektroger\xE4te niemals
+      alleine auseinanderschrauben, schon gar nicht, wenn sie an den Strom angeschlossen
+      sind."
   - clip: {fileID: 8300000, guid: 33c7532115183134dacbbcc74f9e8df8, type: 3}
     name: Richtig
     volume: 1
@@ -921,8 +922,8 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 22
+    m_Font: {fileID: 12800000, guid: 40c6b27f2d292b541aa8fd409ff3fabd, type: 3}
+    m_FontSize: 23
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0

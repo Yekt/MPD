@@ -35,7 +35,7 @@ public class RadioMinigame : MonoBehaviour {
         questions.Add( new Question(2, "Welches Bauteil stellt sicher, dass nur der gewünschte Sender empfangen wird?", "RadioFrage2", "Eingangsfilter") );
         questions.Add( new Question(3, "Mit welchem Bauteil werden die Schallwellen von den Radiowellen getrennt?", "RadioFrage3", "Demodulator") );
         questions.Add( new Question(4, "Womit bekommt das Signal, das die Lautsprecher zum Schwingen bringt, ausreichend Energie zugeführt?", "RadioFrage4", "Verstärker") );
-        questions.Add( new Question(5, "Wie werden die elektromagnetischen Schallwellen wieder in physische Schallwellen umgewandelt?", "RadioFrage5", "Lautsprecher") );
+        questions.Add( new Question(5, "Wie werden die elektromagnetischen Wellen wieder in physische Schallwellen umgewandelt?", "RadioFrage5", "Lautsprecher") );
 
         answers = new List<string>();
         foreach (Question question in questions) {
