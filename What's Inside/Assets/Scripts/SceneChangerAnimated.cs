@@ -75,6 +75,7 @@ public class SceneChangerAnimated : MonoBehaviour {
                     persistentData.enteredDorm = true;
                     audioManager.Play("SchlafzimmerErstesBetreten");
                 }
+                else audioManager.Play("SchlafzimmerBetreten");
                 break;
             case (5):   // Wohnzimmer
                 if (!persistentData.enteredLivingroom)
@@ -82,6 +83,7 @@ public class SceneChangerAnimated : MonoBehaviour {
                     persistentData.enteredLivingroom = true;
                     audioManager.Play("WohnzimmerErstesBetreten");
                 }
+                else audioManager.Play("WohnzimmerBetreten");
                 break;
             case (6):   // Küche
                 if (!persistentData.ovenFixed)

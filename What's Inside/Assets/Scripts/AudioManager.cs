@@ -99,8 +99,8 @@ public class AudioManager : MonoBehaviour {
     public void giveHint()
     {
         Play("Click");
-        if (!PersistentData.Instance.vacuumFixed) Play("milestone1+2");
-        else if (PersistentData.Instance.radioFixed) Play("milestone23");
+        if (!PersistentData.Instance.vacuumFixed) Play("Milestone12+3");
+        else if (PersistentData.Instance.radioFixed) Play("Flush");
         else Play("Milestone22");
     }
 }

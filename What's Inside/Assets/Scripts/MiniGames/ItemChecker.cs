@@ -20,7 +20,11 @@ public class ItemChecker : MonoBehaviour
         }
 
         if (flag) sceneChanger.loadScene(szene);
-        else Debug.Log("Couldn't find all Items");
+        else {
+            Debug.Log("Couldn't find all Items");
+            AudioManager.Instance.Play("FehlendeTeile");
+        }
+        
     }
 
 
