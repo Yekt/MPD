@@ -11,13 +11,15 @@ public class tileController : MonoBehaviour
 {
     public tileHandler[,] tiles;
     public GameObject controller;
-    
+
+    GameObject[] tmpTiles;
+
     // Start is called before the first frame update
     void Start()
     {
         AudioManager.Instance.Play("TVErstesBetreten1");
 
-        GameObject[] tmpTiles = new GameObject[controller.transform.childCount];
+        tmpTiles = new GameObject[controller.transform.childCount];
         this.tiles = new tileHandler[4,8];
         
         
@@ -198,4 +200,20 @@ public class tileController : MonoBehaviour
 
 	    return false;
     }
+
+
+
+    public void rerollTiles()
+    {
+
+        foreach (GameObject tileTransform in tmpTiles)
+        {
+            tileHandler tile = tileTransform.transform.gameObject.GetComponent(typeof(tileHandler)) as tileHandler;
+            tile.rdmRotation();
+        }
+
+    }
+
+
+
 }

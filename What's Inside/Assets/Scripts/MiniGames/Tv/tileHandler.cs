@@ -69,7 +69,8 @@ public class tileHandler : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        rdmRotation();
+
     }
 
     // Update is called once per frame
@@ -217,4 +218,31 @@ public class tileHandler : MonoBehaviour
 
 
 
+
+    public void rdmRotation()
+    {
+        if (sortOfTile == SortOfTile.CURVETILE)
+        {
+
+            int rdmNumber = UnityEngine.Random.Range(0, 4);
+
+            for (int i = rdmNumber; i >= 0; i--)
+            {
+                rotateRight();
+            }
+
+
+        }
+        else if (sortOfTile == SortOfTile.STREIGHTTILE)
+        {
+            int rdmNumber = UnityEngine.Random.Range(0, 2);
+
+            for (int i = rdmNumber; i >= 0; i--)
+            {
+                rotateRight();
+            }
+        }
     }
+
+
+}
