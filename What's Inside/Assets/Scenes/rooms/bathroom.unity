@@ -292,6 +292,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: a3893e24ffae03d4384e65d7d1039762, type: 3}
   sceneChanger: {fileID: 650906865}
+  back: {fileID: 1537370220}
 --- !u!1 &585948549
 GameObject:
   m_ObjectHideFlags: 0
@@ -1019,6 +1020,12 @@ PrefabInstance:
 --- !u!224 &1537370219 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 9023268006669714135, guid: 3055382efe5f582448a7b3fd598042e3,
+    type: 3}
+  m_PrefabInstance: {fileID: 1537370218}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1537370220 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9023268006669714132, guid: 3055382efe5f582448a7b3fd598042e3,
     type: 3}
   m_PrefabInstance: {fileID: 1537370218}
   m_PrefabAsset: {fileID: 0}

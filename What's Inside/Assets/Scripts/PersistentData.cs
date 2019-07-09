@@ -21,6 +21,7 @@ public class PersistentData : MonoBehaviour {
     public bool enteredKitchen;
     public bool enteredDorm;
     public bool enteredLivingroom;
+    public bool creditsRolled;
 	
 	
 	private void Awake(){
@@ -41,6 +42,7 @@ public class PersistentData : MonoBehaviour {
             enteredKitchen = false;
             enteredDorm = false;
             enteredLivingroom = false;
+            creditsRolled = false;
 }
 		else Destroy(gameObject);
 	}

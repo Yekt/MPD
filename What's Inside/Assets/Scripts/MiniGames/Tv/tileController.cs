@@ -12,7 +12,8 @@ public class tileController : MonoBehaviour
     public tileHandler[,] tiles;
     public GameObject controller;
 
-    private float timerSpeed = 15f;
+    // Zeit zum lösen in Sekunden
+    private float timerSpeed = 90f;
 
     GameObject[] tmpTiles;
 
