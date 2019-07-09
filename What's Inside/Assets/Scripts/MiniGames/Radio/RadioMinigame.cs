@@ -103,7 +103,12 @@ public class RadioMinigame : MonoBehaviour {
                 frage.text = "Super, das Radio funktioniert wieder!";
                 this.gameObject.transform.Find("UI Layer").Find("Quiz").Find("Antwort1").gameObject.SetActive(false);
                 this.gameObject.transform.Find("UI Layer").Find("Quiz").Find("Antwort2").gameObject.SetActive(false);
-                this.gameObject.transform.Find("UI Layer").Find("Quiz").Find("Antwort3").gameObject.SetActive(false);                
+                this.gameObject.transform.Find("UI Layer").Find("Quiz").Find("Antwort3").gameObject.SetActive(false);
+                Inventory.Instance.deactivateItem("Antenne");
+                Inventory.Instance.deactivateItem("Demodulator");
+                Inventory.Instance.deactivateItem("Verstärker");
+                Inventory.Instance.deactivateItem("Eingangsfilter");
+                Inventory.Instance.deactivateItem("Lautsprecher");
                 AudioManager.Instance.Play("RadioAbgeschlossen");
             }
             else {
