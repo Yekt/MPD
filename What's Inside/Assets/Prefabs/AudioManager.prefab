@@ -620,6 +620,19 @@ MonoBehaviour:
     text: "Das ist doch dein Mitbewohner. Anscheinend wollte er dich pranken! Man
       sollte Elektroger\xE4te niemals alleine auseinanderschrauben, schon gar nicht,
       wenn sie an den Strom angeschlossen sind. "
+  - clip: {fileID: 8300000, guid: 33c7532115183134dacbbcc74f9e8df8, type: 3}
+    name: Richtig
+    volume: 1
+    source: {fileID: 0}
+    loop: 0
+    text: 
+  - clip: {fileID: 8300000, guid: e413f63663472f141b565ae2f2e291cb, type: 3}
+    name: Falsch
+    volume: 1
+    source: {fileID: 0}
+    loop: 0
+    text: 
+  playingSounds: []
   speechBubble: {fileID: 3118910266766277152}
 --- !u!1 &4064632508937288452
 GameObject:

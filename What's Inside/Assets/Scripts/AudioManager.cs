@@ -45,7 +45,7 @@ public class AudioManager : MonoBehaviour {
             if (!a.source.isPlaying)
             {
                 toRemove.Add(a);
-                if (!name.Equals("Hover") && !name.Equals("Click") && !name.Equals("AmbientMusic")
+                if (!name.Equals("Hover") && !name.Equals("Click") && !name.Equals("AmbientMusic") && !name.Equals("Richtig") && !name.Equals("Falsch")
                     && speechBubble.transform.GetChild(0).transform.GetChild(0).GetComponent<Text>().text.Equals(a.text)) StopDialog();
             }
         }
@@ -57,10 +57,10 @@ public class AudioManager : MonoBehaviour {
 	
    public void Play(string name) {
 	   Audio a = Array.Find(sounds, sound => sound.name == name);
-	   //Debug.Log(name);
+	   //Debug.Log("Play: "+name);
 	   if (a != null)
 	   {
-           if (!name.Equals("Hover") && !name.Equals("Click") && !name.Equals("AmbientMusic")) Stop();
+           if (!name.Equals("Hover") && !name.Equals("Click") && !name.Equals("AmbientMusic") && !name.Equals("Richtig") && !name.Equals("Falsch")) Stop();
 
 		   a.source.Play();
            playingSounds.Add(a);
