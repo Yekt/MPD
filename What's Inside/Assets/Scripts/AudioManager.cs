@@ -54,6 +54,7 @@ public class AudioManager : MonoBehaviour {
 
                     if (a.name.Equals("FlurErstesBetreten1")) playNext = "Milestone11";
                     else if (a.name.Equals("TVErstesBetreten1")) playNext = "TVErstesBetreten2";
+                    else if (a.name.Equals("TVErstesBetreten2")) playNext = "TVErstesBetreten3";
                     else if (a.name.Equals("OfenLampe")) playNext = "OfenErstesBetreten";
                 }
             }
