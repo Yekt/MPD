@@ -5,15 +5,18 @@ using System.Linq;
 using System.Net;
 using System.Runtime.CompilerServices;
 using UnityEngine;
-
+using UnityEngine.UI;
 
 public class tileController : MonoBehaviour
 {
     public tileHandler[,] tiles;
     public GameObject controller;
+    public GameObject textBox;
 
-    // Zeit zum lösen in Sekunden
-    private float timerSpeed = 90f;
+    private bool allConected;
+    private Text text;
+    private float timeLeft = 60f;
+
 
     GameObject[] tmpTiles;
 
@@ -21,6 +24,8 @@ public class tileController : MonoBehaviour
     void Start()
     {
         AudioManager.Instance.Play("TVErstesBetreten1");
+
+        text = textBox.GetComponent<Text>();
 
         tmpTiles = new GameObject[controller.transform.childCount];
         this.tiles = new tileHandler[4,8];
@@ -44,12 +49,23 @@ public class tileController : MonoBehaviour
         }
 
 
-        InvokeRepeating("rerollTiles", timerSpeed, timerSpeed);
+        //InvokeRepeating("rerollTiles", timerSpeed, timerSpeed);
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (!allConected)
+        {
+            timeLeft -= Time.deltaTime;
+            if (timeLeft <= 0)
+            {
+                rerollTiles();
+                timeLeft = 60f;
+            }
+            text.text = Mathf.RoundToInt(timeLeft).ToString() + " Sekunden";
+        }
+        
     }
 
     public void checkForConnection()
@@ -57,6 +73,7 @@ public class tileController : MonoBehaviour
 
 	    if (recursivCall(2, 0, Direction.RIGHT))
 	    {
+            allConected = true;
             PersistentData.Instance.tvFixed = true;
             Inventory.Instance.activateGameItem("Antenne");
             Inventory.Instance.deactivateItem("Fernseherkabel");            
