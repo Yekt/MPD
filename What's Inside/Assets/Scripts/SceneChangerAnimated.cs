@@ -61,11 +61,14 @@ public class SceneChangerAnimated : MonoBehaviour {
         AudioManager audioManager = AudioManager.Instance;
         switch (nextScene) {
             case (3):   // Flur
-                if (!persistentData.enteredHallway) {
+                if (!persistentData.enteredHallway)
+                {
                     persistentData.enteredHallway = true;
                     audioManager.Play("FlurErstesBetreten1");
                 }
-                else {
+                else if (!persistentData.creditsRolled && persistentData.tvFixed) audioManager.Play("Flush");
+                else
+                {
                     audioManager.Play("FlurBetreten");
                 }
                 break;

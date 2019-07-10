@@ -63,7 +63,7 @@ public class tileController : MonoBehaviour
                 rerollTiles();
                 timeLeft = 60f;
             }
-            text.text = Mathf.RoundToInt(timeLeft).ToString() + " Sekunden";
+            text.text = Mathf.RoundToInt(timeLeft).ToString();
         }
         
     }
@@ -78,16 +78,33 @@ public class tileController : MonoBehaviour
             Inventory.Instance.activateGameItem("Antenne");
             Inventory.Instance.deactivateItem("Fernseherkabel");            
             AudioManager.Instance.Play("TVAbgeschlossen");
+            AudioManager.Instance.Play("Richtig");
+        }	    
+    }
+
+    public void checkForConnectionPlus()
+    {
+
+        if (recursivCall(2, 0, Direction.RIGHT))
+        {
+            allConected = true;
+            PersistentData.Instance.tvFixed = true;
+            Inventory.Instance.activateGameItem("Antenne");
+            Inventory.Instance.deactivateItem("Fernseherkabel");
+            AudioManager.Instance.Play("TVAbgeschlossen");
+            AudioManager.Instance.Play("Richtig");
         }
         else
         {
             AudioManager.Instance.Play("VersuchsNochmal1");
+            AudioManager.Instance.Play("Falsch");
         }
-	    
+
     }
 
-    
-	
+
+
+
     //recursive Call to check if Game is connected correctly (Direction we entered is the direction we entered the current tile)
     bool recursivCall(int y, int x, Direction directionWeGo)
     {

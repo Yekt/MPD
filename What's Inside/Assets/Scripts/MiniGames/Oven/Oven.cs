@@ -11,7 +11,7 @@ public class Oven : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        AudioManager.Instance.Play("OfenErstesBetreten");
+        AudioManager.Instance.Play("OfenLampe");
     }
 
     // Update is called once per frame
@@ -34,22 +34,27 @@ public class Oven : MonoBehaviour
                 if (toRemove is HeatingRod && !firstHeatingRodCompleted)
                 {
                     firstHeatingRodCompleted = true;
+                    AudioManager.Instance.Play("Richtig");
                 }
                 else if (toRemove is HeatingRod && firstHeatingRodCompleted)
                 {
                     AudioManager.Instance.Play("OfenHeizstabAbgeschlossen");
+                    AudioManager.Instance.Play("Richtig");
                 }
                 if (toRemove is LightBulb)
                 {
                     AudioManager.Instance.Play("OfenLampeAbgeschlossen");
+                    AudioManager.Instance.Play("Richtig");
                 }
                 if (toRemove is Ventilator)
                 {
                     AudioManager.Instance.Play("OfenVentilatorAbgeschlossen");
+                    AudioManager.Instance.Play("Richtig");
                 }
             } else
             {
                 AudioManager.Instance.Play("OfenAbgeschlossen");
+                AudioManager.Instance.Play("Richtig");
             }
             components.Remove(toRemove);
             toRemove = null;

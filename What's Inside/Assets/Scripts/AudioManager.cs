@@ -8,7 +8,8 @@ public class AudioManager : MonoBehaviour {
 	
 	// Singelton
 	public static AudioManager Instance {get; private set;}
-	
+
+    //private GameObject sceneChanger;
 	public Audio[] sounds;
     public List<Audio> playingSounds;
 	
@@ -40,19 +41,29 @@ public class AudioManager : MonoBehaviour {
 		if(lastVolume != PersistentData.Instance.volume)
 			AdjustVolume(PersistentData.Instance.volume);
         List<Audio> toRemove = new List<Audio>();
+        string playNext = null;
         foreach (Audio a in playingSounds)
         {
             if (!a.source.isPlaying)
             {
                 toRemove.Add(a);
-                if (!name.Equals("Hover") && !name.Equals("Click") && !name.Equals("AmbientMusic") && !name.Equals("Richtig") && !name.Equals("Falsch")
-                    && speechBubble.transform.GetChild(0).transform.GetChild(0).GetComponent<Text>().text.Equals(a.text)) StopDialog();
+                if (!a.name.Equals("Hover") && !a.name.Equals("Click") && !a.name.Equals("AmbientMusic") && !a.name.Equals("Richtig") && !a.name.Equals("Falsch")
+                    && speechBubble.transform.GetChild(0).transform.GetChild(0).GetComponent<Text>().text.Equals(a.text)) {
+
+                    StopDialog();
+
+                    if (a.name.Equals("FlurErstesBetreten1")) playNext = "Milestone11";
+                    else if (a.name.Equals("TVErstesBetreten1")) playNext = "TVErstesBetreten2";
+                    else if (a.name.Equals("OfenLampe")) playNext = "OfenErstesBetreten";
+                }
             }
         }
         foreach (Audio a in toRemove)
         {
             playingSounds.Remove(a);
         }
+
+        if (playNext != null) Play(playNext);
     }
 	
    public void Play(string name) {
@@ -104,4 +115,9 @@ public class AudioManager : MonoBehaviour {
         else if (PersistentData.Instance.radioFixed) Play("Flush");
         else Play("Milestone22");
     }
+
+    /**public void goBack()
+    {
+        if (sceneChanger != null) Debug.Log("jupp"); sceneChanger.GetComponent<SceneChangerAnimated>().loadPreviousScene();
+    }*/
 }

@@ -33,11 +33,13 @@ public class VacuumCleaner : MonoBehaviour
                     toRemove = component;
                     //TODO Älexa: Minispiel-Staubsauger_Richtiges-Bauteil-Ausgewählt
                     if (components.Count > 3) AudioManager.Instance.Play("StaubsaugerRichtig");
+                    AudioManager.Instance.Play("Richtig");
                 }
                 if (ComponentPlacedInWrongPosition(component))
                 {
                     component.ResetPosition();
                     AudioManager.Instance.Play("StaubsaugerFalsch");
+                    AudioManager.Instance.Play("Falsch");
                 }
                 if (toRemove != null)
                 {
@@ -54,7 +56,7 @@ public class VacuumCleaner : MonoBehaviour
                     Inventory.Instance.deactivateItem("Saugturbine");
                     Inventory.Instance.deactivateItem("Rohr");                    
                     AudioManager.Instance.Play("StaubsaugerAbgeschlossen");
-                    // TODO Items aus dem Inventar löschen und neues Item hinzufügen
+                    AudioManager.Instance.Play("Richtig");
                 }
             }
         }
